@@ -730,5 +730,115 @@
     </div>
   </section>
 </main>
+<!-- ========================= -->
+<!--     CONTENT SECTIONS      -->
+<!-- ========================= -->
+
+<section class="section" id="tubs">
+  <div class="container">
+    <h2>Why Seniors Choose Our Walk-In Bathtubs</h2>
+    <p>
+      Aging Safely Baths provides senior-friendly walk-in tubs built for safety,
+      comfort, and long-term reliability. Enjoy accessible bathing with hydrotherapy,
+      fast-fill faucets, heated seating, and lifetime warranties.
+    </p>
+  </div>
+</section>
+
+<section class="section section--alt" id="showers">
+  <div class="container">
+    <h2>Roll-In Showers & ADA Shower Systems</h2>
+    <p>
+      We also offer barrier-free and wheelchair-accessible roll-in showers with strong
+      slip-resistant bases, beautiful wall systems, and nationwide delivery.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="why-us">
+  <div class="container">
+    <h2>Why Aging Safely Baths?</h2>
+    <ul>
+      <li>✔ Over 15 Years Helping Seniors Bathe Independently</li>
+      <li>✔ Nationwide Delivery & Installation Options</li>
+      <li>✔ Trusted Pricing, No Pressure, No Sales Games</li>
+      <li>✔ Hydrotherapy, Bariatric, Wheelchair-Accessible Options</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--alt" id="resources">
+  <div class="container">
+    <h2>Helpful Guides & Resources</h2>
+    <p>
+      Learn how walk-in bathtubs help reduce fall risks, discover safety upgrades,
+      compare tub sizes, and explore best practices for aging in place.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="blog">
+  <div class="container">
+    <h2>Latest Blog Articles</h2>
+    <p>
+      Coming soon! Educational articles, senior safety tips, hydrotherapy guides,
+      and walk-in tub installation insights.
+    </p>
+  </div>
+</section>
+
+<!-- ========================= -->
+<!--           FOOTER          -->
+<!-- ========================= -->
+
+<footer class="section section--alt">
+  <div class="container">
+    <h3>Aging Safely Baths</h3>
+    <p>Premium Senior Walk-In Bathtubs & Roll-In Showers</p>
+    <p>
+      Call us: <a href="tel:18887792284">1 (888) 779-2284</a><br />
+      Email: sales@agingsafelybaths.com
+    </p>
+    <p style="margin-top:1.5rem; font-size:0.85rem; color:#73808c;">
+      © 2025 Aging Safely Baths – All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+</div> <!-- end page-wrapper -->
+
+<!-- ========================= -->
+<!--      EMAILJS CONNECT      -->
+<!-- ========================= -->
+<script>
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("formStatus");
+  status.textContent = "Sending...";
+  status.style.color = "#0a6f7f";
+
+  emailjs.send("service_usimtub", "template_5n0cskt", {
+      name: this.user_name.value,
+      phone: this.user_phone.value,
+      zip: this.user_zip.value,
+      email: this.user_email.value || "Not provided",
+      message: this.user_message.value || "No message provided"
+  }, "alWutsHLG6c3h9P2j")
+  .then(() => {
+      status.textContent = "Thank you! A specialist will contact you shortly.";
+      status.style.color = "#1ba97f";
+      this.reset();
+  })
+  .catch(() => {
+      status.textContent = "There was a problem sending your request. Please try again.";
+      status.style.color = "#f45b45";
+  });
+});
+</script>
+
+</body>
+</html>
+
 
 
