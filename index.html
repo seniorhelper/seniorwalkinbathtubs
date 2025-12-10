@@ -211,7 +211,7 @@
       font-size: 0.75rem;
     }
 
-    /* Header & Nav (your existing look) */
+    /* Header & Nav */
     .site-header {
       position: sticky;
       top: 0;
@@ -485,6 +485,53 @@
       }
     }
 
+    /* HERO RIBBON (One-Day Installation) */
+    .hero-ribbon {
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(8, 36, 62, 0.08);
+      border-bottom: 1px solid rgba(221, 227, 234, 0.7);
+    }
+
+    .hero-ribbon__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .hero-ribbon__eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      color: var(--color-deep-teal);
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-ribbon__headline {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-deep-navy);
+      margin-bottom: 0.15rem;
+    }
+
+    .hero-ribbon__subtext {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+    }
+
+    @media (max-width: 768px) {
+      .hero-ribbon__inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-ribbon__headline {
+        font-size: 1.2rem;
+      }
+    }
+
     /* HERO + FORM */
     .hero-section {
       padding: 4rem 0;
@@ -660,6 +707,11 @@
       border: 1px solid rgba(221, 227, 234, 0.9);
     }
 
+    .card--frosted {
+      background: linear-gradient(145deg, #ffffff 0%, #f5f9fd 100%);
+      border-color: rgba(221, 227, 234, 0.9);
+    }
+
     .card__eyebrow {
       font-size: 0.75rem;
       text-transform: uppercase;
@@ -692,6 +744,18 @@
     .card__link::after {
       content: "➜";
       font-size: 0.9rem;
+    }
+
+    /* Inline section images */
+    .section-image-wrapper {
+      max-width: 820px;
+      margin: 0 auto 2rem;
+    }
+
+    .section-image {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
     }
 
     /* FAQ */
@@ -863,7 +927,7 @@
             <div class="nav__phone">
               <span class="nav__phone-label">Call for your free quote</span>
               <span class="nav__phone-number">
-                <a href="tel:18887792284">1 (888) 779-2284</a>
+                <a href="tel:18887792284">1 (888) 779-2284 (BATH)</a>
               </span>
             </div>
             <a href="#quote" class="btn btn--primary nav__cta-button">
@@ -896,7 +960,7 @@
             <div class="nav__phone">
               <span class="nav__phone-label">Call for your free quote</span>
               <span class="nav__phone-number">
-                <a href="tel:18887792284">1 (888) 779-2284</a>
+                <a href="tel:18887792284">1 (888) 779-2284 (BATH)</a>
               </span>
             </div>
             <a href="#quote" class="btn btn--primary">
@@ -906,6 +970,19 @@
         </div>
       </div>
     </header>
+
+    <!-- One-Day Installation Hero Ribbon -->
+    <section class="hero-ribbon">
+      <div class="container hero-ribbon__inner">
+        <div>
+          <p class="hero-ribbon__eyebrow">Fast, Worry-Free Installations</p>
+          <p class="hero-ribbon__headline">One-Day Installation Options</p>
+          <p class="hero-ribbon__subtext">
+            DIY delivery or professional installation available in select areas, depending on your location and tub or shower system.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- MAIN -->
     <main id="top">
@@ -998,6 +1075,15 @@
             </p>
           </div>
 
+          <div class="section-image-wrapper">
+            <img
+              src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/top_view_detailed_diagram5-1.jpg"
+              alt="senior walk in bathtub features diagram showing seat, grab bars, and hydrotherapy jets"
+              class="section-image"
+              loading="lazy"
+            />
+          </div>
+
           <div class="grid grid--3">
             <div class="card">
               <div class="card__eyebrow">Extra Space & Support</div>
@@ -1048,6 +1134,15 @@
               Some seniors prefer a low-threshold or roll in shower instead of a tub. Aging Safely Baths
               can provide ADA-friendly shower systems with sturdy pans, beautiful wall systems, and seat options.
             </p>
+          </div>
+
+          <div class="section-image-wrapper">
+            <img
+              src="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/wheelchair-accessible-showers-image-scaled.jpg"
+              alt="wheelchair accessible roll in shower with built-in seat and grab bars"
+              class="section-image"
+              loading="lazy"
+            />
           </div>
 
           <div class="grid grid--2">
@@ -1208,8 +1303,7 @@
             <span class="eyebrow">Senior Bath Safety Blog</span>
             <h2>Educational Articles for Seniors, Caregivers & Families</h2>
             <p>
-              Future articles may cover topics like funding options, comparing walk-in tub brands, and bath safety checklists for the home.
-              As your content grows, this area can highlight your best-performing articles.
+              This section will highlight your latest senior bath safety articles once the blog is live. Check back soon for new content on walk-in tubs, roll in showers, and aging in place.
             </p>
           </div>
 
@@ -1240,450 +1334,491 @@
       </section>
 
     </main>
-<!-- ===========================
-   SECTION: WHY AGING SAFELY
-=========================== -->
-<section id="why-us" class="section section--alt">
-  <div class="container">
-    <div class="section__header">
-      <span class="eyebrow">Why Choose Aging Safely Baths</span>
-      <h2>Your Safety, Comfort & Dignity Come First</h2>
-      <p>Every senior deserves a safe bathing experience without fear of slips, falls, or painful mobility challenges. Our walk-in bathtubs are designed to provide peace of mind, therapeutic relief, and long-term comfort for aging in place.</p>
-    </div>
 
-    <div class="grid grid--3">
-      <div class="card">
-        <h3>❤️ Compassion-First Approach</h3>
-        <p>We take time to understand your unique mobility needs. Our team provides friendly, no-pressure guidance so you feel confident in your decision.</p>
-      </div>
+    <!-- ===========================
+       SECTION: WHY AGING SAFELY (EXPANDED)
+    =========================== -->
+    <section id="why-aging-safely-expanded" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Why Choose Aging Safely Baths</span>
+          <h2>Your Safety, Comfort &amp; Dignity Come First</h2>
+          <p>
+            Every senior deserves a safe bathing experience without fear of slips, falls, or painful mobility challenges.
+            Our walk-in bathtubs are designed to provide peace of mind, therapeutic relief, and long-term comfort for aging in place.
+          </p>
+        </div>
 
-      <div class="card">
-        <h3>🛁 Trusted Nationwide</h3>
-        <p>Aging Safely Baths has earned the trust of thousands of seniors and caregivers. We offer fast, reliable delivery nationwide or full-service installation in select areas.</p>
-      </div>
+        <div class="section-image-wrapper">
+          <img
+            src="https://www.agingsafelybaths.com/wp-content/uploads/2020/06/aging-in-place-home-modifications-image.png"
+            alt="recently installed senior walk in bathtub in residential bathroom"
+            class="section-image"
+            loading="lazy"
+          />
+        </div>
 
-      <div class="card">
-        <h3>💸 Honest, Transparent Pricing</h3>
-        <p>No pushy sales tactics. No inflated quotes. Just honest pricing with premium-quality tubs that last.</p>
-      </div>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>❤️ Compassion-First Approach</h3>
+            <p>We take time to understand your unique mobility needs. Our team provides friendly, no-pressure guidance so you feel confident in your decision.</p>
+          </div>
 
-      <div class="card">
-        <h3>♿ ADA & Mobility Focused</h3>
-        <p>Our tubs prioritize accessibility: low-entry thresholds, slip-resistant flooring, grab bars, heated seating, and more.</p>
-      </div>
+          <div class="card">
+            <h3>🛁 Trusted Nationwide</h3>
+            <p>Aging Safely Baths has earned the trust of thousands of seniors and caregivers. We offer fast, reliable delivery nationwide or full-service installation in select areas.</p>
+          </div>
 
-      <div class="card">
-        <h3>🔧 Industry-Leading Warranties</h3>
-        <p>Most systems include lifetime warranties on the door seal and extended warranties on pumps and jets for total peace of mind.</p>
-      </div>
+          <div class="card">
+            <h3>💸 Honest, Transparent Pricing</h3>
+            <p>No pushy sales tactics. No inflated quotes. Just honest pricing with premium-quality tubs that last.</p>
+          </div>
 
-      <div class="card">
-        <h3>🌊 Hydrotherapy for Pain Relief</h3>
-        <p>Warm air or water jets can help ease arthritis, nerve pain, stiffness, circulation issues, and general soreness.</p>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="card">
+            <h3>♿ ADA &amp; Mobility Focused</h3>
+            <p>Our tubs prioritize accessibility: low-entry thresholds, slip-resistant flooring, grab bars, heated seating, and more.</p>
+          </div>
 
+          <div class="card">
+            <h3>🔧 Industry-Leading Warranties</h3>
+            <p>Most systems include lifetime warranties on the door seal and extended warranties on pumps and jets for total peace of mind.</p>
+          </div>
 
-
-<!-- ===========================
-   SECTION: FEATURE GRID
-=========================== -->
-<section class="section">
-  <div class="container">
-    <div class="section__header">
-      <span class="eyebrow">Premium Features</span>
-      <h2>Everything You Need for a Safer, More Relaxing Bathing Experience</h2>
-    </div>
-
-    <div class="grid grid--3">
-      <div class="card">
-        <h3>✔ Low Step-In Entry</h3>
-        <p>A fraction of the height of a traditional tub, dramatically lowering slip risks.</p>
-      </div>
-
-      <div class="card">
-        <h3>✔ Leak-Proof Door Seal</h3>
-        <p>Backed by lifetime warranties for dependable performance.</p>
-      </div>
-
-      <div class="card">
-        <h3>✔ Heated Backrest & Seat</h3>
-        <p>Stay warm and comfortable as the tub fills — perfect for arthritis and circulation.</p>
-      </div>
-
-      <div class="card">
-        <h3>✔ Hydrotherapy Jet Options</h3>
-        <p>Choose air, water, or dual-therapy jets to soothe sore joints and muscles.</p>
-      </div>
-
-      <div class="card">
-        <h3>✔ Slip-Resistant Flooring</h3>
-        <p>Designed to prevent falls and provide secure footing at all times.</p>
-      </div>
-
-      <div class="card">
-        <h3>✔ Fast-Drain Technology</h3>
-        <p>Empty your tub quickly and safely — no long waits.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- ===========================
-   SECTION: NATIONWIDE DELIVERY
-=========================== -->
-<section class="section section--alt">
-  <div class="container">
-    <div class="section__header">
-      <span class="eyebrow">Nationwide Delivery</span>
-      <h2>We Serve Seniors Coast to Coast</h2>
-      <p>No matter where you live in the U.S., we can ship your walk-in tub directly to your home.  
-      Installation services available in select regions.</p>
-    </div>
-
-    <div class="card card--frosted">
-      <h3 style="margin-bottom: 1rem;">Serving Homeowners, Contractors & Assisted Living Communities</h3>
-      <p>We proudly support:</p>
-      <ul style="margin-top: 1rem; color: var(--color-text-muted); line-height: 1.7;">
-        <li>✔ Seniors aging safely at home</li>
-        <li>✔ Caregivers seeking safer alternatives</li>
-        <li>✔ Veterans needing mobility access solutions</li>
-        <li>✔ Assisted living & nursing home remodeling</li>
-        <li>✔ Contractors installing ADA-compliant bathing systems</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<!-- ===========================
-     PART 4 – VALUE SECTIONS
-=========================== -->
-
-<!-- WHY CHOOSE US -->
-<section id="why-us" class="section">
-  <div class="container">
-    <div class="section__header">
-      <p class="eyebrow">Why Seniors Trust Aging Safely Baths</p>
-      <h2>Premium Senior Walk-In Bathtubs Designed for Real Life</h2>
-      <p>Your safety, comfort, and peace of mind come first. Every tub is engineered for reliability, comfort, and long-term independence — without pushy sales reps or inflated pricing.</p>
-    </div>
-
-    <div class="grid grid--3">
-      <div class="card">
-        <h3>Safe Low-Entry Threshold</h3>
-        <p>Our step-in entry makes bathing safer every day, dramatically reducing fall risk for seniors and those with mobility challenges.</p>
-      </div>
-
-      <div class="card">
-        <h3>Hydrotherapy for Pain Relief</h3>
-        <p>Relax stiff joints, improve circulation, and ease chronic pain with warm-air hydrotherapy jets designed for seniors.</p>
-      </div>
-
-      <div class="card">
-        <h3>Lifetime Warranty Options</h3>
-        <p>Enjoy peace of mind knowing your investment is protected with long-term warranties on major components and fixtures.</p>
-      </div>
-
-      <div class="card">
-        <h3>ADA & Wheelchair Accessible Options</h3>
-        <p>We offer bariatric tubs, extra-wide doors, and true wheelchair-entry models for every level of mobility need.</p>
-      </div>
-
-      <div class="card">
-        <h3>Fast Delivery Across the U.S.</h3>
-        <p>Whether you need professional installation or a DIY-friendly drop-off, your tub ships safely and quickly to your home.</p>
-      </div>
-
-      <div class="card">
-        <h3>Honest Pricing. No Pressure.</h3>
-        <p>No sales tactics. No confusing packages. Just upfront, transparent pricing with real customer support.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- HOW IT WORKS SECTION -->
-<section class="section section--alt" id="how-it-works">
-  <div class="container">
-    <div class="section__header">
-      <p class="eyebrow">How It Works</p>
-      <h2>Simple 3-Step Process to Getting Your Walk-In Tub</h2>
-    </div>
-
-    <div class="grid grid--3">
-      <div class="card card--frosted">
-        <h3>1. Request Your Free Quote</h3>
-        <p>You’ll receive friendly, pressure-free guidance to choose the right tub based on mobility needs, bathroom layout, and budget.</p>
-      </div>
-
-      <div class="card card--frosted">
-        <h3>2. Confirm Your Model</h3>
-        <p>Select from senior walk-in tubs, wheelchair-entry units, and deep-soaker therapeutic tubs — all built for long-term reliability.</p>
-      </div>
-
-      <div class="card card--frosted">
-        <h3>3. Delivery or Installation</h3>
-        <p>Get fast nationwide delivery or professional installation by Aging Safely certified installers.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- MID-PAGE CTA -->
-<section class="section cta-section">
-  <div class="container">
-    <div class="card card--frosted" style="text-align:center; padding:3rem;">
-      <h2>Ready to Enjoy Safer, More Comfortable Bathing?</h2>
-      <p style="max-width:650px; margin:0 auto 1.5rem;">
-        Speak with a compassionate Aging Safely specialist today. We’re here to help seniors, caregivers, and veterans choose the right walk-in tub without pressure or gimmicks.
-      </p>
-      <a href="#quote" class="btn btn--primary">Get My Free Quote</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- BUYER’S GUIDE SECTION -->
-<section id="resources" class="section">
-  <div class="container">
-    <div class="section__header">
-      <p class="eyebrow">Helpful Resources</p>
-      <h2>Senior Walk-In Tub Buyer’s Guide</h2>
-    </div>
-
-    <div class="grid grid--2">
-      <div class="card">
-        <h3>What Size Walk-In Tub Do You Need?</h3>
-        <p>Learn how to correctly measure your bathroom to avoid the #1 mistake homeowners make when buying a walk-in tub.</p>
-      </div>
-
-      <div class="card">
-        <h3>Hydrotherapy: Does It Really Work?</h3>
-        <p>Discover how warm-water therapy helps reduce arthritis pain, improve mobility, and promote deep relaxation.</p>
-      </div>
-    </div>
-
-    <div class="grid grid--2" style="margin-top:1.7rem;">
-      <div class="card">
-        <h3>Installation vs. DIY Drop-Off</h3>
-        <p>Understand the pros and cons of professional installation versus doing it yourself — and what saves the most money.</p>
-      </div>
-
-      <div class="card">
-        <h3>Comparing Door Styles & Jet Systems</h3>
-        <p>We break down inward-opening vs. outward-opening doors, jet placements, and safety features that matter.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ⭐⭐⭐ PART 5 – EXPANDED FAQ START ⭐⭐⭐ -->
-<section class="section section--alt" id="faq-expanded">
-  <div class="container">
-    <div class="section__header">
-      <span class="eyebrow">More Answers</span>
-      <h2>Frequently Asked Questions About Senior Walk-In Tubs</h2>
-      <p>Everything seniors, families, and caregivers want to know before choosing a walk-in bathtub.</p>
-    </div>
-
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <button class="faq-question">How long does installation usually take?</button>
-        <div class="faq-answer">
-          <p>Most installations are completed in 1–2 days depending on plumbing access and bathroom layout.</p>
+          <div class="card">
+            <h3>🌊 Hydrotherapy for Pain Relief</h3>
+            <p>Warm air or water jets can help ease arthritis, nerve pain, stiffness, circulation issues, and general soreness.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">Do walk-in tubs really help with arthritis or pain relief?</button>
-        <div class="faq-answer">
-          <p>Yes. Hydrotherapy jets and warm water therapy greatly reduce joint stiffness and chronic pain.</p>
+    <!-- ===========================
+       SECTION: FEATURE GRID
+    =========================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Premium Features</span>
+          <h2>Everything You Need for a Safer, More Relaxing Bathing Experience</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>✔ Low Step-In Entry</h3>
+            <p>A fraction of the height of a traditional tub, dramatically lowering slip risks.</p>
+          </div>
+
+          <div class="card">
+            <h3>✔ Leak-Proof Door Seal</h3>
+            <p>Backed by lifetime warranties for dependable performance.</p>
+          </div>
+
+          <div class="card">
+            <h3>✔ Heated Backrest &amp; Seat</h3>
+            <p>Stay warm and comfortable as the tub fills — perfect for arthritis and circulation.</p>
+          </div>
+
+          <div class="card">
+            <h3>✔ Hydrotherapy Jet Options</h3>
+            <p>Choose air, water, or dual-therapy jets to soothe sore joints and muscles.</p>
+          </div>
+
+          <div class="card">
+            <h3>✔ Slip-Resistant Flooring</h3>
+            <p>Designed to prevent falls and provide secure footing at all times.</p>
+          </div>
+
+          <div class="card">
+            <h3>✔ Fast-Drain Technology</h3>
+            <p>Empty your tub quickly and safely — no long waits.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">How much water does a walk-in tub use?</button>
-        <div class="faq-answer">
-          <p>Most tubs hold 40–70 gallons. Fast-fill faucets and dual drains help reduce wait time.</p>
+    <!-- ===========================
+       SECTION: NATIONWIDE DELIVERY
+    =========================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Nationwide Delivery</span>
+          <h2>We Serve Seniors Coast to Coast</h2>
+          <p>
+            No matter where you live in the U.S., we can ship your walk-in tub directly to your home.
+            Installation services available in select regions.
+          </p>
+        </div>
+
+        <div class="card card--frosted">
+          <h3 style="margin-bottom: 1rem;">Serving Homeowners, Contractors &amp; Assisted Living Communities</h3>
+          <p>We proudly support:</p>
+          <ul style="margin-top: 1rem; color: var(--color-text-muted); line-height: 1.7;">
+            <li>✔ Seniors aging safely at home</li>
+            <li>✔ Caregivers seeking safer alternatives</li>
+            <li>✔ Veterans needing mobility access solutions</li>
+            <li>✔ Assisted living &amp; nursing home remodeling</li>
+            <li>✔ Contractors installing ADA-compliant bathing systems</li>
+          </ul>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">Do I need a larger water heater?</button>
-        <div class="faq-answer">
-          <p>Some homes benefit from upgrading to 50–80 gallon heaters, depending on tub size.</p>
+    <!-- ===========================
+         PART 4 – VALUE SECTIONS
+    =========================== -->
+
+    <!-- WHY CHOOSE US (SECONDARY) -->
+    <section id="why-seniors-trust" class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Why Seniors Trust Aging Safely Baths</p>
+          <h2>Premium Senior Walk-In Bathtubs Designed for Real Life</h2>
+          <p>
+            Your safety, comfort, and peace of mind come first. Every tub is engineered for reliability, comfort,
+            and long-term independence — without pushy sales reps or inflated pricing.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Safe Low-Entry Threshold</h3>
+            <p>Our step-in entry makes bathing safer every day, dramatically reducing fall risk for seniors and those with mobility challenges.</p>
+          </div>
+
+          <div class="card">
+            <h3>Hydrotherapy for Pain Relief</h3>
+            <p>Relax stiff joints, improve circulation, and ease chronic pain with warm-air hydrotherapy jets designed for seniors.</p>
+          </div>
+
+          <div class="card">
+            <h3>Lifetime Warranty Options</h3>
+            <p>Enjoy peace of mind knowing your investment is protected with long-term warranties on major components and fixtures.</p>
+          </div>
+
+          <div class="card">
+            <h3>ADA &amp; Wheelchair Accessible Options</h3>
+            <p>We offer bariatric tubs, extra-wide doors, and true wheelchair-entry models for every level of mobility need.</p>
+          </div>
+
+          <div class="card">
+            <h3>Fast Delivery Across the U.S.</h3>
+            <p>Whether you need professional installation or a DIY-friendly drop-off, your tub ships safely and quickly to your home.</p>
+          </div>
+
+          <div class="card">
+            <h3>Honest Pricing. No Pressure.</h3>
+            <p>No sales tactics. No confusing packages. Just upfront, transparent pricing with real customer support.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">Are walk-in tubs safe for mobility challenges?</button>
-        <div class="faq-answer">
-          <p>Yes. Walk-in tubs include ADA-height seating, slip-resistant flooring, and built-in grab bars.</p>
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section section--alt" id="how-it-works">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">How It Works</p>
+          <h2>Simple 3-Step Process to Getting Your Walk-In Tub</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--frosted">
+            <h3>1. Request Your Free Quote</h3>
+            <p>You’ll receive friendly, pressure-free guidance to choose the right tub based on mobility needs, bathroom layout, and budget.</p>
+          </div>
+
+          <div class="card card--frosted">
+            <h3>2. Confirm Your Model</h3>
+            <p>Select from senior walk-in tubs, wheelchair-entry units, and deep-soaker therapeutic tubs — all built for long-term reliability.</p>
+          </div>
+
+          <div class="card card--frosted">
+            <h3>3. Delivery or Installation</h3>
+            <p>Get fast nationwide delivery or professional installation by Aging Safely certified installers where available.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">What warranties are available?</button>
-        <div class="faq-answer">
-          <p>Many tubs include lifetime warranties on the door seal, frame, and components.</p>
+    <!-- MID-PAGE CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="card card--frosted" style="text-align:center; padding:3rem;">
+          <h2>Ready to Enjoy Safer, More Comfortable Bathing?</h2>
+          <p style="max-width:650px; margin:0 auto 1.5rem;">
+            Speak with a compassionate Aging Safely specialist today. We’re here to help seniors, caregivers, and veterans choose the right walk-in tub without pressure or gimmicks.
+          </p>
+          <a href="#quote" class="btn btn--primary">Get My Free Quote</a>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">Can a walk-in tub fit in a small bathroom?</button>
-        <div class="faq-answer">
-          <p>Compact 26–28″ models fit most existing tub/shower spaces with no major remodeling.</p>
+    <!-- BUYER’S GUIDE SECTION (EXPANDED RESOURCES) -->
+    <section id="buyers-guide-expanded" class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Helpful Resources</p>
+          <h2>Senior Walk-In Tub Buyer’s Guide</h2>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>What Size Walk-In Tub Do You Need?</h3>
+            <p>Learn how to correctly measure your bathroom to avoid the #1 mistake homeowners make when buying a walk-in tub.</p>
+          </div>
+
+          <div class="card">
+            <h3>Hydrotherapy: Does It Really Work?</h3>
+            <p>Discover how warm-water therapy helps reduce arthritis pain, improve mobility, and promote deep relaxation.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--2" style="margin-top:1.7rem;">
+          <div class="card">
+            <h3>Installation vs. DIY Drop-Off</h3>
+            <p>Understand the pros and cons of professional installation versus doing it yourself — and what saves the most money.</p>
+          </div>
+
+          <div class="card">
+            <h3>Comparing Door Styles &amp; Jet Systems</h3>
+            <p>We break down inward-opening vs. outward-opening doors, jet placements, and safety features that matter.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">Does Medicare cover walk-in tubs?</button>
-        <div class="faq-answer">
-          <p>Medicare does not typically cover tubs, but some Advantage plans may offer partial reimbursements.</p>
+    <!-- EXPANDED FAQ -->
+    <section class="section section--alt" id="faq-expanded">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">More Answers</span>
+          <h2>Frequently Asked Questions About Senior Walk-In Tubs</h2>
+          <p>Everything seniors, families, and caregivers want to know before choosing a walk-in bathtub.</p>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">How long does installation usually take?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Most installations are completed in 1–2 days depending on plumbing access and bathroom layout.
+                A friendly specialist can help you understand what to expect in your home.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do walk-in tubs really help with arthritis or pain relief?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Many seniors report less stiffness and better sleep after soaking in a warm hydrotherapy walk-in tub.
+                Always consult with your doctor about what’s best for your specific health needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How much water does a walk-in tub use?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Most senior walk-in bathtubs hold between 40–70 gallons. Fast-fill faucets and dual drains help reduce waiting time so you spend more time relaxing and less time sitting still.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do I need a larger water heater?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Some homes benefit from upgrading to a 50–80 gallon water heater, especially with bigger soaking tubs.
+                We can help you estimate hot water requirements based on the model you’re considering.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Are walk-in tubs safe for mobility challenges?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Walk-in tubs can include ADA-height seating, slip-resistant flooring, and built-in grab bars.
+                These features are designed to support safer transfers compared to a traditional bathtub.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What warranties are available?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Many systems offer lifetime warranties on the door seal and robust coverage on frames, shells, and key components.
+                We’ll explain your options before you decide.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can a walk-in tub fit in a small bathroom?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Compact 26–28″ models are designed to fit in most standard tub/shower openings. In tighter spaces, a low-threshold or roll in shower may be a better fit.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Does Medicare cover walk-in tubs?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Traditional Medicare does not typically cover walk-in tubs, but some Medicare Advantage plans, VA programs, or state-specific resources may offer partial assistance in certain situations.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How much do senior walk-in bathtubs cost?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1rem;">
+                Tub-only pricing can range from around $2,500–$8,000+ depending on size and features. Installed systems may range higher based on plumbing and electrical needs. We’ll walk you through options that fit your budget.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do you deliver tubs nationwide?</button>
+            <div class="faq-answer">
+              <p style="padding-bottom:1.5rem;">
+                Yes. Aging Safely Baths offers affordable nationwide shipping on many senior walk-in bathtubs, and professional installation is available in select U.S. regions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-image-wrapper" style="margin-top:2rem;">
+          <img
+            src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/dual_drain2.jpg"
+            alt="dual drain system diagram for faster draining senior walk in bathtub"
+            class="section-image"
+            loading="lazy"
+          />
         </div>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <button class="faq-question">How much do senior walk-in bathtubs cost?</button>
-        <div class="faq-answer">
-          <p>Tub-only $2,500–$8,000. Installed systems $10,000–$18,000 depending on model and plumbing.</p>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-columns">
+
+          <div>
+            <h3 class="footer-heading">Aging Safely Baths</h3>
+            <p class="footer-text">
+              Senior walk in bathtubs, roll in showers, and wheelchair-accessible bathing solutions
+              for homeowners, caregivers, and healthcare environments.
+            </p>
+            <p class="footer-text">
+              Phone: <a href="tel:18887792284">1 (888) 779-2284 (BATH)</a><br>
+              Email: <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <div class="footer-links">
+              <a href="https://www.agingsafelybaths.com/shop/" target="_blank">All Products</a>
+              <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank">Walk In Tubs</a>
+              <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank">Roll In Showers</a>
+              <a href="https://www.agingsafelybaths.com/contact-us/" target="_blank">Contact Us</a>
+              <!-- XML Sitemap link -->
+              <a href="/sitemap.xml" target="_blank">XML Sitemap</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 Aging Safely Baths. All Rights Reserved.</span>
+          <span>SeniorWalkInBathtubs.com – An Aging Safely Baths Website</span>
         </div>
       </div>
+    </footer>
 
-      <div class="faq-item">
-        <button class="faq-question">Do you deliver tubs nationwide?</button>
-        <div class="faq-answer">
-          <p>Yes — Affordable nationwide shipping plus optional installation in many U.S. regions.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- ⭐⭐⭐ PART 5 – EXPANDED FAQ END ⭐⭐⭐ -->
+  </div> <!-- /.page-wrapper -->
 
 
-<!-- ⭐⭐⭐ FOOTER START ⭐⭐⭐ -->
-<footer>
-  <div class="container footer-inner">
-    <div class="footer-columns">
+  <!-- EMAILJS + JS SCRIPTS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
 
-      <div>
-        <h3 class="footer-heading">Aging Safely Baths</h3>
-        <p class="footer-text">
-          Senior walk in bathtubs, roll in showers, and wheelchair-accessible bathing solutions
-          for homeowners, caregivers, and healthcare environments.
-        </p>
-        <p class="footer-text">
-          Phone: <a href="tel:18887792284">1 (888) 779-2284</a><br>
-          Email: <a href="mailto:sales@agingsafelybaths.com">sales@agingsafelybaths.com</a>
-        </p>
-      </div>
-
-      <div>
-        <h4 class="footer-heading">Quick Links</h4>
-        <div class="footer-links">
-          <a href="https://www.agingsafelybaths.com/shop/" target="_blank">All Products</a>
-          <a href="https://www.agingsafelybaths.com/walk-in-tubs/" target="_blank">Walk In Tubs</a>
-          <a href="https://www.agingsafelybaths.com/handicap-showers/" target="_blank">Roll In Showers</a>
-          <a href="https://www.agingsafelybaths.com/contact-us/" target="_blank">Contact Us</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <span>© 2025 Aging Safely Baths. All Rights Reserved.</span>
-      <span>SeniorWalkInBathtubs.com – An Aging Safely Baths Website</span>
-    </div>
-  </div>
-</footer>
-<!-- ⭐⭐⭐ FOOTER END ⭐⭐⭐ -->
-
-
-</div> <!-- /.page-wrapper -->
-
-
-<!-- ⭐⭐⭐ EMAILJS + JS SCRIPTS ⭐⭐⭐ -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-(function() {
-
-  // Initialize EmailJS
-  if (window.emailjs) {
-    emailjs.init("alWutsHLG6c3h9P2j");
-  }
-
-  // Handle quote form submit
-  var form = document.getElementById("quoteForm");
-  var statusEl = document.getElementById("formStatus");
-
-  if (form && statusEl) {
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      statusEl.textContent = "Sending...";
-      statusEl.style.color = "#0a6f7f";
-
-      var params = {
-        user_name: form.user_name.value,
-        user_phone: form.user_phone.value,
-        user_zip: form.user_zip.value,
-        user_email: form.user_email.value || "Not provided",
-        user_message: form.user_message.value || "No comments"
-      };
-
-      emailjs.send("service_usimtub", "template_5n0cskt", params)
-        .then(function() {
-          statusEl.textContent = "Thank you! A specialist will contact you shortly.";
-          statusEl.style.color = "#1ba97f";
-          form.reset();
-        })
-        .catch(function() {
-          statusEl.textContent = "There was a problem sending your request. Please try again.";
-          statusEl.style.color = "#f45b45";
-        });
-    });
-  }
-
-  // Mobile Nav
-  var navToggle = document.getElementById("navToggle");
-  var mobileNav = document.getElementById("mobileNav");
-
-  if (navToggle && mobileNav) {
-    navToggle.addEventListener("click", function() {
-      mobileNav.classList.toggle("nav--open");
-      navToggle.classList.toggle("nav--open");
-    });
-
-    mobileNav.addEventListener("click", function(e) {
-      if (e.target.classList.contains("nav--mobile-link")) {
-        mobileNav.classList.remove("nav--open");
-        navToggle.classList.remove("nav--open");
+      // Initialize EmailJS
+      if (window.emailjs) {
+        emailjs.init("alWutsHLG6c3h9P2j");
       }
-    });
-  }
 
-  // FAQ accordion
-  var faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach(function(item) {
-    var questionBtn = item.querySelector(".faq-question");
-    if (!questionBtn) return;
-    questionBtn.addEventListener("click", function() {
-      item.classList.toggle("open");
-    });
-  });
+      // Handle quote form submit
+      var form = document.getElementById("quoteForm");
+      var statusEl = document.getElementById("formStatus");
 
-})();
-</script>
+      if (form && statusEl) {
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          statusEl.textContent = "Sending...";
+          statusEl.style.color = "#0a6f7f";
+
+          var params = {
+            user_name: form.user_name.value,
+            user_phone: form.user_phone.value,
+            user_zip: form.user_zip.value,
+            user_email: form.user_email.value || "Not provided",
+            user_message: form.user_message.value || "No comments"
+          };
+
+          emailjs.send("service_usimtub", "template_5n0cskt", params)
+            .then(function() {
+              statusEl.textContent = "Thank you! A specialist will contact you shortly.";
+              statusEl.style.color = "#1ba97f";
+              form.reset();
+            })
+            .catch(function() {
+              statusEl.textContent = "There was a problem sending your request. Please try again.";
+              statusEl.style.color = "#f45b45";
+            });
+        });
+      }
+
+      // Mobile Nav
+      var navToggle = document.getElementById("navToggle");
+      var mobileNav = document.getElementById("mobileNav");
+
+      if (navToggle && mobileNav) {
+        navToggle.addEventListener("click", function() {
+          mobileNav.classList.toggle("nav--open");
+          navToggle.classList.toggle("nav--open");
+        });
+
+        mobileNav.addEventListener("click", function(e) {
+          if (e.target.classList.contains("nav--mobile-link")) {
+            mobileNav.classList.remove("nav--open");
+            navToggle.classList.remove("nav--open");
+          }
+        });
+      }
+
+      // FAQ accordion
+      var faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach(function(item) {
+        var questionBtn = item.querySelector(".faq-question");
+        if (!questionBtn) return;
+        questionBtn.addEventListener("click", function() {
+          item.classList.toggle("open");
+        });
+      });
+
+    })();
+  </script>
 
 </body>
 </html>
-
-
-
