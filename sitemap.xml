@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aging Safely Baths – Senior Walk In Bathtubs Sitemap -->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Home -->
+<url>
+  <loc>https://seniorwalkinbathtubs.com/</loc>
+  <priority>1.0</priority>
+</url>
+
+<!-- Blog Index -->
+<url>
+  <loc>https://seniorwalkinbathtubs.com/blog/</loc>
+  <priority>0.8</priority>
+</url>
+
+<!-- Blog posts -->
+<url>
+  <loc>https://seniorwalkinbathtubs.com/blog/senior-hydrotherapy-benefits.html</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://seniorwalkinbathtubs.com/blog/walk-in-tub-vs-roll-in-shower.html</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://seniorwalkinbathtubs.com/blog/wheelchair-accessible-showers-installation-guide.html</loc>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://seniorwalkinbathtubs.com/blog/senior-bathroom-safety-upgrades.html</loc>
+  <priority>0.7</priority>
+</url>
+
+</urlset>
