@@ -1,3 +1,22 @@
+You’re not imagining it — that link failing on mobile is a real issue sometimes (“file stream access denied”). No games.
+
+Below is the full, complete, single-file HTML with your original file kept intact and only the approved changes applied:
+
+Hero strip text updated to “ONE-DAY INSTALLATION AVAILABLE IN YOUR AREA”
+
+Subtitle updated to start with “Or DIY-friendly…”
+
+Hero strip styling updated to be bigger/bolder with more whitespace (centered)
+
+Footer copyright updated to 2026
+
+Added SearchConverts attribution link in footer bottom
+
+EmailJS: kept your IDs the same, added console error logging + safety guard (this helps diagnose why it’s failing)
+
+
+Copy/paste once:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -492,24 +511,25 @@
     }
 
     .hero-install-strip__inner {
-      padding: 1.3rem 1.25rem 1.1rem;
+      padding: 2rem 1.25rem 1.8rem;
       display: flex;
       flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.45rem;
       max-width: var(--max-width);
       margin: 0 auto;
+      text-align: center;
     }
 
     .hero-install-strip__title {
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: 0.08em;
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--color-deep-navy);
     }
 
     .hero-install-strip__subtitle {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--color-text-muted);
     }
 
@@ -990,9 +1010,9 @@
     <!-- One-Day Install / DIY Strip -->
     <section class="hero-install-strip">
       <div class="hero-install-strip__inner">
-        <div class="hero-install-strip__title">ONE-DAY INSTALLATION IN SELECT AREAS</div>
+        <div class="hero-install-strip__title">ONE-DAY INSTALLATION AVAILABLE IN YOUR AREA</div>
         <div class="hero-install-strip__subtitle">
-          DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available.
+          Or DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available.
         </div>
       </div>
     </section>
@@ -1641,8 +1661,9 @@
         </div>
 
         <div class="footer-bottom">
-          <span>© 2025 Aging Safely Baths. All Rights Reserved.</span>
+          <span>© 2026 Aging Safely Baths. All Rights Reserved.</span>
           <span>SeniorWalkInBathtubs.com – An Aging Safely Baths Website</span>
+          <span><a href="https://www.searchconverts.com" target="_blank" rel="noopener">Powered by AIO SEO &amp; Conversion Strategy — SearchConverts</a></span>
         </div>
       </div>
     </footer>
@@ -1677,13 +1698,20 @@
             user_message: form.user_message.value || "No comments"
           };
 
+          if (!window.emailjs) {
+            statusEl.textContent = "There was a problem sending your request. Please try again.";
+            statusEl.style.color = "#f45b45";
+            return;
+          }
+
           emailjs.send("service_usimtub", "template_5n0cskt", params)
             .then(function() {
               statusEl.textContent = "Thank you! A specialist will contact you shortly.";
               statusEl.style.color = "#1ba97f";
               form.reset();
             })
-            .catch(function() {
+            .catch(function(err) {
+              console.error("EmailJS error:", err);
               statusEl.textContent = "There was a problem sending your request. Please try again.";
               statusEl.style.color = "#f45b45";
             });
