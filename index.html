@@ -232,7 +232,16 @@
     .brand {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
+    }
+
+    /* NEW: header logo image (with graceful fallback) */
+    .brand__logo {
+      width: auto;
+      height: 34px;
+      max-height: 34px;
+      display: block;
+      border-radius: 8px;
     }
 
     .brand__mark {
@@ -485,14 +494,14 @@
       }
     }
 
-    /* One-Day Install / DIY Strip */
+    /* One-Day Install / DIY Strip (UPDATED per your locked component) */
     .hero-install-strip {
       background: #ffffff;
       border-bottom: 1px solid rgba(15, 35, 52, 0.06);
     }
 
     .hero-install-strip__inner {
-      padding: 2rem 1.25rem 1.8rem;
+      padding: 2rem 1.25rem;
       display: flex;
       flex-direction: column;
       gap: 0.45rem;
@@ -924,6 +933,13 @@
     <header class="site-header">
       <div class="container site-header__inner">
         <a href="#top" class="brand">
+          <!-- NEW: real logo image + fallback to your existing mark -->
+          <img
+            src="logo.png"
+            alt="Aging Safely Baths logo"
+            class="brand__logo"
+            onerror="this.style.display='none';"
+          />
           <div class="brand__mark" aria-hidden="true"></div>
           <div class="brand__text">
             <span class="brand__name">Aging Safely Baths</span>
@@ -1652,22 +1668,42 @@
   </div> <!-- /.page-wrapper -->
 
   <!-- EMAILJS + JS SCRIPTS -->
+  <!-- Primary CDN -->
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function() {
 
-      // Initialize EmailJS
-      if (window.emailjs) {
-        emailjs.init("alWutsHLG6c3h9P2j");
+      // Robust EmailJS loader: if primary CDN is blocked or slow, load backup from jsDelivr.
+      function loadEmailJsBackup(cb) {
+        var s = document.createElement("script");
+        s.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+        s.onload = cb;
+        s.onerror = cb;
+        document.head.appendChild(s);
+      }
+
+      function initEmailJs() {
+        if (window.emailjs && typeof window.emailjs.init === "function") {
+          window.emailjs.init("alWutsHLG6c3h9P2j");
+          return true;
+        }
+        return false;
       }
 
       // Handle quote form submit
       var form = document.getElementById("quoteForm");
       var statusEl = document.getElementById("formStatus");
+      var isSending = false;
 
-      if (form && statusEl) {
+      function bindFormHandler() {
+        if (!form || !statusEl) return;
+
         form.addEventListener("submit", function(e) {
           e.preventDefault();
+
+          if (isSending) return;
+          isSending = true;
+
           statusEl.textContent = "Sending...";
           statusEl.style.color = "#0a6f7f";
 
@@ -1679,13 +1715,14 @@
             user_message: form.user_message.value || "No comments"
           };
 
-          if (!window.emailjs) {
-            statusEl.textContent = "There was a problem sending your request. Please try again.";
+          if (!window.emailjs || typeof window.emailjs.send !== "function") {
+            statusEl.textContent = "Form system is not loading. Please refresh and try again.";
             statusEl.style.color = "#f45b45";
+            isSending = false;
             return;
           }
 
-          emailjs.send("service_usimtub", "template_5n0cskt", params)
+          window.emailjs.send("service_usimtub", "template_5n0cskt", params)
             .then(function() {
               statusEl.textContent = "Thank you! A specialist will contact you shortly.";
               statusEl.style.color = "#1ba97f";
@@ -1695,9 +1732,25 @@
               console.error("EmailJS error:", err);
               statusEl.textContent = "There was a problem sending your request. Please try again.";
               statusEl.style.color = "#f45b45";
+            })
+            .finally(function() {
+              isSending = false;
             });
         });
       }
+
+      // Init sequence: try primary, else load backup, then init.
+      function startEmailJs() {
+        var ok = initEmailJs();
+        if (!ok) {
+          loadEmailJsBackup(function() {
+            initEmailJs();
+          });
+        }
+      }
+
+      startEmailJs();
+      bindFormHandler();
 
       // Mobile Nav
       var navToggle = document.getElementById("navToggle");
