@@ -1117,9 +1117,47 @@
             <button type="submit" class="form-btn">Request My Free Quote</button>
             <p id="formStatus" class="form-status"></p>
           </form>
+
+          <!-- FIX: EmailJS wiring so the form actually sends -->
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script>
+            (function () {
+              if (typeof emailjs === "undefined") return;
+
+              emailjs.init("alWutsHLG6c3h9P2j");
+
+              var form = document.getElementById("quoteForm");
+              var statusEl = document.getElementById("formStatus");
+
+              if (!form || !statusEl) return;
+
+              form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                statusEl.textContent = "Sending your request...";
+                statusEl.style.color = "#0a6f7f";
+
+                emailjs.send("service_usimtub", "template_5n0cskt", {
+                  user_name: form.user_name.value,
+                  user_phone: form.user_phone.value,
+                  user_zip: form.user_zip.value,
+                  user_email: form.user_email.value || "Not provided",
+                  user_message: form.user_message.value || "No comments"
+                })
+                .then(function () {
+                  statusEl.textContent = "Thank you! A specialist will contact you shortly.";
+                  statusEl.style.color = "#1ba97f";
+                  form.reset();
+                })
+                .catch(function () {
+                  statusEl.textContent = "There was a problem sending your request. Please try again.";
+                  statusEl.style.color = "#f45b45";
+                });
+              });
+            })();
+          </script>
         </div>
       </section>
-
       <!-- KEY BENEFITS / TRUST -->
       <section class="section section--alt" id="tubs">
         <div class="container">
