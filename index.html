@@ -1119,44 +1119,80 @@
           </form>
 
           <!-- FIX: EmailJS wiring so the form actually sends -->
-          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-          <script>
-            (function () {
-              if (typeof emailjs === "undefined") return;
+          <!-- EmailJS (required) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-              emailjs.init("alWutsHLG6c3h9P2j");
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("quoteForm");
+    const statusEl = document.getElementById("formStatus");
 
-              var form = document.getElementById("quoteForm");
-              var statusEl = document.getElementById("formStatus");
+    if (!form) {
+      console.error("quoteForm not found.");
+      return;
+    }
 
-              if (!form || !statusEl) return;
+    // IMPORTANT: Your stored settings (do not change unless you changed them in EmailJS)
+    const EMAILJS_PUBLIC_KEY = "alWutsHLG6c3h9P2j";
+    const EMAILJS_SERVICE_ID = "service_usimtub";
+    const EMAILJS_TEMPLATE_ID = "template_5n0cskt";
 
-              form.addEventListener("submit", function (e) {
-                e.preventDefault();
+    // Initialize EmailJS
+    if (window.emailjs && typeof window.emailjs.init === "function") {
+      window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    } else {
+      console.error("EmailJS SDK did not load.");
+      if (statusEl) statusEl.textContent = "Error: Email service failed to load. Please refresh and try again.";
+      return;
+    }
 
-                statusEl.textContent = "Sending your request...";
-                statusEl.style.color = "#0a6f7f";
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-                emailjs.send("service_usimtub", "template_5n0cskt", {
-                  user_name: form.user_name.value,
-                  user_phone: form.user_phone.value,
-                  user_zip: form.user_zip.value,
-                  user_email: form.user_email.value || "Not provided",
-                  user_message: form.user_message.value || "No comments"
-                })
-                .then(function () {
-                  statusEl.textContent = "Thank you! A specialist will contact you shortly.";
-                  statusEl.style.color = "#1ba97f";
-                  form.reset();
-                })
-                .catch(function () {
-                  statusEl.textContent = "There was a problem sending your request. Please try again.";
-                  statusEl.style.color = "#f45b45";
-                });
-              });
-            })();
-          </script>
-        </div>
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      if (statusEl) {
+        statusEl.style.color = "#0a6f7f";
+        statusEl.textContent = "Sending…";
+      }
+
+      try {
+        // sendForm reads the form field names directly:
+        // user_name, user_phone, user_zip, user_email, user_message
+        const res = await window.emailjs.sendForm(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          form
+        );
+
+        console.log("EmailJS success:", res);
+
+        if (statusEl) {
+          statusEl.style.color = "#1ba97f";
+          statusEl.textContent = "Success! We received your request and will reach out shortly.";
+        }
+
+        form.reset();
+      } catch (err) {
+        console.error("EmailJS error:", err);
+
+        // Show the most useful error info possible without DevTools
+        const msg =
+          (err && err.text) ? err.text :
+          (err && err.message) ? err.message :
+          "There was a problem sending your request. Please try again.";
+
+        if (statusEl) {
+          statusEl.style.color = "#d94532";
+          statusEl.textContent = msg;
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+  });
+</script>
       </section>
       <!-- KEY BENEFITS / TRUST -->
       <section class="section section--alt" id="tubs">
