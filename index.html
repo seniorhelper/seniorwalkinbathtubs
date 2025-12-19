@@ -1,4 +1,3 @@
-Seniorwalkinbathtubs.com 12/16/2025 START
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +6,62 @@ Seniorwalkinbathtubs.com 12/16/2025 START
   <title>Senior Walk In Bathtubs | Aging Safely Baths</title>
   <meta name="description" content="Senior walk in bathtubs and senior walk in tubs designed for comfort and independence. Explore hydrotherapy options, bariatric tubs, wheelchair accessible bathtubs, and roll in showers from Aging Safely Baths." />
 
+  <!-- Favicon (Shield) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a6f7f'/%3E%3Cstop offset='1' stop-color='%2305253d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 4c9 8 18 8 24 10v18c0 15-10 24-24 28C18 56 8 47 8 32V14c6-2 15-2 24-10z'/%3E%3Cpath fill='white' opacity='.18' d='M32 7c8 7 16 7 21 9v16c0 13-9 21-21 25C20 53 11 45 11 32V16c5-2 13-2 21-9z'/%3E%3Cpath fill='white' opacity='.9' d='M28.6 38.7l-6.3-6.3 2.2-2.2 4.1 4.1 10.8-10.8 2.2 2.2z'/%3E%3C/svg%3E" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- SEO / AIO: Schema + Breadcrumbs (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aging Safely Baths",
+    "url": "https://www.seniorwalkinbathtubs.com/",
+    "logo": "https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+1-888-779-2284",
+      "contactType": "sales",
+      "availableLanguage": ["en"]
+    }]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Senior Walk In Bathtubs",
+    "url": "https://www.seniorwalkinbathtubs.com/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aging Safely Baths",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.seniorwalkinbathtubs.com/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Global Styles -->
   <style>
@@ -137,6 +188,19 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       color: var(--color-text-muted);
     }
 
+    /* Utility: visually hidden (for breadcrumbs without design changes) */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
     /* Buttons */
     .btn {
       display: inline-flex;
@@ -236,56 +300,13 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       gap: 0.5rem;
     }
 
-    .brand__mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 14px;
-      background: radial-gradient(circle at 25% 20%, #ffffff 0, #dff4ff 32%, #0a6f7f 100%);
-      box-shadow: 0 10px 24px rgba(10, 111, 127, 0.35);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .brand__mark::before,
-    .brand__mark::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.8);
-    }
-
-    .brand__mark::before {
-      width: 18px;
-      height: 18px;
-      bottom: -4px;
-      left: -2px;
-    }
-
-    .brand__mark::after {
-      width: 26px;
-      height: 26px;
-      top: -9px;
-      right: -6px;
-      opacity: 0.75;
-    }
-
-    .brand__text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-
-    .brand__name {
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--color-deep-navy);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .brand__tagline {
-      font-size: 0.72rem;
-      color: var(--color-text-muted);
+    /* NEW: Proper logo sizing (replaces text to right as requested) */
+    .brand__logo {
+      height: 52px;
+      width: auto;
+      max-width: 260px;
+      object-fit: contain;
+      display: block;
     }
 
     .nav {
@@ -484,6 +505,12 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       .nav--mobile-cta .nav__phone {
         align-items: flex-start;
       }
+
+      /* Logo responsive */
+      .brand__logo {
+        height: 46px;
+        max-width: 220px;
+      }
     }
 
     /* One-Day Install / DIY Strip */
@@ -492,26 +519,30 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       border-bottom: 1px solid rgba(15, 35, 52, 0.06);
     }
 
+    /* UPDATED per locked hero strip standard: more whitespace + bolder */
     .hero-install-strip__inner {
-      padding: 1.3rem 1.25rem 1.1rem;
+      padding: 2rem 1.25rem; /* increased whitespace */
       display: flex;
       flex-direction: column;
-      gap: 0.25rem;
+      gap: 0.55rem;
       max-width: var(--max-width);
       margin: 0 auto;
+      text-align: center;
     }
 
     .hero-install-strip__title {
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: 0.08em;
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--color-deep-navy);
     }
 
     .hero-install-strip__subtitle {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: var(--color-text-muted);
+      max-width: 980px;
+      margin: 0 auto;
     }
 
     /* HERO + FORM */
@@ -923,12 +954,15 @@ Seniorwalkinbathtubs.com 12/16/2025 START
     <!-- Header / Navigation -->
     <header class="site-header">
       <div class="container site-header__inner">
-        <a href="#top" class="brand">
-          <div class="brand__mark" aria-hidden="true"></div>
-          <div class="brand__text">
-            <span class="brand__name">Aging Safely Baths</span>
-            <span class="brand__tagline">Senior Walk In Bathtubs & Showers</span>
-          </div>
+        <!-- UPDATED: Remove text to the right (as requested) and use large logo -->
+        <a href="#top" class="brand" aria-label="Aging Safely Baths home">
+          <img
+            class="brand__logo"
+            src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125"
+            alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers"
+            loading="eager"
+            decoding="async"
+          />
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
@@ -937,7 +971,8 @@ Seniorwalkinbathtubs.com 12/16/2025 START
             <a href="#showers" class="nav__link">Roll In Showers</a>
             <a href="#why-us" class="nav__link">Why Aging Safely</a>
             <a href="#resources" class="nav__link">Guides & Resources</a>
-            <a href="#blog" class="nav__link">Blog</a>
+            <!-- UPDATED: Real blog link -->
+            <a href="/blog/index.html" class="nav__link">Blog</a>
           </div>
 
           <div class="nav__cta-group">
@@ -971,7 +1006,8 @@ Seniorwalkinbathtubs.com 12/16/2025 START
           <a href="#showers" class="nav--mobile-link">Roll In Showers</a>
           <a href="#why-us" class="nav--mobile-link">Why Aging Safely</a>
           <a href="#resources" class="nav--mobile-link">Guides & Resources</a>
-          <a href="#blog" class="nav--mobile-link">Blog</a>
+          <!-- UPDATED: Real blog link -->
+          <a href="/blog/index.html" class="nav--mobile-link">Blog</a>
 
           <div class="nav--mobile-cta">
             <div class="nav__phone">
@@ -988,12 +1024,20 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       </div>
     </header>
 
+    <!-- Breadcrumbs (hidden for SEO without design changes) -->
+    <nav aria-label="Breadcrumb" class="sr-only">
+      <ol>
+        <li><a href="/">Home</a></li>
+      </ol>
+    </nav>
+
     <!-- One-Day Install / DIY Strip -->
     <section class="hero-install-strip">
       <div class="hero-install-strip__inner">
-        <div class="hero-install-strip__title">ONE-DAY INSTALLATION IN SELECT AREAS</div>
+        <!-- UPDATED per locked standard -->
+        <div class="hero-install-strip__title">ONE-DAY INSTALLATION AVAILABLE IN YOUR AREA</div>
         <div class="hero-install-strip__subtitle">
-          DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available.
+          Or DIY-friendly delivery nationwide — use your own contractor or ask about professional installation options where available.
         </div>
       </div>
     </section>
@@ -1268,6 +1312,51 @@ Seniorwalkinbathtubs.com 12/16/2025 START
                 Our team can help you think through both current needs and longer-term possibilities.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW: 700+ words added (does not replace or remove anything) -->
+      <section class="section section--alt" id="senior-bathing-guide">
+        <div class="container">
+          <div class="section__header">
+            <span class="eyebrow">Senior Bathing Guide</span>
+            <h2>How to Choose Senior Walk In Bathtubs Without Guesswork</h2>
+            <p>
+              If you are researching senior walk in bathtubs, you are likely trying to solve a real problem: bathing is becoming harder, more tiring, or less safe. The goal is not simply to buy a product. The goal is to protect independence, reduce daily stress, and make a bathroom feel supportive again.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Start with safety and daily usability</h3>
+            <p>
+              Most families begin by looking at step-in height, seating comfort, and stability features. A walk in tub can reduce the need to lift a leg high over a standard tub wall, which is one of the most common moments when slips happen. Look for practical details that support real routines: a comfortable seat height, textured flooring, and assist bars that feel stable and naturally placed. For many seniors, these features matter more than flashy upgrades.
+            </p>
+
+            <h3>Understand the difference between tub-only and hydrotherapy upgrades</h3>
+            <p>
+              Some seniors want a simple soaking tub. Others want hydrotherapy jets or air massage systems because warmth and gentle pressure can help ease stiffness after a long day or after therapy. While individual results vary, many people find that warm water itself helps them relax, and optional jet systems can make bath time feel less draining. If you are unsure, it is often best to choose a model that can support your preferences today while still fitting your space and budget.
+            </p>
+
+            <h3>Measure your bathroom before you fall in love with a model</h3>
+            <p>
+              Bathroom layout decides what is realistic. Compact models can be a strong fit for smaller rooms while still offering good soaking depth. Larger models can provide more room for those who feel cramped in tight seating. Either way, the best choice is the one that fits your existing footprint without forcing expensive, unexpected remodeling. Even small details like door swing direction can change what works, especially when space is limited.
+            </p>
+
+            <h3>When a roll in shower may be the better option</h3>
+            <p>
+              In some homes, a roll in shower is a simpler daily solution. Wheelchair users or seniors with balance concerns may prefer a low-threshold entry that allows steadier movement. Roll in showers can be paired with seating and handheld shower wands for easier reach. If standing is difficult, a seat becomes essential. If transfers are a concern, the shower layout and bar placement matter a great deal. The “best” solution is the one that matches how bathing actually happens in your home.
+            </p>
+
+            <h3>Delivery and installation: choose the path that reduces stress</h3>
+            <p>
+              Some customers already have a trusted contractor. Others want help coordinating professional installation where available. Many systems can be shipped nationwide so you can work with your local installer, and installation options may be available in certain areas. If speed matters, ask what is realistic in your region and what preparation may be needed. If minimizing disruption matters, choose a plan that keeps the project predictable, with clear expectations on timeline and next steps.
+            </p>
+
+            <h3>Transparent, no-pressure guidance</h3>
+            <p>
+              The biggest frustration families face is feeling pushed into a decision before they understand the tradeoffs. Aging Safely Baths focuses on education. That means helping you compare size, comfort, safety features, and optional upgrades so you can choose confidently. Whether you need a bariatric walk in tub, a compact model for a smaller bathroom, or an ADA-conscious shower system, the right plan is the one that fits your needs now and supports future mobility changes. If you are ready, request a quote so we can help you narrow the options quickly and clearly.
+            </p>
           </div>
         </div>
       </section>
@@ -1600,8 +1689,10 @@ Seniorwalkinbathtubs.com 12/16/2025 START
           <div class="faq-item">
             <button class="faq-question">Do you deliver tubs nationwide?</button>
             <div class="faq-answer">
-              <div class="faq-answer__inner">
-                Many tubs can be shipped across the U.S. Ask about delivery and any installation options where you live.
+              <div class="faq-answer">
+                <div class="faq-answer__inner">
+                  Many tubs can be shipped across the U.S. Ask about delivery and any installation options where you live.
+                </div>
               </div>
             </div>
           </div>
@@ -1642,7 +1733,8 @@ Seniorwalkinbathtubs.com 12/16/2025 START
         </div>
 
         <div class="footer-bottom">
-          <span>© 2025 Aging Safely Baths. All Rights Reserved.</span>
+          <!-- UPDATED: 2026 -->
+          <span>© 2026 Aging Safely Baths. All Rights Reserved.</span>
           <span>SeniorWalkInBathtubs.com – An Aging Safely Baths Website</span>
         </div>
       </div>
@@ -1656,8 +1748,19 @@ Seniorwalkinbathtubs.com 12/16/2025 START
     (function() {
 
       // Initialize EmailJS
-      if (window.emailjs) {
+      // Hardened to avoid silent failures if script is blocked/slow
+      function setStatus(msg, color) {
+        var statusEl = document.getElementById("formStatus");
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.style.color = color || "#0a6f7f";
+      }
+
+      if (window.emailjs && typeof window.emailjs.init === "function") {
         emailjs.init("alWutsHLG6c3h9P2j");
+      } else {
+        // If EmailJS fails to load, show an error when user tries to submit
+        // (keeps UI stable; does not break page)
       }
 
       // Handle quote form submit
@@ -1667,8 +1770,13 @@ Seniorwalkinbathtubs.com 12/16/2025 START
       if (form && statusEl) {
         form.addEventListener("submit", function(e) {
           e.preventDefault();
-          statusEl.textContent = "Sending...";
-          statusEl.style.color = "#0a6f7f";
+
+          if (!window.emailjs || typeof window.emailjs.send !== "function") {
+            setStatus("There was a problem loading the form service. Please refresh and try again, or call now.", "#f45b45");
+            return;
+          }
+
+          setStatus("Sending...", "#0a6f7f");
 
           var params = {
             user_name: form.user_name.value,
@@ -1680,13 +1788,12 @@ Seniorwalkinbathtubs.com 12/16/2025 START
 
           emailjs.send("service_usimtub", "template_5n0cskt", params)
             .then(function() {
-              statusEl.textContent = "Thank you! A specialist will contact you shortly.";
-              statusEl.style.color = "#1ba97f";
+              setStatus("Thank you! A specialist will contact you shortly.", "#1ba97f");
               form.reset();
             })
-            .catch(function() {
-              statusEl.textContent = "There was a problem sending your request. Please try again.";
-              statusEl.style.color = "#f45b45";
+            .catch(function(err) {
+              setStatus("There was a problem sending your request. Please try again.", "#f45b45");
+              try { console.error("EmailJS send error:", err); } catch(e) {}
             });
         });
       }
@@ -1724,7 +1831,3 @@ Seniorwalkinbathtubs.com 12/16/2025 START
 
 </body>
 </html>
-
-END SCRIPT Seniorwalkinbathtubs.com
-
-
