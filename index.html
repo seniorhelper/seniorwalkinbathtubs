@@ -1089,6 +1089,9 @@
           </p>
 
           <form id="quoteForm">
+            <!-- REQUIRED: locked-in hidden source_site field -->
+            <input type="hidden" id="source_site" name="source_site" value="seniorwalkinbathtubs.com" />
+
             <div class="form-group">
               <label for="user_name">Full Name *</label>
               <input type="text" id="user_name" name="user_name" required />
@@ -1118,81 +1121,88 @@
             <p id="formStatus" class="form-status"></p>
           </form>
 
-          <!-- FIX: EmailJS wiring so the form actually sends -->
+          <!-- FIX: EmailJS wiring so the form actually sends (locked config: Browser v4 CDN, init with public key, sendForm, source_site) -->
           <!-- EmailJS (required) -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("quoteForm");
-    const statusEl = document.getElementById("formStatus");
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              // Guard to prevent double-binding (this page also has a bottom script block)
+              if (window.__quoteFormBound) return;
+              window.__quoteFormBound = true;
 
-    if (!form) {
-      console.error("quoteForm not found.");
-      return;
-    }
+              const form = document.getElementById("quoteForm");
+              const statusEl = document.getElementById("formStatus");
 
-    // IMPORTANT: Your stored settings (do not change unless you changed them in EmailJS)
-    const EMAILJS_PUBLIC_KEY = "alWutsHLG6c3h9P2j";
-    const EMAILJS_SERVICE_ID = "service_usimtub";
-    const EMAILJS_TEMPLATE_ID = "template_5n0cskt";
+              if (!form) {
+                console.error("quoteForm not found.");
+                return;
+              }
 
-    // Initialize EmailJS
-    if (window.emailjs && typeof window.emailjs.init === "function") {
-      window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    } else {
-      console.error("EmailJS SDK did not load.");
-      if (statusEl) statusEl.textContent = "Error: Email service failed to load. Please refresh and try again.";
-      return;
-    }
+              // IMPORTANT: Your stored settings (locked)
+              const EMAILJS_PUBLIC_KEY = "alWutsHLG6c3h9P2j";
+              const EMAILJS_SERVICE_ID = "service_usimtub";
+              const EMAILJS_TEMPLATE_ID = "template_5n0cskt";
 
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
+              // Initialize EmailJS
+              if (window.emailjs && typeof window.emailjs.init === "function") {
+                window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+              } else {
+                console.error("EmailJS SDK did not load.");
+                if (statusEl) statusEl.textContent = "Error: Email service failed to load. Please refresh and try again.";
+                return;
+              }
 
-      const submitBtn = form.querySelector('button[type="submit"]');
-      if (submitBtn) submitBtn.disabled = true;
+              form.addEventListener("submit", async function (e) {
+                e.preventDefault();
 
-      if (statusEl) {
-        statusEl.style.color = "#0a6f7f";
-        statusEl.textContent = "Sending…";
-      }
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if (submitBtn) submitBtn.disabled = true;
 
-      try {
-        // sendForm reads the form field names directly:
-        // user_name, user_phone, user_zip, user_email, user_message
-        const res = await window.emailjs.sendForm(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID,
-          form
-        );
+                if (statusEl) {
+                  statusEl.style.color = "#0a6f7f";
+                  statusEl.textContent = "Sending…";
+                }
 
-        console.log("EmailJS success:", res);
+                try {
+                  // sendForm reads the form field names directly:
+                  // user_name, user_phone, user_zip, user_email, user_message, source_site
+                  const res = await window.emailjs.sendForm(
+                    EMAILJS_SERVICE_ID,
+                    EMAILJS_TEMPLATE_ID,
+                    form
+                  );
 
-        if (statusEl) {
-          statusEl.style.color = "#1ba97f";
-          statusEl.textContent = "Success! We received your request and will reach out shortly.";
-        }
+                  console.log("EmailJS success:", res);
 
-        form.reset();
-      } catch (err) {
-        console.error("EmailJS error:", err);
+                  if (statusEl) {
+                    statusEl.style.color = "#1ba97f";
+                    statusEl.textContent = "Success! We received your request and will reach out shortly.";
+                  }
 
-        // Show the most useful error info possible without DevTools
-        const msg =
-          (err && err.text) ? err.text :
-          (err && err.message) ? err.message :
-          "There was a problem sending your request. Please try again.";
+                  form.reset();
 
-        if (statusEl) {
-          statusEl.style.color = "#d94532";
-          statusEl.textContent = msg;
-        }
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
-      }
-    });
-  });
-</script>
+                  // Re-set locked hidden field after reset
+                  const sourceField = document.getElementById("source_site");
+                  if (sourceField) sourceField.value = "seniorwalkinbathtubs.com";
+                } catch (err) {
+                  console.error("EmailJS error:", err);
+
+                  const msg =
+                    (err && err.text) ? err.text :
+                    (err && err.message) ? err.message :
+                    "There was a problem sending your request. Please try again.";
+
+                  if (statusEl) {
+                    statusEl.style.color = "#d94532";
+                    statusEl.textContent = msg;
+                  }
+                } finally {
+                  if (submitBtn) submitBtn.disabled = false;
+                }
+              });
+            });
+          </script>
       </section>
       <!-- KEY BENEFITS / TRUST -->
       <section class="section section--alt" id="tubs">
@@ -1817,7 +1827,8 @@
   </div> <!-- /.page-wrapper -->
 
   <!-- EMAILJS + JS SCRIPTS -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Keep this include (but align it to the locked v4 CDN path for consistency) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function() {
 
@@ -1830,46 +1841,69 @@
         statusEl.style.color = color || "#0a6f7f";
       }
 
-      if (window.emailjs && typeof window.emailjs.init === "function") {
-        emailjs.init("alWutsHLG6c3h9P2j");
+      // Guard: if the in-section script already bound the form, do not bind again.
+      if (window.__quoteFormBound) {
+        // Still allow nav + FAQ scripts below to run
       } else {
-        // If EmailJS fails to load, show an error when user tries to submit
-        // (keeps UI stable; does not break page)
-      }
 
-      // Handle quote form submit
-      var form = document.getElementById("quoteForm");
-      var statusEl = document.getElementById("formStatus");
-
-      if (form && statusEl) {
-        form.addEventListener("submit", function(e) {
-          e.preventDefault();
-
-          if (!window.emailjs || typeof window.emailjs.send !== "function") {
-            setStatus("There was a problem loading the form service. Please refresh and try again, or call now.", "#f45b45");
-            return;
+        // Initialize EmailJS using locked v4 init signature
+        if (window.emailjs && typeof window.emailjs.init === "function") {
+          try {
+            emailjs.init({ publicKey: "alWutsHLG6c3h9P2j" });
+          } catch (e) {
+            try { emailjs.init("alWutsHLG6c3h9P2j"); } catch (e2) {}
           }
+        } else {
+          // If EmailJS fails to load, show an error when user tries to submit
+          // (keeps UI stable; does not break page)
+        }
 
-          setStatus("Sending...", "#0a6f7f");
+        // Handle quote form submit (locked: sendForm + hidden source_site)
+        var form = document.getElementById("quoteForm");
+        var statusEl = document.getElementById("formStatus");
 
-          var params = {
-            user_name: form.user_name.value,
-            user_phone: form.user_phone.value,
-            user_zip: form.user_zip.value,
-            user_email: form.user_email.value || "Not provided",
-            user_message: form.user_message.value || "No comments"
-          };
+        if (form && statusEl) {
+          form.addEventListener("submit", function(e) {
+            e.preventDefault();
 
-          emailjs.send("service_usimtub", "template_5n0cskt", params)
-            .then(function() {
-              setStatus("Thank you! A specialist will contact you shortly.", "#1ba97f");
-              form.reset();
-            })
-            .catch(function(err) {
-              setStatus("There was a problem sending your request. Please try again.", "#f45b45");
-              try { console.error("EmailJS send error:", err); } catch(e) {}
-            });
-        });
+            // Lock the hidden field value in case anything overwrote it
+            var sourceField = document.getElementById("source_site");
+            if (sourceField) sourceField.value = "seniorwalkinbathtubs.com";
+
+            if (!window.emailjs || typeof window.emailjs.sendForm !== "function") {
+              setStatus("There was a problem loading the form service. Please refresh and try again, or call now.", "#f45b45");
+              return;
+            }
+
+            setStatus("Sending...", "#0a6f7f");
+
+            var submitBtn = form.querySelector('button[type="submit"]');
+            if (submitBtn) submitBtn.disabled = true;
+
+            emailjs.sendForm("service_usimtub", "template_5n0cskt", form)
+              .then(function() {
+                setStatus("Thank you! A specialist will contact you shortly.", "#1ba97f");
+                form.reset();
+                // Re-apply locked hidden value after reset
+                var sf = document.getElementById("source_site");
+                if (sf) sf.value = "seniorwalkinbathtubs.com";
+              })
+              .catch(function(err) {
+                var msg =
+                  (err && err.text) ? err.text :
+                  (err && err.message) ? err.message :
+                  "There was a problem sending your request. Please try again.";
+                setStatus(msg, "#f45b45");
+                try { console.error("EmailJS sendForm error:", err); } catch(e) {}
+              })
+              .finally(function() {
+                if (submitBtn) submitBtn.disabled = false;
+              });
+
+            // Mark bound so nothing else binds again
+            window.__quoteFormBound = true;
+          });
+        }
       }
 
       // Mobile Nav
