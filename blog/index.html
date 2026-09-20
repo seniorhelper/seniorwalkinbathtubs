@@ -19,7 +19,9 @@
 <meta name="twitter:title" content="Walk-In Tub and Bathroom Safety Guides for Seniors">
 <meta name="twitter:description" content="Research-backed guides on walk-in tubs, bathroom fall statistics, hydrotherapy, water heaters, measuring, roll-in showers and senior bathroom safety.">
 <meta name="twitter:image" content="https://www.agingsafelybaths.com/wp-content/uploads/2023/04/walk-in-tub-image-scaled.jpg">
-<meta name="theme-color" content="#0d5c63">
+<meta name="theme-color" content="#0a2a33">
+
+<link rel="preconnect" href="https://cdn.shopify.com">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%230d5c63' d='M32 4c9 8 18 8 24 10v18c0 15-10 24-24 28C18 56 8 47 8 32V14c6-2 15-2 24-10z'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' d='M17 36c5-4 10 4 15 0s10-4 15 0'/%3E%3Cpath fill='%23fff' d='M28.6 29.2l-5-5 2.1-2.1 2.9 2.9 8.6-8.6 2.1 2.1z'/%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2054,24 +2056,158 @@ ul.sources{font-size:1rem}
 .brand-logo{height:140px;width:auto;max-width:260px;object-fit:contain;display:block}
 @media (max-width:980px){.brand-logo{height:120px;max-width:220px}.site-head{position:static}}
 @media (max-width:380px){.brand-logo{max-width:180px}}
+/* ================= v2 visual layer ================= */
+html,body{overflow-x:clip}
+.site-head{position:relative;top:auto}
+.head-in{min-height:0;padding-top:6px;padding-bottom:6px}
+.brand-logo{height:168px;max-width:312px}
+@media (max-width:980px){.brand-logo{height:144px;max-width:264px}}
+@media (max-width:380px){.brand-logo{max-width:216px;height:130px}}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:90;pointer-events:none}
+.progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#fcd34d,#f59e0b)}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(10,42,51,.97);color:#fff;transform:translateY(-110%);transition:transform .45s ease;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.minibar.on{transform:none}
+.minibar-in{display:flex;align-items:center;gap:18px;padding-top:9px;padding-bottom:9px}
+.mb-name{color:#fff;font-weight:800;text-decoration:none;font-size:1.08rem}
+.mb-note{color:#dbeef1;font-size:.95rem}
+.mb-phone{margin-left:auto;color:#fff;font-weight:800;text-decoration:none}
+.mb-name:hover,.mb-phone:hover{color:#fcd34d}
+.minibar .btn{padding:8px 16px}
+@media (max-width:760px){.minibar{display:none}}
+@media (max-width:1040px){.mb-note{display:none}}
+.side{top:84px}
+/* inner hero */
+.page-hero{background:radial-gradient(900px 420px at 85% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(700px 380px at 0% 100%,rgba(252,211,77,.13),transparent 60%),linear-gradient(135deg,#0a2a33 0%,#0d4750 55%,#0b4f56 100%);color:#fff;padding:40px 0 92px}
+.page-hero h1{color:#fff}
+.page-hero .lead{color:#e3f2f4}.page-hero .lead strong{color:#fff}
+.page-hero .meta-line{color:#dbeef1}.page-hero .meta-line a{color:#fff}
+.page-hero .crumbs ol,.page-hero .crumbs li+li::before{color:#dbeef1}.page-hero .crumbs a{color:#fff}
+.page-hero .btn.ghost{background:transparent;color:#fff;border-color:#fff}.page-hero .btn.ghost:hover{background:#fff;color:#0a2a33}
+.page-hero .strip{background:rgba(255,255,255,.10);border-left-color:#fcd34d;color:#fff}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero .waterline path{fill:#fff}
+.page-hero .bubbles span{border-color:rgba(207,231,234,.45)}
+.ripples{position:absolute;right:-40px;top:-60px;width:560px;height:560px;z-index:1;pointer-events:none}
+.ripples circle{fill:none;stroke:rgba(207,231,234,.38);stroke-width:1.5;transform-origin:200px 200px;animation:ripple 10s ease-out infinite;opacity:0}
+.ripples circle:nth-child(2){animation-delay:3.3s}.ripples circle:nth-child(3){animation-delay:6.6s}
+@keyframes ripple{0%{transform:scale(.35);opacity:0}15%{opacity:1}100%{transform:scale(3.1);opacity:0}}
+@media (max-width:760px){.ripples{width:360px;height:360px;right:-140px;top:-40px}}
+/* layout + bands */
+.layout{background:none;padding-top:0}
+.home-body{background:none;padding-top:0}
+.band{position:relative;isolation:isolate;padding:48px 0 26px}
+.band::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;background:var(--bg,#fff);z-index:-1}
+.b-intro{--bg:#eef5f6;padding-top:30px}
+.home-body .b-intro{--bg:#eef5f6}
+.b-sky{--bg:#eef5f6}.b-white{--bg:#fff}.b-sand{--bg:#f7f5f0}.b-src{--bg:#fff}
+.prose .band>h2{margin-top:0}
+.b-night{color:#fff;padding:60px 0 44px}
+.b-night::before{background:radial-gradient(640px 320px at 92% 0%,rgba(126,200,208,.16),transparent 60%),linear-gradient(160deg,#0a2a33,#0d4750)}
+.b-night h2{color:#fff}
+.b-night>p,.b-night>ul li{color:#e3f2f4}
+.b-night>p a,.b-night>ul a{color:#9fe8ee}
+.b-night .faq{background:#fff;border:0;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.b-night .faq summary{color:#0a0a0a}.b-night .faq p{color:#1f2937}
+/* h2 wave accent */
+.prose h2::after{content:"";display:block;width:84px;height:12px;margin-top:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%230d5c63' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.b-night h2::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%23fcd34d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.prose h2.qtitle::after,.final h2::after{display:none}
+/* facts */
+.facts{border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#0d5c63,#fcd34d) border-box;border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px rgba(13,92,99,.14);margin-top:34px}
+.facts ul{list-style:none;padding:0}
+.facts li{position:relative;padding-left:34px}
+.facts li::before{content:"";position:absolute;left:0;top:.28em;width:22px;height:22px;border-radius:50%;background:#046c4e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6.5l2.5 2.5L10 3.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* stats */
+.stats{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 0;margin:30px 0 0}
+.stats::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;z-index:-1;background:radial-gradient(520px 260px at 12% 0%,rgba(252,211,77,.10),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56)}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 18px 16px}
+.stat-n{font-size:clamp(2.2rem,4.2vw,3.1rem);font-weight:800;color:#fcd34d;margin:0;line-height:1.05;font-variant-numeric:tabular-nums}
+.stat-l{color:#fff;margin:8px 0 6px;font-size:1.02rem;line-height:1.4}
+.stat-s{color:#dbeef1;font-size:.88rem;margin:0}
+@media (max-width:760px){.stats{grid-template-columns:1fr}}
+/* tables */
+th{background:#0d5c63;color:#fff}
+tbody tr:nth-child(even) td{background:#f4f9fa}
+.tscroll{box-shadow:0 10px 26px rgba(10,42,51,.08);border-radius:14px}
+/* charts */
+.chart,.illus{border:0;box-shadow:0 16px 38px rgba(10,42,51,.12);border-radius:18px;padding:22px 22px 14px}
+.photo{border:0;box-shadow:0 16px 38px rgba(10,42,51,.14);border-radius:18px}
+.hb-row{margin:14px 0}
+.hb-lab{font-size:1rem;color:#1f2937;margin-bottom:5px;line-height:1.35}
+.hb-bar{position:relative;height:26px;margin-right:130px}
+.hb-fill{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:6px;background:linear-gradient(90deg,#0d5c63,#13808a);transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.hb-fill.hl{background:linear-gradient(90deg,#b45309,#d97706)}
+.hb-val{position:absolute;left:calc(var(--w) + 10px);top:50%;transform:translateY(-50%);font-weight:800;white-space:nowrap;color:#000;font-size:1rem;transition:left 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .hb-fill{width:0}
+.js .chart:not(.seen) .hb-val{left:10px}
+.vb{display:flex;gap:18px;height:300px;padding-top:6px}
+.vb-col{flex:1;display:flex;flex-direction:column;min-width:0}
+.vb-stack{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:2px solid #6b7280}
+.vb-fill{display:block;width:min(96px,72%);height:calc(var(--h) * .82);border-radius:8px 8px 0 0;background:linear-gradient(180deg,#13808a,#0d5c63);transition:height 1.4s cubic-bezier(.2,.7,.2,1)}
+.vb-fill.hl{background:linear-gradient(180deg,#d97706,#b45309)}
+.vb-val{font-weight:800;margin-bottom:6px;color:#000}
+.vb-lab{text-align:center;padding-top:8px;font-size:1rem;color:#1f2937}
+.js .chart:not(.seen) .vb-fill{height:0}
+.rb-axis{position:relative;height:22px;margin:4px 0 8px;font-size:.85rem;color:#374151}
+.rb-axis span{position:absolute;transform:translateX(-50%)}
+.rb-axis span:first-child{transform:none}.rb-axis span:last-child{transform:translateX(-100%)}
+.rb-row{margin:16px 0}
+.rb-track{position:relative;height:24px;background:#e5eef0;border-radius:12px}
+.rb-fill{position:absolute;top:0;bottom:0;border-radius:12px;background:linear-gradient(90deg,#0d5c63,#13808a);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .rb-fill{transform:scaleX(0)}
+.rb-dot{position:absolute;top:50%;width:18px;height:18px;margin-left:-9px;transform:translateY(-50%);border-radius:50%;background:#fff;border:3px solid #000}
+/* type cards */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+@media (max-width:900px){.tcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.tcards{grid-template-columns:1fr}}
+.tcard{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:16px;background:#fff;text-decoration:none;color:#0a0a0a;border-top:5px solid #0d5c63;box-shadow:0 12px 28px rgba(10,42,51,.10);transition:transform .35s ease,box-shadow .35s ease}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(10,42,51,.16);color:#0a0a0a}
+.tcard:nth-child(3n+2){border-top-color:#b45309}.tcard:nth-child(3n){border-top-color:#046c4e}
+.tcard svg{width:46px;height:46px;fill:none;stroke:#0d5c63;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.tcard strong{color:#000;font-size:1.12rem}.tcard span{color:#374151;font-size:1rem;line-height:1.45}
+/* callouts, related, cta, final */
+.callout{box-shadow:0 10px 24px rgba(10,42,51,.08)}
+.related a{border:0;border-top:4px solid #0d5c63;box-shadow:0 10px 26px rgba(10,42,51,.10);transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(10,42,51,.16)}
+.cta-band{background:radial-gradient(500px 220px at 100% 0%,rgba(252,211,77,.18),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);box-shadow:0 18px 40px rgba(10,42,51,.25)}
+.final{background:radial-gradient(760px 380px at 90% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(252,211,77,.12),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);border-top:0;color:#fff}
+.final h2{color:#fff}
+.final-grid>div:first-child p{color:#e3f2f4}
+.final .bigphone a{color:#fff}
+.final .qbox{box-shadow:12px 12px 0 #fcd34d}
+.btn.go.big{position:relative;overflow:hidden}
+.btn.go.big::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,70%{left:-60%}100%{left:130%}}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.seen{opacity:1;transform:none}
+.author{background:#eef5f6;border:0;border-left:6px solid #0d5c63;border-radius:0 14px 14px 0;padding:16px 20px}
+.toc{box-shadow:0 10px 26px rgba(10,42,51,.08);border:0}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
 </style>
 </head>
 <body data-type="index">
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="minibar"><div class="wrap minibar-in"><a class="mb-name" href="/">Senior Walk In Bathtubs</a><span class="mb-note">One-day install or ship to US and Canada</span><a class="mb-phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div></div>
 <div class="util"><div class="wrap util-in"><span>BBB Accredited, A+ rating</span><span>Authorized Ella’s Bubbles dealer since 2012</span><span>Ships to the US and Canada</span><span><a href="tel:+18887792284">Call 1-888-779-2284</a></span></div></div>
 <header class="site-head"><div class="wrap head-in">
-<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" decoding="async"></a>
+<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" fetchpriority="high" decoding="async"></a>
 <nav class="mainnav" aria-label="Main"><ul><li class="has-sub"><a href="/">Walk-in tubs</a><ul class="subnav"><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small and compact tubs</a></li></ul></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
 <div class="head-cta"><a class="phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div>
 <details class="mnav"><summary aria-label="Open menu">Menu</summary><ul><li><a href="/">Home</a></li><li class="indent"><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li class="indent"><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li class="indent"><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li class="indent"><a href="/small-walk-in-tubs/">Small and compact tubs</a></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></details>
 </div></header>
-<main id="main"><section class="hero page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Guides</li></ol></nav><h1>Walk-In Tub and Bathroom Safety Guides</h1><p class="lead speakable">Practical, research-backed guides for seniors, families and caregivers planning a safer bathroom. Every guide cites its sources, and every statistic links to the original publisher.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 1 minute read.</p>
+<main id="main"><section class="hero page-hero"><svg class="ripples" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/></svg><div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Guides</li></ol></nav><h1>Walk-In Tub and Bathroom Safety Guides</h1><p class="lead speakable">Practical, research-backed guides for seniors, families and caregivers planning a safer bathroom. Every guide cites its sources, and every statistic links to the original publisher.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 2 minute read.</p>
 
 
-</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout single"><article class="prose"><h2 id="all-guides">All guides</h2>
+</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout single"><article class="prose"><section class="band b-intro">
+</section><section class="band b-white" aria-labelledby="all-guides">
+<h2 id="all-guides">All guides</h2>
 <ul class="bloglist"><li><a href="/blog/are-walk-in-tubs-worth-it/"><strong>Are Walk-In Tubs Worth It? An Honest Look at the Pros, Cons and Costs</strong></a><br><span>Are walk-in tubs worth it for seniors? An honest look at pros, cons, real costs, who benefits most, who should skip one, and the alternatives, with cited data.</span></li><li><a href="/blog/bathroom-fall-statistics-seniors/"><strong>Bathroom Fall Statistics for Seniors: The Numbers, Charted and Sourced</strong></a><br><span>Bathroom fall statistics for seniors with charts: injury rates by age, where and how bathroom injuries happen, fall deaths, Canadian data and what the numbers mean.</span></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/"><strong>How to Measure for a Walk-In Tub in 10 Minutes</strong></a><br><span>How to measure for a walk-in tub in 10 minutes: alcove size, drain side, door swing, doorways, water heater and electrical, with diagrams and a printable checklist.</span></li><li><a href="/blog/senior-bathroom-safety-upgrades/"><strong>Senior Bathroom Safety Upgrades: What Matters Most, and What to Do First</strong></a><br><span>The senior bathroom safety upgrades that matter most: grab bars, walk-in tubs, curbless showers, comfort-height toilets, lighting and flooring, backed by CDC data.</span></li><li><a href="/blog/senior-hydrotherapy-benefits/"><strong>Hydrotherapy Benefits for Seniors: What the Research Actually Shows</strong></a><br><span>Hydrotherapy benefits for seniors explained: what research says about warm water for arthritis, stiffness and relaxation, safety precautions, and home walk-in tubs.</span></li><li><a href="/blog/walk-in-tub-vs-roll-in-shower/"><strong>Walk-In Tub vs. Roll-In Shower: Which Is Better for Seniors?</strong></a><br><span>Walk-in tub vs. roll-in shower: compare access, safety, space, water use, caregiver help, ADA sizes and cost factors to choose the right option for seniors.</span></li><li><a href="/blog/walk-in-tub-water-heater-guide/"><strong>Walk-In Tub Water Heater Guide: Will Your Heater Keep Up?</strong></a><br><span>Will your water heater fill a walk-in tub? Simple hot water math, a free calculator, tank vs. tankless vs. in-line heaters, and how to avoid lukewarm baths.</span></li><li><a href="/blog/wheelchair-accessible-showers-installation-guide/"><strong>Wheelchair Accessible Shower Guide: Sizes, Layout and Installation</strong></a><br><span>Plan a wheelchair accessible shower: ADA roll-in and transfer shower sizes, thresholds, grab bars, seats, controls, drains and installation steps for homes.</span></li></ul>
+</section><section class="band b-sky" aria-labelledby="shopping-for-a-walk-in-tub">
 <h2 id="shopping-for-a-walk-in-tub">Shopping for a walk-in tub?</h2>
-<p>These pages cover buying decisions: <a href="/">senior walk in bathtubs</a>, <a href="/walk-in-tub-cost/">walk-in tub cost</a>, <a href="/walk-in-tub-installation/">one-day installation</a>, <a href="/buy-walk-in-tub-online/">buying online with delivery to the US and Canada</a>, <a href="/hydrotherapy-walk-in-tubs/">hydrotherapy tubs</a>, <a href="/bariatric-walk-in-tubs/">bariatric tubs</a>, <a href="/wheelchair-accessible-walk-in-tubs/">wheelchair-accessible tubs</a>, <a href="/small-walk-in-tubs/">small tubs</a> and <a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a>.</p></article></div>
+<div class="tcards"><a class="tcard" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 34h48v8a10 10 0 0 1-10 10H18A10 10 0 0 1 8 42z M14 34V16a6 6 0 0 1 12 0"/></svg><strong>Soaking walk-in tubs</strong><span>The simplest, safest deep soak. No jets to maintain.</span></a><a class="tcard" href="/hydrotherapy-walk-in-tubs/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 34h48v8a10 10 0 0 1-10 10H18A10 10 0 0 1 8 42z M20 26c0-4 4-4 4-8 M32 26c0-4 4-4 4-8 M44 26c0-4 4-4 4-8"/></svg><strong>Hydrotherapy tubs</strong><span>Water jets, air jets or both for sore muscles and stiff joints.</span></a><a class="tcard" href="/bariatric-walk-in-tubs/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 34h52v8a10 10 0 0 1-10 10H16A10 10 0 0 1 6 42z M18 34v-8h10v8 M36 34v-8h10v8"/></svg><strong>Bariatric and two-seat</strong><span>Wider seats, wider doors and room for two.</span></a><a class="tcard" href="/wheelchair-accessible-walk-in-tubs/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 14a4 4 0 1 0 0.1 0 M22 22v14h14l6 12 M18 30a12 12 0 1 0 16 14"/></svg><strong>Wheelchair transfer tubs</strong><span>Wide outward doors so you slide across, not step in.</span></a><a class="tcard" href="/small-walk-in-tubs/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 30h32v10a8 8 0 0 1-8 8H24a8 8 0 0 1-8-8z M22 30V18h20v12"/></svg><strong>Small and compact tubs</strong><span>Fits short alcoves, tight bathrooms and shower stalls.</span></a><a class="tcard" href="/buy-walk-in-tub-online/"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 20h32v22H6z M38 28h12l8 8v6H38z M16 48a4 4 0 1 0 .1 0 M48 48a4 4 0 1 0 .1 0"/></svg><strong>Buy online, ship anywhere</strong><span>Drop-shipped to your door in the US or Canada.</span></a></div>
+<p>These pages cover buying decisions: <a href="/">senior walk in bathtubs</a>, <a href="/walk-in-tub-cost/">walk-in tub cost</a>, <a href="/walk-in-tub-installation/">one-day installation</a>, <a href="/buy-walk-in-tub-online/">buying online with delivery to the US and Canada</a>, <a href="/hydrotherapy-walk-in-tubs/">hydrotherapy tubs</a>, <a href="/bariatric-walk-in-tubs/">bariatric tubs</a>, <a href="/wheelchair-accessible-walk-in-tubs/">wheelchair-accessible tubs</a>, <a href="/small-walk-in-tubs/">small tubs</a> and <a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a>.</p>
+</section></article></div>
 <section class="final" id="quote"><div class="wrap final-grid"><div><h2>Ready for a safer, easier bath?</h2><p>Tell us a little about the bathroom and who will use the tub. We’ll confirm one-day installation availability for your ZIP, or quote DIY delivery anywhere in the US or Canada. You’ll talk to a real specialist, not a call center script.</p><p class="bigphone"><a href="tel:+18887792284">1-888-779-2284 (BATH)</a></p></div><div class="qbox"><h2 class="qtitle">Get your free walk-in tub quote</h2><p class="qintro">Tell us where the tub is going. A specialist calls you back, answers your questions and confirms whether one-day installation is available at your address.</p>
 <form class="qform" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
 <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
@@ -2094,7 +2230,7 @@ ul.sources{font-size:1rem}
 <p class="small">Also from our family of sites: <a href="https://www.agingsafelybaths.com/" rel="noopener">Aging Safely Baths</a> and <a href="https://www.showers4less.com/" rel="noopener">Showers4Less shower kits</a>.</p></div>
 <div><h2 class="fh">Walk-in tubs</h2><ul><li><a href="/">Senior walk in bathtubs</a></li><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy walk-in tubs</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric walk-in tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small walk-in tubs</a></li></ul></div><div><h2 class="fh">Plan and buy</h2><ul><li><a href="/walk-in-tub-cost/">Walk-in tub cost</a></li><li><a href="/walk-in-tub-installation/">One-day installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy a walk-in tub online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></div><div><h2 class="fh">Guides</h2><ul><li><a href="/blog/">All guides</a></li><li><a href="/blog/are-walk-in-tubs-worth-it/">Are walk-in tubs worth it?</a></li><li><a href="/blog/bathroom-fall-statistics-seniors/">Bathroom fall statistics</a></li><li><a href="/blog/walk-in-tub-water-heater-guide/">Water heater guide</a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/">How to measure</a></li></ul></div></div>
 <div class="wrap foot-legal"><p>© 2026 Aging Safely Baths. All rights reserved. Powered by Eye To Ad Media <a href="https://www.eyetoad.com" rel="noopener">www.eyetoad.com</a></p>
-<p><a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
+<p><a href="/about/">About us</a> <a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
 <p class="small">Information on this site is general and educational. It is not medical, legal or tax advice. Confirm coverage and eligibility with the program or plan administrator.</p></div></footer>
 <div class="callbar"><a href="tel:+18887792284">Call 1-888-779-2284</a><a href="/get-a-quote/">Free quote</a></div>
 <script>document.documentElement.classList.add('js');
@@ -2132,6 +2268,21 @@ document.querySelectorAll('form.qform').forEach(function(f){
 });
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');io.unobserve(e.target)}})},{threshold:.25});
 document.querySelectorAll('.chart').forEach(function(c){io.observe(c)});}else{document.querySelectorAll('.chart').forEach(function(c){c.classList.add('seen')});}
+
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, IO='IntersectionObserver' in window;
+var pb=document.querySelector('.progress span'),mb=document.querySelector('.minibar'),hd=document.querySelector('.site-head');
+function onS(){var h=document.documentElement,p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(pb)pb.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';if(mb&&hd)mb.classList.toggle('on',hd.getBoundingClientRect().bottom<0);}
+window.addEventListener('scroll',onS,{passive:true});onS();
+if(IO&&!rm){
+ var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,to=parseFloat(el.getAttribute('data-to')),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',cm=el.getAttribute('data-comma')==='1',fin=el.textContent,t0=null;
+  if(isNaN(to)){return}
+  function fmt(v){var s=Math.round(v).toString();if(cm)s=s.replace(/\B(?=(\d{3})+(?!\d))/g,',');return pre+s+suf}
+  function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1600),ez=1-Math.pow(1-k,3);el.textContent=fmt(to*ez);if(k<1)requestAnimationFrame(step);else el.textContent=fin;}
+  requestAnimationFrame(step);})},{threshold:.5});
+ document.querySelectorAll('.stat-n').forEach(function(el){if(/^[\$0-9,.]+/.test(el.textContent)&&!/×/.test(el.textContent))cio.observe(el)});
+ var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');rio.unobserve(e.target)}})},{threshold:.15});
+ document.querySelectorAll('.tcard,.photo,.illus,.related li,.stat,.calc').forEach(function(el){el.classList.add('reveal');rio.observe(el)});
+}
 })();
 </script>
 </body>

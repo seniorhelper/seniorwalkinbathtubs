@@ -19,7 +19,11 @@
 <meta name="twitter:title" content="Walk-In Tub Water Heater Guide: Sizing, Math and Calculator">
 <meta name="twitter:description" content="Will your water heater fill a walk-in tub? Simple hot water math, a free calculator, tank vs. tankless vs. in-line heaters, and how to avoid lukewarm baths.">
 <meta name="twitter:image" content="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/dual_drain2.jpg">
-<meta name="theme-color" content="#0d5c63">
+<meta name="theme-color" content="#0a2a33">
+<meta name="author" content="Zachary Tye Wennstedt">
+<meta property="article:published_time" content="2026-09-19">
+<meta property="article:modified_time" content="2026-09-19">
+<link rel="preconnect" href="https://cdn.shopify.com">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%230d5c63' d='M32 4c9 8 18 8 24 10v18c0 15-10 24-24 28C18 56 8 47 8 32V14c6-2 15-2 24-10z'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' d='M17 36c5-4 10 4 15 0s10-4 15 0'/%3E%3Cpath fill='%23fff' d='M28.6 29.2l-5-5 2.1-2.1 2.9 2.9 8.6-8.6 2.1 2.1z'/%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -180,9 +184,16 @@
     "@id": "https://seniorwalkinbathtubs.com/#org"
    },
    "description": "Runs Aging Safely Baths. Former sales manager for multi-million-dollar plumbing companies and manager of national remodeling companies and their sales teams.",
-   "url": "https://zacharytyewennstedt.com/",
+   "url": "https://seniorwalkinbathtubs.com/about/",
    "sameAs": [
     "https://zacharytyewennstedt.com/"
+   ],
+   "jobTitle": "Owner, Aging Safely Baths",
+   "knowsAbout": [
+    "walk-in bathtubs",
+    "bathroom remodeling",
+    "plumbing sales",
+    "aging in place"
    ]
   },
   {
@@ -522,37 +533,171 @@ ul.sources{font-size:1rem}
 .brand-logo{height:140px;width:auto;max-width:260px;object-fit:contain;display:block}
 @media (max-width:980px){.brand-logo{height:120px;max-width:220px}.site-head{position:static}}
 @media (max-width:380px){.brand-logo{max-width:180px}}
+/* ================= v2 visual layer ================= */
+html,body{overflow-x:clip}
+.site-head{position:relative;top:auto}
+.head-in{min-height:0;padding-top:6px;padding-bottom:6px}
+.brand-logo{height:168px;max-width:312px}
+@media (max-width:980px){.brand-logo{height:144px;max-width:264px}}
+@media (max-width:380px){.brand-logo{max-width:216px;height:130px}}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:90;pointer-events:none}
+.progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#fcd34d,#f59e0b)}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(10,42,51,.97);color:#fff;transform:translateY(-110%);transition:transform .45s ease;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.minibar.on{transform:none}
+.minibar-in{display:flex;align-items:center;gap:18px;padding-top:9px;padding-bottom:9px}
+.mb-name{color:#fff;font-weight:800;text-decoration:none;font-size:1.08rem}
+.mb-note{color:#dbeef1;font-size:.95rem}
+.mb-phone{margin-left:auto;color:#fff;font-weight:800;text-decoration:none}
+.mb-name:hover,.mb-phone:hover{color:#fcd34d}
+.minibar .btn{padding:8px 16px}
+@media (max-width:760px){.minibar{display:none}}
+@media (max-width:1040px){.mb-note{display:none}}
+.side{top:84px}
+/* inner hero */
+.page-hero{background:radial-gradient(900px 420px at 85% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(700px 380px at 0% 100%,rgba(252,211,77,.13),transparent 60%),linear-gradient(135deg,#0a2a33 0%,#0d4750 55%,#0b4f56 100%);color:#fff;padding:40px 0 92px}
+.page-hero h1{color:#fff}
+.page-hero .lead{color:#e3f2f4}.page-hero .lead strong{color:#fff}
+.page-hero .meta-line{color:#dbeef1}.page-hero .meta-line a{color:#fff}
+.page-hero .crumbs ol,.page-hero .crumbs li+li::before{color:#dbeef1}.page-hero .crumbs a{color:#fff}
+.page-hero .btn.ghost{background:transparent;color:#fff;border-color:#fff}.page-hero .btn.ghost:hover{background:#fff;color:#0a2a33}
+.page-hero .strip{background:rgba(255,255,255,.10);border-left-color:#fcd34d;color:#fff}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero .waterline path{fill:#fff}
+.page-hero .bubbles span{border-color:rgba(207,231,234,.45)}
+.ripples{position:absolute;right:-40px;top:-60px;width:560px;height:560px;z-index:1;pointer-events:none}
+.ripples circle{fill:none;stroke:rgba(207,231,234,.38);stroke-width:1.5;transform-origin:200px 200px;animation:ripple 10s ease-out infinite;opacity:0}
+.ripples circle:nth-child(2){animation-delay:3.3s}.ripples circle:nth-child(3){animation-delay:6.6s}
+@keyframes ripple{0%{transform:scale(.35);opacity:0}15%{opacity:1}100%{transform:scale(3.1);opacity:0}}
+@media (max-width:760px){.ripples{width:360px;height:360px;right:-140px;top:-40px}}
+/* layout + bands */
+.layout{background:none;padding-top:0}
+.home-body{background:none;padding-top:0}
+.band{position:relative;isolation:isolate;padding:48px 0 26px}
+.band::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;background:var(--bg,#fff);z-index:-1}
+.b-intro{--bg:#eef5f6;padding-top:30px}
+.home-body .b-intro{--bg:#eef5f6}
+.b-sky{--bg:#eef5f6}.b-white{--bg:#fff}.b-sand{--bg:#f7f5f0}.b-src{--bg:#fff}
+.prose .band>h2{margin-top:0}
+.b-night{color:#fff;padding:60px 0 44px}
+.b-night::before{background:radial-gradient(640px 320px at 92% 0%,rgba(126,200,208,.16),transparent 60%),linear-gradient(160deg,#0a2a33,#0d4750)}
+.b-night h2{color:#fff}
+.b-night>p,.b-night>ul li{color:#e3f2f4}
+.b-night>p a,.b-night>ul a{color:#9fe8ee}
+.b-night .faq{background:#fff;border:0;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.b-night .faq summary{color:#0a0a0a}.b-night .faq p{color:#1f2937}
+/* h2 wave accent */
+.prose h2::after{content:"";display:block;width:84px;height:12px;margin-top:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%230d5c63' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.b-night h2::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%23fcd34d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.prose h2.qtitle::after,.final h2::after{display:none}
+/* facts */
+.facts{border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#0d5c63,#fcd34d) border-box;border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px rgba(13,92,99,.14);margin-top:34px}
+.facts ul{list-style:none;padding:0}
+.facts li{position:relative;padding-left:34px}
+.facts li::before{content:"";position:absolute;left:0;top:.28em;width:22px;height:22px;border-radius:50%;background:#046c4e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6.5l2.5 2.5L10 3.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* stats */
+.stats{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 0;margin:30px 0 0}
+.stats::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;z-index:-1;background:radial-gradient(520px 260px at 12% 0%,rgba(252,211,77,.10),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56)}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 18px 16px}
+.stat-n{font-size:clamp(2.2rem,4.2vw,3.1rem);font-weight:800;color:#fcd34d;margin:0;line-height:1.05;font-variant-numeric:tabular-nums}
+.stat-l{color:#fff;margin:8px 0 6px;font-size:1.02rem;line-height:1.4}
+.stat-s{color:#dbeef1;font-size:.88rem;margin:0}
+@media (max-width:760px){.stats{grid-template-columns:1fr}}
+/* tables */
+th{background:#0d5c63;color:#fff}
+tbody tr:nth-child(even) td{background:#f4f9fa}
+.tscroll{box-shadow:0 10px 26px rgba(10,42,51,.08);border-radius:14px}
+/* charts */
+.chart,.illus{border:0;box-shadow:0 16px 38px rgba(10,42,51,.12);border-radius:18px;padding:22px 22px 14px}
+.photo{border:0;box-shadow:0 16px 38px rgba(10,42,51,.14);border-radius:18px}
+.hb-row{margin:14px 0}
+.hb-lab{font-size:1rem;color:#1f2937;margin-bottom:5px;line-height:1.35}
+.hb-bar{position:relative;height:26px;margin-right:130px}
+.hb-fill{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:6px;background:linear-gradient(90deg,#0d5c63,#13808a);transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.hb-fill.hl{background:linear-gradient(90deg,#b45309,#d97706)}
+.hb-val{position:absolute;left:calc(var(--w) + 10px);top:50%;transform:translateY(-50%);font-weight:800;white-space:nowrap;color:#000;font-size:1rem;transition:left 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .hb-fill{width:0}
+.js .chart:not(.seen) .hb-val{left:10px}
+.vb{display:flex;gap:18px;height:300px;padding-top:6px}
+.vb-col{flex:1;display:flex;flex-direction:column;min-width:0}
+.vb-stack{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:2px solid #6b7280}
+.vb-fill{display:block;width:min(96px,72%);height:calc(var(--h) * .82);border-radius:8px 8px 0 0;background:linear-gradient(180deg,#13808a,#0d5c63);transition:height 1.4s cubic-bezier(.2,.7,.2,1)}
+.vb-fill.hl{background:linear-gradient(180deg,#d97706,#b45309)}
+.vb-val{font-weight:800;margin-bottom:6px;color:#000}
+.vb-lab{text-align:center;padding-top:8px;font-size:1rem;color:#1f2937}
+.js .chart:not(.seen) .vb-fill{height:0}
+.rb-axis{position:relative;height:22px;margin:4px 0 8px;font-size:.85rem;color:#374151}
+.rb-axis span{position:absolute;transform:translateX(-50%)}
+.rb-axis span:first-child{transform:none}.rb-axis span:last-child{transform:translateX(-100%)}
+.rb-row{margin:16px 0}
+.rb-track{position:relative;height:24px;background:#e5eef0;border-radius:12px}
+.rb-fill{position:absolute;top:0;bottom:0;border-radius:12px;background:linear-gradient(90deg,#0d5c63,#13808a);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .rb-fill{transform:scaleX(0)}
+.rb-dot{position:absolute;top:50%;width:18px;height:18px;margin-left:-9px;transform:translateY(-50%);border-radius:50%;background:#fff;border:3px solid #000}
+/* type cards */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+@media (max-width:900px){.tcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.tcards{grid-template-columns:1fr}}
+.tcard{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:16px;background:#fff;text-decoration:none;color:#0a0a0a;border-top:5px solid #0d5c63;box-shadow:0 12px 28px rgba(10,42,51,.10);transition:transform .35s ease,box-shadow .35s ease}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(10,42,51,.16);color:#0a0a0a}
+.tcard:nth-child(3n+2){border-top-color:#b45309}.tcard:nth-child(3n){border-top-color:#046c4e}
+.tcard svg{width:46px;height:46px;fill:none;stroke:#0d5c63;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.tcard strong{color:#000;font-size:1.12rem}.tcard span{color:#374151;font-size:1rem;line-height:1.45}
+/* callouts, related, cta, final */
+.callout{box-shadow:0 10px 24px rgba(10,42,51,.08)}
+.related a{border:0;border-top:4px solid #0d5c63;box-shadow:0 10px 26px rgba(10,42,51,.10);transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(10,42,51,.16)}
+.cta-band{background:radial-gradient(500px 220px at 100% 0%,rgba(252,211,77,.18),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);box-shadow:0 18px 40px rgba(10,42,51,.25)}
+.final{background:radial-gradient(760px 380px at 90% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(252,211,77,.12),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);border-top:0;color:#fff}
+.final h2{color:#fff}
+.final-grid>div:first-child p{color:#e3f2f4}
+.final .bigphone a{color:#fff}
+.final .qbox{box-shadow:12px 12px 0 #fcd34d}
+.btn.go.big{position:relative;overflow:hidden}
+.btn.go.big::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,70%{left:-60%}100%{left:130%}}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.seen{opacity:1;transform:none}
+.author{background:#eef5f6;border:0;border-left:6px solid #0d5c63;border-radius:0 14px 14px 0;padding:16px 20px}
+.toc{box-shadow:0 10px 26px rgba(10,42,51,.08);border:0}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
 </style>
 </head>
 <body data-type="blog">
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="minibar"><div class="wrap minibar-in"><a class="mb-name" href="/">Senior Walk In Bathtubs</a><span class="mb-note">One-day install or ship to US and Canada</span><a class="mb-phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div></div>
 <div class="util"><div class="wrap util-in"><span>BBB Accredited, A+ rating</span><span>Authorized Ella’s Bubbles dealer since 2012</span><span>Ships to the US and Canada</span><span><a href="tel:+18887792284">Call 1-888-779-2284</a></span></div></div>
 <header class="site-head"><div class="wrap head-in">
-<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" decoding="async"></a>
+<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" fetchpriority="high" decoding="async"></a>
 <nav class="mainnav" aria-label="Main"><ul><li class="has-sub"><a href="/">Walk-in tubs</a><ul class="subnav"><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small and compact tubs</a></li></ul></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
 <div class="head-cta"><a class="phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div>
 <details class="mnav"><summary aria-label="Open menu">Menu</summary><ul><li><a href="/">Home</a></li><li class="indent"><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li class="indent"><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li class="indent"><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li class="indent"><a href="/small-walk-in-tubs/">Small and compact tubs</a></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></details>
 </div></header>
-<main id="main"><section class="hero page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Guides</a></li><li aria-current="page">Water heater guide</li></ol></nav><h1>Walk-In Tub Water Heater Guide: Will Your Heater Keep Up?</h1><p class="lead speakable">The most common walk-in tub problem is not the tub. It is the <strong>water heater</strong>. Walk-in tubs are deep, many hold more water than a standard tub, and roughly three-quarters of a comfortable bath comes from the heater. This guide shows the simple math, gives you a free calculator, explains tank, tankless and in-line heater options, and shows how to make sure every bath is hot all the way to the top.</p><p class="meta-line">Updated September 19, 2026 by <a href="https://zacharytyewennstedt.com/" rel="noopener author">Zachary Tye Wennstedt</a>, Aging Safely Baths. 11 minute read.</p>
+<main id="main"><section class="hero page-hero"><svg class="ripples" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/></svg><div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Guides</a></li><li aria-current="page">Water heater guide</li></ol></nav><h1>Walk-In Tub Water Heater Guide: Will Your Heater Keep Up?</h1><p class="lead speakable">The most common walk-in tub problem is not the tub. It is the <strong>water heater</strong>. Walk-in tubs are deep, many hold more water than a standard tub, and roughly three-quarters of a comfortable bath comes from the heater. This guide shows the simple math, gives you a free calculator, explains tank, tankless and in-line heater options, and shows how to make sure every bath is hot all the way to the top.</p><p class="meta-line">Updated September 19, 2026 by <a href="/about/" rel="author">Zachary Tye Wennstedt</a>, Aging Safely Baths. 11 minute read.</p>
 <div class="hero-actions"><a class="btn go" href="/get-a-quote/">Get a free quote</a><a class="btn ghost" href="tel:+18887792284">Call 1-888-779-2284</a></div>
 
-</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>At a 120°F heater setting, 55°F incoming water and a 102°F bath, about 72% of the fill comes from the water heater.</li><li>A 60-gallon fill needs about 43 gallons of 120°F water; an 80-gallon fill needs about 58 gallons.</li><li>A tank delivers only part of its rated volume before the temperature drops; the first-hour rating on the EnergyGuide label is the best guide.</li><li>Colder incoming water in winter means more hot water is needed.</li><li>Options include a smaller-fill tub, a larger tank, a tankless heater sized for the flow, or an in-line heater on the tub.</li><li>The U.S. Department of Energy recommends a 120°F water heater setting for most households.</li></ul></div><nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-hot-water-matters-more-with-a-walk-in-tub">Why hot water matters more with a walk-in tub</a></li><li><a href="#the-simple-math-behind-a-hot-bath">The simple math behind a hot bath</a></li><li><a href="#how-much-hot-water-does-your-heater-actually-deliver">How much hot water does your heater actually deliver?</a></li><li><a href="#try-the-calculator">Try the calculator</a></li><li><a href="#worked-examples">Worked examples</a></li><li><a href="#winter-changes-everything">Winter changes everything</a></li><li><a href="#your-options-if-your-heater-falls-short">Your options if your heater falls short</a></li><li><a href="#should-you-raise-the-water-heater-temperature">Should you raise the water heater temperature?</a></li><li><a href="#fill-time-flow-matters-too">Fill time: flow matters too</a></li><li><a href="#energy-cost-of-a-walk-in-tub-bath">Energy cost of a walk-in tub bath</a></li><li><a href="#checklist-before-you-buy-a-walk-in-tub">Checklist before you buy a walk-in tub</a></li><li><a href="#gas-vs-electric-tank-heaters">Gas vs. electric tank heaters</a></li><li><a href="#planning-an-upgrade-with-your-tub">Planning an upgrade with your tub</a></li><li><a href="#quick-reference-hot-water-needed-by-season">Quick reference: hot water needed by season</a></li><li><a href="#let-us-check-it-for-you">Let us check it for you</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>At a 120°F heater setting, 55°F incoming water and a 102°F bath, about 72% of the fill comes from the water heater.</li><li>A 60-gallon fill needs about 43 gallons of 120°F water; an 80-gallon fill needs about 58 gallons.</li><li>A tank delivers only part of its rated volume before the temperature drops; the first-hour rating on the EnergyGuide label is the best guide.</li><li>Colder incoming water in winter means more hot water is needed.</li><li>Options include a smaller-fill tub, a larger tank, a tankless heater sized for the flow, or an in-line heater on the tub.</li><li>The U.S. Department of Energy recommends a 120°F water heater setting for most households.</li></ul></div><aside class="stats" aria-label="Key figures"><div class="stat"><p class="stat-n" data-to="72" data-pre="" data-suf="%" data-comma="0">72%</p><p class="stat-l">of a typical walk-in tub bath comes from your water heater</p><p class="stat-s">DOE 120°F setting, mixing math</p></div><div class="stat"><p class="stat-n" data-to="6000" data-pre="$" data-suf="" data-comma="1">$6,000</p><p class="stat-l">average installed walk-in tub cost</p><p class="stat-s">Fixr, 2026</p></div><div class="stat"><p class="stat-n" data-to="2012" data-pre="" data-suf="" data-comma="0">2012</p><p class="stat-l">authorized Ella’s Bubbles dealer since</p><p class="stat-s">Aging Safely Baths</p></div></aside><section class="band b-intro">
+<nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-hot-water-matters-more-with-a-walk-in-tub">Why hot water matters more with a walk-in tub</a></li><li><a href="#the-simple-math-behind-a-hot-bath">The simple math behind a hot bath</a></li><li><a href="#how-much-hot-water-does-your-heater-actually-deliver">How much hot water does your heater actually deliver?</a></li><li><a href="#try-the-calculator">Try the calculator</a></li><li><a href="#worked-examples">Worked examples</a></li><li><a href="#winter-changes-everything">Winter changes everything</a></li><li><a href="#your-options-if-your-heater-falls-short">Your options if your heater falls short</a></li><li><a href="#should-you-raise-the-water-heater-temperature">Should you raise the water heater temperature?</a></li><li><a href="#fill-time-flow-matters-too">Fill time: flow matters too</a></li><li><a href="#energy-cost-of-a-walk-in-tub-bath">Energy cost of a walk-in tub bath</a></li><li><a href="#checklist-before-you-buy-a-walk-in-tub">Checklist before you buy a walk-in tub</a></li><li><a href="#gas-vs-electric-tank-heaters">Gas vs. electric tank heaters</a></li><li><a href="#planning-an-upgrade-with-your-tub">Planning an upgrade with your tub</a></li><li><a href="#quick-reference-hot-water-needed-by-season">Quick reference: hot water needed by season</a></li><li><a href="#let-us-check-it-for-you">Let us check it for you</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</section><section class="band b-white" aria-labelledby="why-hot-water-matters-more-with-a-walk-in-tub">
 <h2 id="why-hot-water-matters-more-with-a-walk-in-tub">Why hot water matters more with a walk-in tub</h2>
 <p>A standard bathtub is shallow. You recline, and the water covers your legs and part of your body. A walk-in tub is different. You sit upright on a seat, and the water rises high around you so you can soak your shoulders and back. That depth is what makes a walk-in tub so comfortable, and it is also why it can use more water than a standard tub.</p>
 <p>Because you sit in a walk-in tub while it fills, you also notice immediately if the water runs lukewarm near the end of the fill. There is no easy way to top it up with hot water once the heater has run low. So before choosing a walk-in tub, it is worth ten minutes to check that your water heater can keep up. The good news: the math is simple, and the fixes are straightforward.</p>
+</section><section class="band b-sky" aria-labelledby="the-simple-math-behind-a-hot-bath">
 <h2 id="the-simple-math-behind-a-hot-bath">The simple math behind a hot bath</h2>
 <p>A bath is a mix of hot water from the heater and cold water from the supply line. The share that has to come from the heater depends on three temperatures:</p>
 <ul><li><strong>Heater setting.</strong> The U.S. Department of Energy recommends 120°F for most households, which also reduces scald risk.</li><li><strong>Incoming cold water temperature.</strong> This varies with climate and season, from about 40°F in northern winters to 70°F or more in southern summers.</li><li><strong>Bath temperature.</strong> Most people like a bath somewhere between 98°F and 104°F.</li></ul>
 <p>The formula is:</p>
 <div class="callout"><p>Hot water share = (bath temperature − cold temperature) ÷ (heater temperature − cold temperature)</p></div>
 <p>With a 102°F bath, 55°F cold water and a 120°F heater, the hot share is (102 − 55) ÷ (120 − 55) = 47 ÷ 65, or about 72%. So nearly three-quarters of the water in a comfortable bath has to come out of the heater.</p>
-<figure class="chart" id="chart-hot-water-share"><figcaption class="chart-title">Gallons of 120°F hot water needed to fill a tub to 102°F (incoming cold water at 55°F)</figcaption><svg viewBox="0 0 720 236" role="img" aria-label="Gallons of 120°F hot water needed to fill a tub to 102°F (incoming cold water at 55°F)" class="svgc"><text x="218" y="34" text-anchor="end" class="lab">40-gallon fill</text><rect x="230" y="16" width="185.2" height="26" rx="3" class="bar" style="--w:185.2px"/><text x="423.2" y="34" class="val">29 gal</text><text x="218" y="78" text-anchor="end" class="lab">50-gallon fill</text><rect x="230" y="60" width="231.5" height="26" rx="3" class="bar" style="--w:231.5px"/><text x="469.5" y="78" class="val">36 gal</text><text x="218" y="122" text-anchor="end" class="lab">60-gallon fill</text><rect x="230" y="104" width="277.8" height="26" rx="3" class="bar" style="--w:277.8px"/><text x="515.8" y="122" class="val">43 gal</text><text x="218" y="166" text-anchor="end" class="lab">70-gallon fill</text><rect x="230" y="148" width="324.1" height="26" rx="3" class="bar" style="--w:324.1px"/><text x="562.1" y="166" class="val">51 gal</text><text x="218" y="210" text-anchor="end" class="lab">80-gallon fill</text><rect x="230" y="192" width="370.4" height="26" rx="3" class="bar" style="--w:370.4px"/><text x="608.4" y="210" class="val">58 gal</text></svg><p class="chart-src">Source: Mixing calculation: hot share = (bath temp − cold temp) ÷ (hot temp − cold temp) = (102 − 55) ÷ (120 − 55) ≈ 72%. 120°F is the setting recommended by the <a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy</a>.</p><details class="chart-data"><summary>Show the numbers</summary><div class="tscroll"><table><thead><tr><th scope="col">Tub fill</th><th scope="col">Hot water needed</th></tr></thead><tbody><tr><td>40-gallon fill</td><td>29 gal</td></tr><tr><td>50-gallon fill</td><td>36 gal</td></tr><tr><td>60-gallon fill</td><td>43 gal</td></tr><tr><td>70-gallon fill</td><td>51 gal</td></tr><tr><td>80-gallon fill</td><td>58 gal</td></tr></tbody></table></div></details></figure>
+<figure class="chart" id="chart-hot-water-share"><figcaption class="chart-title">Gallons of 120°F hot water needed to fill a tub to 102°F (incoming cold water at 55°F)</figcaption><div class="hb"><div class="hb-row"><div class="hb-lab">40-gallon fill</div><div class="hb-bar"><span class="hb-fill" style="--w:50.0%"></span><span class="hb-val" style="--w:50.0%">29 gal</span></div></div><div class="hb-row"><div class="hb-lab">50-gallon fill</div><div class="hb-bar"><span class="hb-fill" style="--w:62.5%"></span><span class="hb-val" style="--w:62.5%">36 gal</span></div></div><div class="hb-row"><div class="hb-lab">60-gallon fill</div><div class="hb-bar"><span class="hb-fill" style="--w:75.0%"></span><span class="hb-val" style="--w:75.0%">43 gal</span></div></div><div class="hb-row"><div class="hb-lab">70-gallon fill</div><div class="hb-bar"><span class="hb-fill" style="--w:87.5%"></span><span class="hb-val" style="--w:87.5%">51 gal</span></div></div><div class="hb-row"><div class="hb-lab">80-gallon fill</div><div class="hb-bar"><span class="hb-fill" style="--w:100.0%"></span><span class="hb-val" style="--w:100.0%">58 gal</span></div></div></div><p class="chart-src">Source: Mixing calculation: hot share = (bath temp − cold temp) ÷ (hot temp − cold temp) = (102 − 55) ÷ (120 − 55) ≈ 72%. 120°F is the setting recommended by the <a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy</a>.</p><details class="chart-data"><summary>Show the numbers</summary><div class="tscroll"><table><thead><tr><th scope="col">Tub fill</th><th scope="col">Hot water needed</th></tr></thead><tbody><tr><td>40-gallon fill</td><td>29 gal</td></tr><tr><td>50-gallon fill</td><td>36 gal</td></tr><tr><td>60-gallon fill</td><td>43 gal</td></tr><tr><td>70-gallon fill</td><td>51 gal</td></tr><tr><td>80-gallon fill</td><td>58 gal</td></tr></tbody></table></div></details></figure>
 <p>At that share, a 40-gallon fill needs about 29 gallons of hot water, a 60-gallon fill needs about 43 gallons, and an 80-gallon fill needs about 58 gallons.</p>
+</section><section class="band b-white" aria-labelledby="how-much-hot-water-does-your-heater-actually-deliver">
 <h2 id="how-much-hot-water-does-your-heater-actually-deliver">How much hot water does your heater actually deliver?</h2>
 <p>Here is the part that surprises most people. A 50-gallon tank does not deliver 50 gallons of hot water. As hot water is drawn from the top of the tank, cold water enters at the bottom and gradually mixes in. After a certain point, the water coming out is no longer hot enough.</p>
 <p>A common rule of thumb is that roughly 70% of a tank’s rated capacity comes out hot before the temperature drops noticeably. By that rule:</p>
 <div class="tscroll"><table><thead><tr><th scope="col">Tank size</th><th scope="col">Approximate usable hot water</th></tr></thead><tbody><tr><td>30 gallons</td><td>About 21 gallons</td></tr><tr><td>40 gallons</td><td>About 28 gallons</td></tr><tr><td>50 gallons</td><td>About 35 gallons</td></tr><tr><td>65 gallons</td><td>About 46 gallons</td></tr><tr><td>75 gallons</td><td>About 53 gallons</td></tr><tr><td>80 gallons</td><td>About 56 gallons</td></tr></tbody></table></div>
 <p>The more accurate number is the <strong>first-hour rating</strong>, printed on the yellow EnergyGuide label on most tank water heaters. The Department of Energy explains that the first-hour rating is the amount of hot water a heater can supply in an hour starting with a full tank. It accounts for both the stored water and how quickly the heater recovers.</p>
+</section><section class="band b-sand" aria-labelledby="try-the-calculator">
 <h2 id="try-the-calculator">Try the calculator</h2>
 <p>Use this calculator to compare your tub fill with your tank. Adjust the incoming water temperature for your climate and season.</p>
 <div class="calc" id="water-calc">
@@ -567,13 +712,16 @@ ul.sources{font-size:1rem}
 <output id="c-out" class="calc-out" aria-live="polite"></output>
 <p class="muted small">Assumes a 120°F heater setting and that roughly 70% of a tank’s rated capacity comes out hot before the temperature drops. The first-hour rating on your heater’s yellow EnergyGuide label is the more exact number.</p>
 </div>
+</section><section class="band b-white" aria-labelledby="worked-examples">
 <h2 id="worked-examples">Worked examples</h2>
 <p><strong>Example 1: A compact tub and a 40-gallon tank.</strong> A 45-gallon fill at the typical settings needs about 33 gallons of hot water. A 40-gallon tank delivers roughly 28 usable gallons by the rule of thumb. That is close. In summer it may be fine; in winter, when incoming water is colder, the last few gallons may be lukewarm. Options: a slightly cooler bath, turning off other hot water use during the fill, or a modest heater upgrade.</p>
 <p><strong>Example 2: A standard walk-in tub and a 50-gallon tank.</strong> A 60-gallon fill needs about 43 gallons of hot water. A 50-gallon tank delivers roughly 35. That is likely to fall short, especially in winter. Options: a 65- to 80-gallon tank, a tankless heater sized for the flow, or an in-line heater on the tub to hold temperature.</p>
 <p><strong>Example 3: A two-seat tub and a 50-gallon tank.</strong> An 80-gallon fill needs about 58 gallons of hot water. A 50-gallon tank cannot supply that. A two-seat or extra-large tub almost always needs a larger or tankless water heater. See our <a href="/bariatric-walk-in-tubs/">bariatric and two-seat walk-in tub guide</a>.</p>
+</section><section class="band b-sky" aria-labelledby="winter-changes-everything">
 <h2 id="winter-changes-everything">Winter changes everything</h2>
 <p>The temperature of the water entering your home changes with the seasons. In northern climates, incoming water can be around 40°F in winter. At that temperature, the hot share for a 102°F bath rises to (102 − 40) ÷ (120 − 40) = 62 ÷ 80, or about 78%. A 60-gallon fill then needs about 47 gallons of hot water instead of 43.</p>
 <p>In southern climates in summer, incoming water may be 70°F or warmer, and the hot share drops to about 64%. So a water heater that seems fine in July may fall short in January. If you live somewhere with cold winters, size for winter.</p>
+</section><section class="band b-white" aria-labelledby="your-options-if-your-heater-falls-short">
 <h2 id="your-options-if-your-heater-falls-short">Your options if your heater falls short</h2>
 <h3>1. Choose a smaller-fill tub</h3>
 <p>Compact and standard walk-in tubs hold less water than two-seat and extra-long models. A tub that fits your heater avoids any upgrade. See our <a href="/small-walk-in-tubs/">small walk-in tubs guide</a>.</p>
@@ -587,28 +735,37 @@ ul.sources{font-size:1rem}
 <p>Small habits help: avoid running the dishwasher or laundry during the fill, run the fill before anyone else showers, and let the heater recover between baths.</p>
 <h3>6. Consider a heat pump water heater</h3>
 <p>Heat pump water heaters are an efficient option in many homes, but their recovery rate can be slower than a standard electric or gas tank. If you choose one, look carefully at the first-hour rating and consider a larger size.</p>
+</section><section class="band b-sand" aria-labelledby="should-you-raise-the-water-heater-temperature">
 <h2 id="should-you-raise-the-water-heater-temperature">Should you raise the water heater temperature?</h2>
 <p>It is tempting to turn the heater up so less of it is needed per bath. Be careful. Higher heater temperatures increase scald risk, which is a particular concern for older adults and anyone with reduced sensation. The Department of Energy recommends 120°F for most households. If a higher setting is considered, a plumber can install a thermostatic mixing valve at the heater, and walk-in tubs themselves typically include an anti-scald or thermostatic valve at the faucet. Always check bath water with your hand before sitting all the way down.</p>
+</section><section class="band b-white" aria-labelledby="fill-time-flow-matters-too">
 <h2 id="fill-time-flow-matters-too">Fill time: flow matters too</h2>
 <p>Hot water volume is one part of the picture. Fill speed is the other. Because you wait in the tub while it fills, faster fills are more comfortable. Fill time depends on:</p>
 <ul><li><strong>Faucet flow.</strong> Fast-fill faucets deliver more gallons per minute than standard tub spouts.</li><li><strong>Water pressure and pipe size.</strong> Small or old supply lines limit flow.</li><li><strong>Tub volume.</strong> Bigger tubs take longer to fill.</li></ul>
 <p>A simple estimate is tub fill divided by faucet flow. A 60-gallon fill at 10 gallons per minute takes about 6 minutes; at 5 gallons per minute, about 12. Your installer can check whether your supply lines support a fast-fill faucet’s rated flow.</p>
+</section><section class="band b-sky" aria-labelledby="energy-cost-of-a-walk-in-tub-bath">
 <h2 id="energy-cost-of-a-walk-in-tub-bath">Energy cost of a walk-in tub bath</h2>
 <p>Heating water takes energy, and the math is straightforward. Water weighs about 8.34 pounds per gallon, and it takes one BTU to raise one pound of water by one degree Fahrenheit. Heating 43 gallons from 55°F to 120°F takes about 43 × 8.34 × 65, or roughly 23,300 BTU. That equals about 6.8 kilowatt-hours of electricity, or about a quarter of a therm of natural gas, before accounting for the heater’s efficiency. Multiply by your local rate and your number of baths per week for a realistic monthly cost.</p>
+</section><section class="band b-white" aria-labelledby="checklist-before-you-buy-a-walk-in-tub">
 <h2 id="checklist-before-you-buy-a-walk-in-tub">Checklist before you buy a walk-in tub</h2>
 <ol class="steps"><li>Find your water heater’s size and first-hour rating on the EnergyGuide label.</li><li>Note whether it is gas, electric, heat pump or tankless.</li><li>Ask for the tub’s fill volume with a bather seated.</li><li>Use the calculator with your winter incoming water temperature.</li><li>Check the faucet’s rated flow and your supply lines.</li><li>Decide whether you want an in-line heater with jets.</li><li>Plan any heater upgrade at the same time as the tub, so both are ready together.</li></ol>
 <p>When you request a quote from Aging Safely Baths, we check your water heater as part of the recommendation. It is one of the reasons our customers enjoy hot baths from day one. Learn more about our <a href="/">senior walk in bathtubs</a>, or <a href="/get-a-quote/">request a free quote</a>.</p>
+</section><section class="band b-sand" aria-labelledby="gas-vs-electric-tank-heaters">
 <h2 id="gas-vs-electric-tank-heaters">Gas vs. electric tank heaters</h2>
 <p>Gas and electric tank heaters of the same size do not always deliver the same amount of hot water in an hour. Gas heaters generally recover faster, meaning they reheat incoming cold water more quickly, which gives them a higher first-hour rating than an electric tank of the same capacity. Electric tanks typically recover more slowly. That is why the first-hour rating on the EnergyGuide label is a better comparison tool than tank size alone, and why an electric household may need a larger tank to fill the same walk-in tub.</p>
+</section><section class="band b-white" aria-labelledby="planning-an-upgrade-with-your-tub">
 <h2 id="planning-an-upgrade-with-your-tub">Planning an upgrade with your tub</h2>
 <p>If your water heater needs an upgrade, plan it alongside the tub:</p>
 <ul><li><strong>Schedule both for the same week,</strong> so the first bath is a hot one.</li><li><strong>Check space and venting</strong> for a larger gas tank or a tankless unit.</li><li><strong>Check electrical capacity</strong> for a larger electric tank or electric tankless unit, which can require substantial power.</li><li><strong>Keep the heater at 120°F</strong> and rely on the tub’s anti-scald valve for comfort and safety.</li><li><strong>Ask about permits,</strong> since water heater replacements often require one.</li></ul>
+</section><section class="band b-sky" aria-labelledby="quick-reference-hot-water-needed-by-season">
 <h2 id="quick-reference-hot-water-needed-by-season">Quick reference: hot water needed by season</h2>
 <div class="tscroll"><table><thead><tr><th scope="col">Tub fill</th><th scope="col">Summer (70°F cold)</th><th scope="col">Typical (55°F cold)</th><th scope="col">Winter (40°F cold)</th></tr></thead><tbody><tr><td>40 gallons</td><td>About 26 gallons</td><td>About 29 gallons</td><td>About 31 gallons</td></tr><tr><td>60 gallons</td><td>About 38 gallons</td><td>About 43 gallons</td><td>About 47 gallons</td></tr><tr><td>80 gallons</td><td>About 51 gallons</td><td>About 58 gallons</td><td>About 62 gallons</td></tr></tbody></table></div>
 <p>All figures assume a 102°F bath and a 120°F water heater setting.</p>
+</section><section class="band b-white" aria-labelledby="let-us-check-it-for-you">
 <h2 id="let-us-check-it-for-you">Let us check it for you</h2>
 <p>When you request a quote, send us a photo of your water heater label along with your bathroom measurements. We will compare the heater with the tubs that fit your space and tell you honestly whether an upgrade is needed. Explore our <a href="/">senior walk in bathtubs</a> or <a href="/buy-walk-in-tub-online/">buy a walk-in tub online</a> for delivery anywhere in the US and Canada.</p>
 <p>A hot bath from the very first night is the goal.</p>
+</section><section class="band b-night" aria-labelledby="frequently-asked-questions">
 <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 <details class="faq"><summary>What size water heater do I need for a walk-in tub?</summary><p>It depends on the tub’s fill volume, your climate and your bath temperature. At typical settings about 72% of the bath comes from the heater, so a 60-gallon fill needs about 43 gallons of hot water. Many homes need a 65- to 80-gallon tank or a properly sized tankless heater for larger tubs.</p></details>
 <details class="faq"><summary>How much water does a walk-in tub hold?</summary><p>It varies by model. Compact tubs hold less and two-seat tubs hold much more. Always ask for the fill volume with a bather seated, and compare it with your heater using our calculator.</p></details>
@@ -618,8 +775,10 @@ ul.sources{font-size:1rem}
 <details class="faq"><summary>Should I turn my water heater up for a walk-in tub?</summary><p>Be cautious. Higher settings increase scald risk. The Department of Energy recommends 120°F for most homes. If a higher setting is considered, a thermostatic mixing valve should be installed, and you should always check the water before sitting down.</p></details>
 <details class="faq"><summary>Why is my walk-in tub bath lukewarm?</summary><p>Usually because the water heater cannot supply enough hot water for the tub’s fill volume, especially in winter when incoming water is colder. Other hot water use during the fill can also be a cause.</p></details>
 <details class="faq"><summary>How long does a walk-in tub take to fill?</summary><p>Divide the fill volume by the faucet’s flow rate. A 60-gallon fill at 10 gallons per minute takes about 6 minutes. Water pressure and supply line size affect the real-world flow.</p></details>
+</section><section class="band b-src" aria-labelledby="sources">
 <h2 id="sources">Sources</h2>
-<ul class="sources"><li><a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy, Water Heating</a></li><li><a href="https://www.energy.gov/energysaver/sizing-new-water-heater" rel="noopener" target="_blank">U.S. Department of Energy, Sizing a New Water Heater</a></li><li><a href="https://www.fixr.com/costs/walk-in-tub-installation" rel="noopener" target="_blank">Fixr, Walk-in Tub Installation Cost (2026)</a></li><li><a href="https://www.consumeraffairs.com/homeowners/best-two-person-walk-in-tubs.html" rel="noopener" target="_blank">ConsumerAffairs, Best Two-Person Walk-In Tubs</a></li></ul><div class="author"><p class="author-h">About the author</p><p><strong>Zachary Tye Wennstedt</strong> runs Aging Safely Baths, which has helped families choose and install walk-in tubs since 2012. Before that he was a sales manager for multi-million-dollar plumbing companies and managed national remodeling companies and their sales teams, so he has seen thousands of bathroom projects from the estimate to the final walkthrough.</p></div><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/buy-walk-in-tub-online/"><strong>Buy a walk-in tub online</strong><span>DIY delivery anywhere in the US and Canada, with spec sheets for your installer.</span></a></li><li><a href="/bariatric-walk-in-tubs/"><strong>Bariatric walk-in tubs</strong><span>Wider seats, wider doors, and two-seat tubs, with sizing tips that actually work.</span></a></li><li><a href="/hydrotherapy-walk-in-tubs/"><strong>Hydrotherapy walk-in tubs</strong><span>Water jets, air jets and dual systems compared, with what the research actually says.</span></a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/"><strong>How to measure for a walk-in tub</strong><span>Ten minutes, a tape measure and this checklist.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
+<ul class="sources"><li><a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy, Water Heating</a></li><li><a href="https://www.energy.gov/energysaver/sizing-new-water-heater" rel="noopener" target="_blank">U.S. Department of Energy, Sizing a New Water Heater</a></li><li><a href="https://www.fixr.com/costs/walk-in-tub-installation" rel="noopener" target="_blank">Fixr, Walk-in Tub Installation Cost (2026)</a></li><li><a href="https://www.consumeraffairs.com/homeowners/best-two-person-walk-in-tubs.html" rel="noopener" target="_blank">ConsumerAffairs, Best Two-Person Walk-In Tubs</a></li></ul>
+</section><div class="author"><p class="author-h">About the author</p><p><strong><a href="/about/">Zachary Tye Wennstedt</a></strong> runs Aging Safely Baths, which has helped families choose and install walk-in tubs since 2012. Before that he was a sales manager for multi-million-dollar plumbing companies and managed national remodeling companies and their sales teams, so he has seen thousands of bathroom projects from the estimate to the final walkthrough.</p></div><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/buy-walk-in-tub-online/"><strong>Buy a walk-in tub online</strong><span>DIY delivery anywhere in the US and Canada, with spec sheets for your installer.</span></a></li><li><a href="/bariatric-walk-in-tubs/"><strong>Bariatric walk-in tubs</strong><span>Wider seats, wider doors, and two-seat tubs, with sizing tips that actually work.</span></a></li><li><a href="/hydrotherapy-walk-in-tubs/"><strong>Hydrotherapy walk-in tubs</strong><span>Water jets, air jets and dual systems compared, with what the research actually says.</span></a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/"><strong>How to measure for a walk-in tub</strong><span>Ten minutes, a tape measure and this checklist.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
 <form class="qform" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
 <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
 <input type="hidden" name="_subject" value="New quote request: seniorwalkinbathtubs.com"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
@@ -655,7 +814,7 @@ ul.sources{font-size:1rem}
 <p class="small">Also from our family of sites: <a href="https://www.agingsafelybaths.com/" rel="noopener">Aging Safely Baths</a> and <a href="https://www.showers4less.com/" rel="noopener">Showers4Less shower kits</a>.</p></div>
 <div><h2 class="fh">Walk-in tubs</h2><ul><li><a href="/">Senior walk in bathtubs</a></li><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy walk-in tubs</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric walk-in tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small walk-in tubs</a></li></ul></div><div><h2 class="fh">Plan and buy</h2><ul><li><a href="/walk-in-tub-cost/">Walk-in tub cost</a></li><li><a href="/walk-in-tub-installation/">One-day installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy a walk-in tub online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></div><div><h2 class="fh">Guides</h2><ul><li><a href="/blog/">All guides</a></li><li><a href="/blog/are-walk-in-tubs-worth-it/">Are walk-in tubs worth it?</a></li><li><a href="/blog/bathroom-fall-statistics-seniors/">Bathroom fall statistics</a></li><li><a href="/blog/walk-in-tub-water-heater-guide/">Water heater guide</a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/">How to measure</a></li></ul></div></div>
 <div class="wrap foot-legal"><p>© 2026 Aging Safely Baths. All rights reserved. Powered by Eye To Ad Media <a href="https://www.eyetoad.com" rel="noopener">www.eyetoad.com</a></p>
-<p><a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
+<p><a href="/about/">About us</a> <a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
 <p class="small">Information on this site is general and educational. It is not medical, legal or tax advice. Confirm coverage and eligibility with the program or plan administrator.</p></div></footer>
 <div class="callbar"><a href="tel:+18887792284">Call 1-888-779-2284</a><a href="/get-a-quote/">Free quote</a></div>
 <script>document.documentElement.classList.add('js');
@@ -693,6 +852,21 @@ document.querySelectorAll('form.qform').forEach(function(f){
 });
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');io.unobserve(e.target)}})},{threshold:.25});
 document.querySelectorAll('.chart').forEach(function(c){io.observe(c)});}else{document.querySelectorAll('.chart').forEach(function(c){c.classList.add('seen')});}
+
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, IO='IntersectionObserver' in window;
+var pb=document.querySelector('.progress span'),mb=document.querySelector('.minibar'),hd=document.querySelector('.site-head');
+function onS(){var h=document.documentElement,p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(pb)pb.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';if(mb&&hd)mb.classList.toggle('on',hd.getBoundingClientRect().bottom<0);}
+window.addEventListener('scroll',onS,{passive:true});onS();
+if(IO&&!rm){
+ var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,to=parseFloat(el.getAttribute('data-to')),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',cm=el.getAttribute('data-comma')==='1',fin=el.textContent,t0=null;
+  if(isNaN(to)){return}
+  function fmt(v){var s=Math.round(v).toString();if(cm)s=s.replace(/\B(?=(\d{3})+(?!\d))/g,',');return pre+s+suf}
+  function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1600),ez=1-Math.pow(1-k,3);el.textContent=fmt(to*ez);if(k<1)requestAnimationFrame(step);else el.textContent=fin;}
+  requestAnimationFrame(step);})},{threshold:.5});
+ document.querySelectorAll('.stat-n').forEach(function(el){if(/^[\$0-9,.]+/.test(el.textContent)&&!/×/.test(el.textContent))cio.observe(el)});
+ var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');rio.unobserve(e.target)}})},{threshold:.15});
+ document.querySelectorAll('.tcard,.photo,.illus,.related li,.stat,.calc').forEach(function(el){el.classList.add('reveal');rio.observe(el)});
+}
 })();
 
 function swbCalc(fill,tank,cold,bath){var hot=120;if(bath<=cold)return{need:0,usable:tank*0.7,ok:true};

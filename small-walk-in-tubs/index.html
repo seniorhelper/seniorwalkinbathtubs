@@ -19,7 +19,9 @@
 <meta name="twitter:title" content="Small Walk-In Tubs for Small Bathrooms and Shower Spaces">
 <meta name="twitter:description" content="Small and compact walk-in tubs that fit tight bathrooms, shower stalls and short alcoves. Compare sizes, door styles, soak depth and walk-in tub shower combos.">
 <meta name="twitter:image" content="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/top_view_detailed_diagram5-1.jpg">
-<meta name="theme-color" content="#0d5c63">
+<meta name="theme-color" content="#0a2a33">
+
+<link rel="preconnect" href="https://cdn.shopify.com">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%230d5c63' d='M32 4c9 8 18 8 24 10v18c0 15-10 24-24 28C18 56 8 47 8 32V14c6-2 15-2 24-10z'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' d='M17 36c5-4 10 4 15 0s10-4 15 0'/%3E%3Cpath fill='%23fff' d='M28.6 29.2l-5-5 2.1-2.1 2.9 2.9 8.6-8.6 2.1 2.1z'/%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -509,29 +511,162 @@ ul.sources{font-size:1rem}
 .brand-logo{height:140px;width:auto;max-width:260px;object-fit:contain;display:block}
 @media (max-width:980px){.brand-logo{height:120px;max-width:220px}.site-head{position:static}}
 @media (max-width:380px){.brand-logo{max-width:180px}}
+/* ================= v2 visual layer ================= */
+html,body{overflow-x:clip}
+.site-head{position:relative;top:auto}
+.head-in{min-height:0;padding-top:6px;padding-bottom:6px}
+.brand-logo{height:168px;max-width:312px}
+@media (max-width:980px){.brand-logo{height:144px;max-width:264px}}
+@media (max-width:380px){.brand-logo{max-width:216px;height:130px}}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:90;pointer-events:none}
+.progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#fcd34d,#f59e0b)}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(10,42,51,.97);color:#fff;transform:translateY(-110%);transition:transform .45s ease;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.minibar.on{transform:none}
+.minibar-in{display:flex;align-items:center;gap:18px;padding-top:9px;padding-bottom:9px}
+.mb-name{color:#fff;font-weight:800;text-decoration:none;font-size:1.08rem}
+.mb-note{color:#dbeef1;font-size:.95rem}
+.mb-phone{margin-left:auto;color:#fff;font-weight:800;text-decoration:none}
+.mb-name:hover,.mb-phone:hover{color:#fcd34d}
+.minibar .btn{padding:8px 16px}
+@media (max-width:760px){.minibar{display:none}}
+@media (max-width:1040px){.mb-note{display:none}}
+.side{top:84px}
+/* inner hero */
+.page-hero{background:radial-gradient(900px 420px at 85% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(700px 380px at 0% 100%,rgba(252,211,77,.13),transparent 60%),linear-gradient(135deg,#0a2a33 0%,#0d4750 55%,#0b4f56 100%);color:#fff;padding:40px 0 92px}
+.page-hero h1{color:#fff}
+.page-hero .lead{color:#e3f2f4}.page-hero .lead strong{color:#fff}
+.page-hero .meta-line{color:#dbeef1}.page-hero .meta-line a{color:#fff}
+.page-hero .crumbs ol,.page-hero .crumbs li+li::before{color:#dbeef1}.page-hero .crumbs a{color:#fff}
+.page-hero .btn.ghost{background:transparent;color:#fff;border-color:#fff}.page-hero .btn.ghost:hover{background:#fff;color:#0a2a33}
+.page-hero .strip{background:rgba(255,255,255,.10);border-left-color:#fcd34d;color:#fff}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero .waterline path{fill:#fff}
+.page-hero .bubbles span{border-color:rgba(207,231,234,.45)}
+.ripples{position:absolute;right:-40px;top:-60px;width:560px;height:560px;z-index:1;pointer-events:none}
+.ripples circle{fill:none;stroke:rgba(207,231,234,.38);stroke-width:1.5;transform-origin:200px 200px;animation:ripple 10s ease-out infinite;opacity:0}
+.ripples circle:nth-child(2){animation-delay:3.3s}.ripples circle:nth-child(3){animation-delay:6.6s}
+@keyframes ripple{0%{transform:scale(.35);opacity:0}15%{opacity:1}100%{transform:scale(3.1);opacity:0}}
+@media (max-width:760px){.ripples{width:360px;height:360px;right:-140px;top:-40px}}
+/* layout + bands */
+.layout{background:none;padding-top:0}
+.home-body{background:none;padding-top:0}
+.band{position:relative;isolation:isolate;padding:48px 0 26px}
+.band::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;background:var(--bg,#fff);z-index:-1}
+.b-intro{--bg:#eef5f6;padding-top:30px}
+.home-body .b-intro{--bg:#eef5f6}
+.b-sky{--bg:#eef5f6}.b-white{--bg:#fff}.b-sand{--bg:#f7f5f0}.b-src{--bg:#fff}
+.prose .band>h2{margin-top:0}
+.b-night{color:#fff;padding:60px 0 44px}
+.b-night::before{background:radial-gradient(640px 320px at 92% 0%,rgba(126,200,208,.16),transparent 60%),linear-gradient(160deg,#0a2a33,#0d4750)}
+.b-night h2{color:#fff}
+.b-night>p,.b-night>ul li{color:#e3f2f4}
+.b-night>p a,.b-night>ul a{color:#9fe8ee}
+.b-night .faq{background:#fff;border:0;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.b-night .faq summary{color:#0a0a0a}.b-night .faq p{color:#1f2937}
+/* h2 wave accent */
+.prose h2::after{content:"";display:block;width:84px;height:12px;margin-top:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%230d5c63' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.b-night h2::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%23fcd34d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.prose h2.qtitle::after,.final h2::after{display:none}
+/* facts */
+.facts{border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#0d5c63,#fcd34d) border-box;border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px rgba(13,92,99,.14);margin-top:34px}
+.facts ul{list-style:none;padding:0}
+.facts li{position:relative;padding-left:34px}
+.facts li::before{content:"";position:absolute;left:0;top:.28em;width:22px;height:22px;border-radius:50%;background:#046c4e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6.5l2.5 2.5L10 3.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* stats */
+.stats{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 0;margin:30px 0 0}
+.stats::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;z-index:-1;background:radial-gradient(520px 260px at 12% 0%,rgba(252,211,77,.10),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56)}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 18px 16px}
+.stat-n{font-size:clamp(2.2rem,4.2vw,3.1rem);font-weight:800;color:#fcd34d;margin:0;line-height:1.05;font-variant-numeric:tabular-nums}
+.stat-l{color:#fff;margin:8px 0 6px;font-size:1.02rem;line-height:1.4}
+.stat-s{color:#dbeef1;font-size:.88rem;margin:0}
+@media (max-width:760px){.stats{grid-template-columns:1fr}}
+/* tables */
+th{background:#0d5c63;color:#fff}
+tbody tr:nth-child(even) td{background:#f4f9fa}
+.tscroll{box-shadow:0 10px 26px rgba(10,42,51,.08);border-radius:14px}
+/* charts */
+.chart,.illus{border:0;box-shadow:0 16px 38px rgba(10,42,51,.12);border-radius:18px;padding:22px 22px 14px}
+.photo{border:0;box-shadow:0 16px 38px rgba(10,42,51,.14);border-radius:18px}
+.hb-row{margin:14px 0}
+.hb-lab{font-size:1rem;color:#1f2937;margin-bottom:5px;line-height:1.35}
+.hb-bar{position:relative;height:26px;margin-right:130px}
+.hb-fill{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:6px;background:linear-gradient(90deg,#0d5c63,#13808a);transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.hb-fill.hl{background:linear-gradient(90deg,#b45309,#d97706)}
+.hb-val{position:absolute;left:calc(var(--w) + 10px);top:50%;transform:translateY(-50%);font-weight:800;white-space:nowrap;color:#000;font-size:1rem;transition:left 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .hb-fill{width:0}
+.js .chart:not(.seen) .hb-val{left:10px}
+.vb{display:flex;gap:18px;height:300px;padding-top:6px}
+.vb-col{flex:1;display:flex;flex-direction:column;min-width:0}
+.vb-stack{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:2px solid #6b7280}
+.vb-fill{display:block;width:min(96px,72%);height:calc(var(--h) * .82);border-radius:8px 8px 0 0;background:linear-gradient(180deg,#13808a,#0d5c63);transition:height 1.4s cubic-bezier(.2,.7,.2,1)}
+.vb-fill.hl{background:linear-gradient(180deg,#d97706,#b45309)}
+.vb-val{font-weight:800;margin-bottom:6px;color:#000}
+.vb-lab{text-align:center;padding-top:8px;font-size:1rem;color:#1f2937}
+.js .chart:not(.seen) .vb-fill{height:0}
+.rb-axis{position:relative;height:22px;margin:4px 0 8px;font-size:.85rem;color:#374151}
+.rb-axis span{position:absolute;transform:translateX(-50%)}
+.rb-axis span:first-child{transform:none}.rb-axis span:last-child{transform:translateX(-100%)}
+.rb-row{margin:16px 0}
+.rb-track{position:relative;height:24px;background:#e5eef0;border-radius:12px}
+.rb-fill{position:absolute;top:0;bottom:0;border-radius:12px;background:linear-gradient(90deg,#0d5c63,#13808a);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .rb-fill{transform:scaleX(0)}
+.rb-dot{position:absolute;top:50%;width:18px;height:18px;margin-left:-9px;transform:translateY(-50%);border-radius:50%;background:#fff;border:3px solid #000}
+/* type cards */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+@media (max-width:900px){.tcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.tcards{grid-template-columns:1fr}}
+.tcard{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:16px;background:#fff;text-decoration:none;color:#0a0a0a;border-top:5px solid #0d5c63;box-shadow:0 12px 28px rgba(10,42,51,.10);transition:transform .35s ease,box-shadow .35s ease}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(10,42,51,.16);color:#0a0a0a}
+.tcard:nth-child(3n+2){border-top-color:#b45309}.tcard:nth-child(3n){border-top-color:#046c4e}
+.tcard svg{width:46px;height:46px;fill:none;stroke:#0d5c63;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.tcard strong{color:#000;font-size:1.12rem}.tcard span{color:#374151;font-size:1rem;line-height:1.45}
+/* callouts, related, cta, final */
+.callout{box-shadow:0 10px 24px rgba(10,42,51,.08)}
+.related a{border:0;border-top:4px solid #0d5c63;box-shadow:0 10px 26px rgba(10,42,51,.10);transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(10,42,51,.16)}
+.cta-band{background:radial-gradient(500px 220px at 100% 0%,rgba(252,211,77,.18),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);box-shadow:0 18px 40px rgba(10,42,51,.25)}
+.final{background:radial-gradient(760px 380px at 90% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(252,211,77,.12),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);border-top:0;color:#fff}
+.final h2{color:#fff}
+.final-grid>div:first-child p{color:#e3f2f4}
+.final .bigphone a{color:#fff}
+.final .qbox{box-shadow:12px 12px 0 #fcd34d}
+.btn.go.big{position:relative;overflow:hidden}
+.btn.go.big::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,70%{left:-60%}100%{left:130%}}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.seen{opacity:1;transform:none}
+.author{background:#eef5f6;border:0;border-left:6px solid #0d5c63;border-radius:0 14px 14px 0;padding:16px 20px}
+.toc{box-shadow:0 10px 26px rgba(10,42,51,.08);border:0}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
 </style>
 </head>
 <body data-type="money">
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="minibar"><div class="wrap minibar-in"><a class="mb-name" href="/">Senior Walk In Bathtubs</a><span class="mb-note">One-day install or ship to US and Canada</span><a class="mb-phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div></div>
 <div class="util"><div class="wrap util-in"><span>BBB Accredited, A+ rating</span><span>Authorized Ella’s Bubbles dealer since 2012</span><span>Ships to the US and Canada</span><span><a href="tel:+18887792284">Call 1-888-779-2284</a></span></div></div>
 <header class="site-head"><div class="wrap head-in">
-<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" decoding="async"></a>
+<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" fetchpriority="high" decoding="async"></a>
 <nav class="mainnav" aria-label="Main"><ul><li class="has-sub"><a href="/">Walk-in tubs</a><ul class="subnav"><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small and compact tubs</a></li></ul></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
 <div class="head-cta"><a class="phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div>
 <details class="mnav"><summary aria-label="Open menu">Menu</summary><ul><li><a href="/">Home</a></li><li class="indent"><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li class="indent"><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li class="indent"><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li class="indent"><a href="/small-walk-in-tubs/">Small and compact tubs</a></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></details>
 </div></header>
-<main id="main"><section class="hero page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Small walk-in tubs</li></ol></nav><h1>Small Walk-In Tubs for Small Bathrooms, Short Alcoves and Shower Spaces</h1><p class="lead speakable"><strong>Small walk-in tubs</strong> prove that a tight bathroom does not rule out a safe, deep, seated bath. Compact models as short as 40 to 45 inches can fit where a standard 60-inch tub never could, including many former shower stalls, and they still give you a low step-in door, a chair-height seat and a deep soak. Here is how to find a compact walk-in tub that fits your space, what you trade for the smaller footprint, and how to combine a small tub with a shower.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 16 minute read.</p>
+<main id="main"><section class="hero page-hero"><svg class="ripples" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/></svg><div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Small walk-in tubs</li></ol></nav><h1>Small Walk-In Tubs for Small Bathrooms, Short Alcoves and Shower Spaces</h1><p class="lead speakable"><strong>Small walk-in tubs</strong> prove that a tight bathroom does not rule out a safe, deep, seated bath. Compact models as short as 40 to 45 inches can fit where a standard 60-inch tub never could, including many former shower stalls, and they still give you a low step-in door, a chair-height seat and a deep soak. Here is how to find a compact walk-in tub that fits your space, what you trade for the smaller footprint, and how to combine a small tub with a shower.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 16 minute read.</p>
 <div class="hero-actions"><a class="btn go" href="/get-a-quote/">Get a free quote</a><a class="btn ghost" href="tel:+18887792284">Call 1-888-779-2284</a></div>
 <p class="strip"><strong>One-day installation</strong> by factory-certified installers in many areas, <strong>or DIY delivery</strong> to your door anywhere in the US or Canada.</p>
-</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>Compact walk-in tubs come as short as about 40 to 45 inches long, compared with a standard 60-inch tub.</li><li>Examples include the Ella’s Bubbles Front Entry (32 by 40 inches) and Mobile (26 by 45 inches), and the Hydro Dimensions HD2645 (26 by 45 inches).</li><li>Seated design means a short tub can still give a deep soak.</li><li>Inward-swinging doors save floor space in tight bathrooms; front-entry doors suit narrow rooms.</li><li>A handheld shower and a tall surround turn a small walk-in tub into a tub-and-shower combination.</li><li>We measure the space, doorways and water heater before recommending a model.</li></ul></div><nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-small-bathrooms-need-a-different-approach">Why small bathrooms need a different approach</a></li><li><a href="#how-small-can-a-walk-in-tub-be">How small can a walk-in tub be?</a></li><li><a href="#short-vs-narrow-know-which-problem-you-have">Short vs. narrow: know which problem you have</a></li><li><a href="#door-styles-for-tight-spaces">Door styles for tight spaces</a></li><li><a href="#what-you-trade-for-a-smaller-footprint">What you trade for a smaller footprint</a></li><li><a href="#walk-in-tub-and-shower-combination-in-a-small-bathroom">Walk-in tub and shower combination in a small bathroom</a></li><li><a href="#converting-a-shower-stall-to-a-walk-in-tub">Converting a shower stall to a walk-in tub</a></li><li><a href="#measuring-a-small-space-correctly">Measuring a small space correctly</a></li><li><a href="#small-walk-in-tubs-in-condos-apartments-and-manufactured-hom">Small walk-in tubs in condos, apartments and manufactured homes</a></li><li><a href="#small-bathroom-layouts-that-work">Small bathroom layouts that work</a></li><li><a href="#why-smaller-tubs-are-easier-on-your-water-heater">Why smaller tubs are easier on your water heater</a></li><li><a href="#making-the-rest-of-a-small-bathroom-safer">Making the rest of a small bathroom safer</a></li><li><a href="#a-checklist-for-buying-a-compact-walk-in-tub">A checklist for buying a compact walk-in tub</a></li><li><a href="#cost-of-a-small-walk-in-tub">Cost of a small walk-in tub</a></li><li><a href="#installation-and-delivery">Installation and delivery</a></li><li><a href="#mistakes-to-avoid-in-small-bathrooms">Mistakes to avoid in small bathrooms</a></li><li><a href="#getting-in-and-out-of-a-compact-tub-safely">Getting in and out of a compact tub safely</a></li><li><a href="#when-a-tub-is-not-the-right-answer">When a tub is not the right answer</a></li><li><a href="#planning-a-few-years-ahead">Planning a few years ahead</a></li><li><a href="#what-to-send-us-for-a-fast-recommendation">What to send us for a fast recommendation</a></li><li><a href="#why-buy-a-compact-walk-in-tub-from-us">Why buy a compact walk-in tub from us</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>Compact walk-in tubs come as short as about 40 to 45 inches long, compared with a standard 60-inch tub.</li><li>Examples include the Ella’s Bubbles Front Entry (32 by 40 inches) and Mobile (26 by 45 inches), and the Hydro Dimensions HD2645 (26 by 45 inches).</li><li>Seated design means a short tub can still give a deep soak.</li><li>Inward-swinging doors save floor space in tight bathrooms; front-entry doors suit narrow rooms.</li><li>A handheld shower and a tall surround turn a small walk-in tub into a tub-and-shower combination.</li><li>We measure the space, doorways and water heater before recommending a model.</li></ul></div><aside class="stats" aria-label="Key figures"><div class="stat"><p class="stat-n" data-to="72" data-pre="" data-suf="%" data-comma="0">72%</p><p class="stat-l">of a typical walk-in tub bath comes from your water heater</p><p class="stat-s">DOE 120°F setting, mixing math</p></div><div class="stat"><p class="stat-n" data-to="68" data-pre="" data-suf="%" data-comma="0">68%</p><p class="stat-l">of bathroom injuries happened in or around the tub or shower</p><p class="stat-s">CDC MMWR</p></div><div class="stat"><p class="stat-n" data-to="2012" data-pre="" data-suf="" data-comma="0">2012</p><p class="stat-l">authorized Ella’s Bubbles dealer since</p><p class="stat-s">Aging Safely Baths</p></div></aside><section class="band b-intro">
+<nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-small-bathrooms-need-a-different-approach">Why small bathrooms need a different approach</a></li><li><a href="#how-small-can-a-walk-in-tub-be">How small can a walk-in tub be?</a></li><li><a href="#short-vs-narrow-know-which-problem-you-have">Short vs. narrow: know which problem you have</a></li><li><a href="#door-styles-for-tight-spaces">Door styles for tight spaces</a></li><li><a href="#what-you-trade-for-a-smaller-footprint">What you trade for a smaller footprint</a></li><li><a href="#walk-in-tub-and-shower-combination-in-a-small-bathroom">Walk-in tub and shower combination in a small bathroom</a></li><li><a href="#converting-a-shower-stall-to-a-walk-in-tub">Converting a shower stall to a walk-in tub</a></li><li><a href="#measuring-a-small-space-correctly">Measuring a small space correctly</a></li><li><a href="#small-walk-in-tubs-in-condos-apartments-and-manufactured-hom">Small walk-in tubs in condos, apartments and manufactured homes</a></li><li><a href="#small-bathroom-layouts-that-work">Small bathroom layouts that work</a></li><li><a href="#why-smaller-tubs-are-easier-on-your-water-heater">Why smaller tubs are easier on your water heater</a></li><li><a href="#making-the-rest-of-a-small-bathroom-safer">Making the rest of a small bathroom safer</a></li><li><a href="#a-checklist-for-buying-a-compact-walk-in-tub">A checklist for buying a compact walk-in tub</a></li><li><a href="#cost-of-a-small-walk-in-tub">Cost of a small walk-in tub</a></li><li><a href="#installation-and-delivery">Installation and delivery</a></li><li><a href="#mistakes-to-avoid-in-small-bathrooms">Mistakes to avoid in small bathrooms</a></li><li><a href="#getting-in-and-out-of-a-compact-tub-safely">Getting in and out of a compact tub safely</a></li><li><a href="#when-a-tub-is-not-the-right-answer">When a tub is not the right answer</a></li><li><a href="#planning-a-few-years-ahead">Planning a few years ahead</a></li><li><a href="#what-to-send-us-for-a-fast-recommendation">What to send us for a fast recommendation</a></li><li><a href="#why-buy-a-compact-walk-in-tub-from-us">Why buy a compact walk-in tub from us</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</section><section class="band b-white" aria-labelledby="why-small-bathrooms-need-a-different-approach">
 <h2 id="why-small-bathrooms-need-a-different-approach">Why small bathrooms need a different approach</h2>
 <p>Many older homes, condos and apartments have bathrooms that were never designed with aging in mind. The tub may be shorter than 60 inches. The bathroom may have only a stall shower. The toilet may sit so close to the tub that an outward-swinging door would hit it. In these rooms, the standard walk-in tub on a brochure simply will not fit.</p>
 <p>That does not mean you are stuck with a tub you cannot get into, or a shower you cannot stand in. Compact walk-in tubs are built specifically for these spaces. Because you sit upright rather than lie back, a walk-in tub does not need to be long to give you a deep soak. The water rises around you while you sit on a chair-height seat, often reaching higher on your body than a longer standard tub where you recline.</p>
+</section><section class="band b-sky" aria-labelledby="how-small-can-a-walk-in-tub-be">
 <h2 id="how-small-can-a-walk-in-tub-be">How small can a walk-in tub be?</h2>
 <p>Compact walk-in tubs come in several shapes. Here are published examples from the brands we carry.</p>
 <div class="tscroll"><table><thead><tr><th scope="col">Model</th><th scope="col">Published size</th><th scope="col">Door style</th><th scope="col">Good for</th></tr></thead><tbody><tr><td>Ella’s Bubbles Front Entry</td><td>32 by 40 inches</td><td>Outward, on the short end</td><td>Very short spaces, some shower-stall conversions</td></tr><tr><td>Ella’s Bubbles Mobile</td><td>26 by 45 inches</td><td>Outward</td><td>Narrow, short spaces</td></tr><tr><td>Hydro Dimensions HD2645</td><td>26 by 45 inches (about 39.5 inches tall)</td><td>Varies by configuration</td><td>Compact alcoves and stall conversions</td></tr><tr><td>Ella’s Bubbles Lounger</td><td>27 by 60 inches</td><td>Outward</td><td>Standard-length alcoves that are narrow</td></tr><tr><td>Ella’s Bubbles Capri</td><td>30 by 52 inches</td><td>Outward</td><td>Shorter-than-standard alcoves</td></tr></tbody></table></div>
 <p>Hydro Dimensions model numbers generally describe the footprint, so the HD2645 is about 26 inches wide and 45 inches long. Other compact Hydro Dimensions sizes, such as the HD2653, follow the same pattern. Always confirm the current spec sheet before ordering, since dimensions and options change.</p>
 <figure class="photo"><img src="https://www.agingsafelybaths.com/wp-content/uploads/2016/10/top_view_detailed_diagram5-1.jpg" alt="Top-view diagram of a walk-in tub layout" loading="lazy" decoding="async" width="1200" height="800" onerror="this.closest('figure').style.display='none'"><figcaption>A top-view layout helps confirm how a compact walk-in tub, its door and the bathroom fixtures fit together.</figcaption></figure>
+</section><section class="band b-white" aria-labelledby="short-vs-narrow-know-which-problem-you-have">
 <h2 id="short-vs-narrow-know-which-problem-you-have">Short vs. narrow: know which problem you have</h2>
 <p>Small bathrooms usually have one of two problems, and the right tub depends on which.</p>
 <h3>The space is short</h3>
@@ -540,10 +675,12 @@ ul.sources{font-size:1rem}
 <p>If the length is fine but the width is tight, or the room is narrow so a door swing is a problem, look at narrow tubs around 26 to 27 inches wide, such as the Mobile or the 27-by-60-inch Lounger, and pay close attention to door style.</p>
 <h3>Both short and narrow</h3>
 <p>The tightest spaces call for the smallest footprints. A front-entry design can work in rooms where there is no side wall space for a door at all.</p>
+</section><section class="band b-sand" aria-labelledby="door-styles-for-tight-spaces">
 <h2 id="door-styles-for-tight-spaces">Door styles for tight spaces</h2>
 <p>In a small bathroom, the door decides whether a tub works.</p>
 <ul><li><strong>Inward-swinging doors</strong> open into the tub, so they need no clearance in the bathroom. They are the classic choice when a toilet or vanity sits close to the tub. The trade-off is a slightly narrower entry path inside the tub.</li><li><strong>Outward-swinging doors</strong> open into the room. They make entry easier, especially with a walker, but need clear floor space in front of the tub.</li><li><strong>Front-entry doors</strong> sit on the short end of the tub. In a narrow bathroom where you approach the tub head-on, this can be the only layout that works.</li></ul>
 <p>Before choosing, measure the clear floor space in front of the tub and note where the toilet, vanity and bathroom door are. Then sketch the door swing. If an outward door would hit the toilet, choose inward or front entry.</p>
+</section><section class="band b-white" aria-labelledby="what-you-trade-for-a-smaller-footprint">
 <h2 id="what-you-trade-for-a-smaller-footprint">What you trade for a smaller footprint</h2>
 <p>Compact tubs are a smart solution, but it is fair to know the trade-offs.</p>
 <div class="tscroll"><table><thead><tr><th scope="col">Consideration</th><th scope="col">What to expect in a compact tub</th></tr></thead><tbody><tr><td>Soak depth</td><td>Often very good, because you sit upright</td></tr><tr><td>Leg room</td><td>Less than a longer tub; tall bathers should check interior length</td></tr><tr><td>Seat width</td><td>Can be narrower; larger bathers should compare seat specs</td></tr><tr><td>Jets</td><td>Available on many compact models, sometimes with fewer jets</td></tr><tr><td>Water volume</td><td>Often lower, which is easier on your water heater</td></tr><tr><td>Showering</td><td>Possible with a handheld shower and surround, but space to stand is limited</td></tr></tbody></table></div>
@@ -560,24 +697,29 @@ ul.sources{font-size:1rem}
 <output id="c-out" class="calc-out" aria-live="polite"></output>
 <p class="muted small">Assumes a 120°F heater setting and that roughly 70% of a tank’s rated capacity comes out hot before the temperature drops. The first-hour rating on your heater’s yellow EnergyGuide label is the more exact number.</p>
 </div>
+</section><section class="band b-sky" aria-labelledby="walk-in-tub-and-shower-combination-in-a-small-bathroom">
 <h2 id="walk-in-tub-and-shower-combination-in-a-small-bathroom">Walk-in tub and shower combination in a small bathroom</h2>
 <p>In a home with one small bathroom, the walk-in tub often has to serve people who shower as well as people who soak. A compact walk-in tub can double as a shower space when it is set up correctly:</p>
 <ul><li><strong>Handheld shower on a long hose</strong>, mounted on a slide bar so it can be used seated or standing.</li><li><strong>A surround that reaches high enough</strong> to keep water off drywall, using a wall kit or extension panels.</li><li><strong>A curtain rod or glass screen</strong> to keep water in the tub area.</li><li><strong>Grab bars</strong> positioned for both seated bathing and standing showers.</li><li><strong>A textured floor</strong> with enough flat area near the faucet to stand safely.</li></ul>
 <p>Many people find they prefer a seated shower in a walk-in tub over standing in a slippery stall. You get the warm water without the balance risk.</p>
+</section><section class="band b-white" aria-labelledby="converting-a-shower-stall-to-a-walk-in-tub">
 <h2 id="converting-a-shower-stall-to-a-walk-in-tub">Converting a shower stall to a walk-in tub</h2>
 <p>Some of our customers have only a stall shower and want a bath again, or find standing to shower tiring and unsafe. Converting a shower stall to a compact walk-in tub is often possible, but it is more involved than replacing a tub with a tub.</p>
 <ul><li><strong>Space.</strong> Stall showers are often 36 by 36 inches, 32 by 48 inches or 30 by 60 inches. Compare the stall dimensions carefully with compact tub footprints.</li><li><strong>Drain.</strong> Shower drains are usually centered; tub drains are at one end. The drain may need to move.</li><li><strong>Supply lines.</strong> A tub filler and handheld shower may need new supply connections.</li><li><strong>Walls.</strong> The surround usually needs to be finished around the new tub.</li><li><strong>Water heater.</strong> Showers use less hot water than baths. Check the heater before adding a tub.</li></ul>
 <p>Because of the extra plumbing, stall conversions can take longer than our typical one-day tub replacement. We will tell you exactly what your conversion involves before you commit. If the space is too small for any tub, a low-curb walk-in shower or roll-in shower may be better, and we supply those too.</p>
 <aside class="cta-band"><p><strong>Have a small bathroom? Send us the measurements and we will tell you what fits.</strong> Our specialists answer in plain language, with no pressure.</p>
 <div class="cta-actions"><a class="btn go" href="/get-a-quote/">Get a free quote</a><a class="btn ghost" href="tel:+18887792284">Call 1-888-779-2284</a></div></aside>
+</section><section class="band b-sand" aria-labelledby="measuring-a-small-space-correctly">
 <h2 id="measuring-a-small-space-correctly">Measuring a small space correctly</h2>
 <p>In a small bathroom, an inch matters. Measure carefully.</p>
 <ol class="steps"><li><strong>Length</strong> of the alcove or stall, wall to wall, at the floor, middle and top. Use the smallest number.</li><li><strong>Width</strong>, from the back wall to the front edge, at the same three heights.</li><li><strong>Height</strong> to any window sill, shelf or niche above the tub area.</li><li><strong>Drain location</strong> and which end the faucet is on.</li><li><strong>Clear floor space</strong> in front of the tub for an outward door, if you want one.</li><li><strong>Doorways and hallways</strong> the tub must pass through.</li><li><strong>Water heater</strong> size in gallons.</li></ol>
 <p>Our step-by-step <a href="/blog/how-to-measure-for-a-walk-in-tub/">measuring guide</a> shows exactly where to place the tape.</p>
 <figure class="illus"><svg viewBox="0 0 720 330" role="img" aria-label="Top-down diagram of a standard 60 by 30 inch tub alcove with the three measurements to take: length, width and doorway" class="svgc"><rect x="100" y="60" width="520" height="190" class="wall"/><rect x="112" y="72" width="496" height="166" rx="10" class="tub"/><path d="M112 290 H608" class="dim"/><path d="M112 282 V298 M608 282 V298" class="dim"/><text x="360" y="316" text-anchor="middle" class="lab">Length: back wall to back wall (a standard alcove is about 60 in)</text><path d="M660 72 V238" class="dim"/><path d="M652 72 H668 M652 238 H668" class="dim"/><text x="672" y="160" class="lab" transform="rotate(90 672 160)" text-anchor="middle">Width (about 30–32 in)</text><text x="360" y="40" text-anchor="middle" class="lab">Measure at three heights; use the smallest number</text></svg><figcaption>Most existing tubs sit in a three-wall alcove. Measure length and width at the floor, the middle and the top, and write down the smallest of each.</figcaption></figure>
+</section><section class="band b-white" aria-labelledby="small-walk-in-tubs-in-condos-apartments-and-manufactured-hom">
 <h2 id="small-walk-in-tubs-in-condos-apartments-and-manufactured-hom">Small walk-in tubs in condos, apartments and manufactured homes</h2>
 <p>Compact tubs are especially popular in homes where space and structure are limited.</p>
 <ul><li><strong>Condos and apartments.</strong> Check with your association about work hours, contractor insurance and plumbing rules before scheduling. A compact tub’s lower water volume can also be easier on shared plumbing and water heaters.</li><li><strong>Manufactured homes.</strong> Bathrooms are often small and floors lighter. A compact tub means less weight when filled, but the floor should still be checked.</li><li><strong>Older homes.</strong> Pre-war bathrooms often have short tubs. A compact walk-in tub may fit the original space with no framing changes.</li></ul>
+</section><section class="band b-sky" aria-labelledby="small-bathroom-layouts-that-work">
 <h2 id="small-bathroom-layouts-that-work">Small bathroom layouts that work</h2>
 <p>Every small bathroom is different, but most fall into a handful of patterns. Here is how a compact walk-in tub typically fits each one.</p>
 <h3>The short alcove (about 48 to 54 inches)</h3>
@@ -590,40 +732,52 @@ ul.sources{font-size:1rem}
 <p>The toilet sits inches from the tub front. An outward door would hit it, so an inward-swinging door is the usual answer. Make sure the grab bar outside the tub does not interfere with the toilet, and consider a grab bar that serves both.</p>
 <h3>The small bathroom shared by two generations</h3>
 <p>One person needs a walk-in tub, another prefers to shower standing. A compact walk-in tub with a handheld shower on a slide bar, a tall surround and a curtain or screen serves both. Choose a model with some flat floor area near the faucet for standing showers.</p>
+</section><section class="band b-white" aria-labelledby="why-smaller-tubs-are-easier-on-your-water-heater">
 <h2 id="why-smaller-tubs-are-easier-on-your-water-heater">Why smaller tubs are easier on your water heater</h2>
 <p>One quiet benefit of a compact tub is that it usually holds less water, which makes a hot, full bath easier to achieve with an ordinary water heater. At a typical 120°F heater setting, with cold water entering at 55°F and a bath at 102°F, about 72% of the fill comes from the water heater.</p>
 <div class="tscroll"><table><thead><tr><th scope="col">Tub fill</th><th scope="col">Hot water needed (approximately)</th></tr></thead><tbody><tr><td>40 gallons</td><td>29 gallons</td></tr><tr><td>50 gallons</td><td>36 gallons</td></tr><tr><td>60 gallons</td><td>43 gallons</td></tr><tr><td>80 gallons</td><td>58 gallons</td></tr></tbody></table></div>
 <p>A typical 40- or 50-gallon tank handles a compact tub much more comfortably than a large two-seat model. Use the calculator on this page to check your own numbers.</p>
+</section><section class="band b-sand" aria-labelledby="making-the-rest-of-a-small-bathroom-safer">
 <h2 id="making-the-rest-of-a-small-bathroom-safer">Making the rest of a small bathroom safer</h2>
 <p>In a small bathroom, every fixture is close to every other, which can be an advantage: grab bars and supports can be within reach wherever you stand. A few changes make a compact bathroom much safer.</p>
 <ul><li><strong>A grab bar beside the toilet</strong> and one outside the tub for stepping out.</li><li><strong>A comfort-height toilet</strong>, since getting on and off the toilet becomes a larger share of bathroom injuries with age, according to CDC data.</li><li><strong>Slip-resistant flooring or a rubber-backed mat</strong> outside the tub.</li><li><strong>Bright, even lighting</strong> and a night-light for nighttime trips.</li><li><strong>A pocket door or outward-swinging bathroom door</strong>, so a person who falls cannot block the door from inside.</li><li><strong>A small fold-down bench</strong> for sitting to dry off, if space allows.</li></ul>
 <p>Our guide to <a href="/blog/senior-bathroom-safety-upgrades/">senior bathroom safety upgrades</a> covers these in detail.</p>
+</section><section class="band b-white" aria-labelledby="a-checklist-for-buying-a-compact-walk-in-tub">
 <h2 id="a-checklist-for-buying-a-compact-walk-in-tub">A checklist for buying a compact walk-in tub</h2>
 <ul><li>Measure length, width and height at three points and use the smallest.</li><li>Note the drain location and faucet end.</li><li>Decide on inward, outward or front-entry door based on the room.</li><li>Check seat width and interior length against the bather.</li><li>Check doorways and hallways for the tub’s path in.</li><li>Confirm your water heater capacity.</li><li>Decide whether you need a shower in the same space.</li><li>Decide whether you want jets and whether an electrical circuit is available.</li><li>Ask for the warranty terms in writing.</li></ul>
+</section><section class="band b-sky" aria-labelledby="cost-of-a-small-walk-in-tub">
 <h2 id="cost-of-a-small-walk-in-tub">Cost of a small walk-in tub</h2>
 <p>Compact tubs are not always cheaper than standard ones, because the door, seat and safety systems cost about the same to build regardless of length. Savings usually come from simpler installation: a tub that fits the existing space avoids framing changes, and a smaller water volume may avoid a water heater upgrade. Retirement Living reports standard soaking walk-in tubs typically cost $2,500 to $5,000, and jets or larger sizes raise that. See our <a href="/walk-in-tub-cost/">cost guide</a> for the full picture.</p>
+</section><section class="band b-white" aria-labelledby="installation-and-delivery">
 <h2 id="installation-and-delivery">Installation and delivery</h2>
 <p>Our factory-certified installers install compact walk-in tubs in many areas, usually in one day when the tub replaces an existing tub. Shower-stall conversions may take longer because of drain and supply changes. If you prefer your own installer, or you live in Canada, we drop-ship the tub with spec sheets and rough-in dimensions. Every tub carries the manufacturer’s warranty plus a 1-year labor warranty from Aging Safely Baths.</p>
+</section><section class="band b-sand" aria-labelledby="mistakes-to-avoid-in-small-bathrooms">
 <h2 id="mistakes-to-avoid-in-small-bathrooms">Mistakes to avoid in small bathrooms</h2>
 <ul><li><strong>Measuring only at the floor.</strong> Walls are rarely perfectly straight. A space that is 48 inches at the floor may be 47 at the top.</li><li><strong>Forgetting the door swing.</strong> An outward door that hits the toilet makes the tub hard to use every day.</li><li><strong>Choosing by length alone.</strong> A short tub that is too narrow for the bather’s hips is not a good fit.</li><li><strong>Ignoring the path in.</strong> Small bathrooms often have narrow doors and tight hallway turns.</li><li><strong>Losing the only shower.</strong> If the bathroom must also serve a person who showers standing, plan the handheld shower and surround from the start.</li><li><strong>Skipping the grab bar outside the tub.</strong> Stepping out onto the bathroom floor is a moment that needs support.</li></ul>
+</section><section class="band b-white" aria-labelledby="getting-in-and-out-of-a-compact-tub-safely">
 <h2 id="getting-in-and-out-of-a-compact-tub-safely">Getting in and out of a compact tub safely</h2>
 <p>A compact tub has the same safety features as a full-size walk-in tub, but the space is tighter, so technique helps.</p>
 <ol class="steps"><li>Open the door fully and hold the grab bar before stepping in.</li><li>Step in with your stronger leg first, then turn and sit on the seat.</li><li>Bring the other leg in, then close and latch the door.</li><li>Use the handheld shower to stay warm while the tub fills.</li><li>After bathing, let the tub drain completely before opening the door.</li><li>Stand slowly using the grab bar, pause for a moment, then step out with your stronger leg first.</li></ol>
 <p>Keep a towel and robe within reach of the seat so you can start drying off before you stand.</p>
+</section><section class="band b-sky" aria-labelledby="when-a-tub-is-not-the-right-answer">
 <h2 id="when-a-tub-is-not-the-right-answer">When a tub is not the right answer</h2>
 <p>Sometimes a small bathroom is simply too small for any tub, or the bather cannot step even a few inches. In those cases, a shower solution may be safer.</p>
 <ul><li><strong>A low-curb walk-in shower</strong> replaces a tub or stall with a shower that has a small curb, a fold-down seat and a handheld shower.</li><li><strong>A curbless or roll-in shower</strong> removes the curb entirely, which suits wheelchair users and people who shuffle when they walk.</li><li><strong>A tub-to-shower conversion</strong> can often use the existing tub space.</li></ul>
 <p>We supply Bestbath roll-in showers, and our sister site <a href="https://www.showers4less.com/" rel="noopener" target="_blank">Showers4Less</a> offers shower kits and bases. Our <a href="/blog/walk-in-tub-vs-roll-in-shower/">walk-in tub vs. roll-in shower guide</a> compares the options.</p>
+</section><section class="band b-white" aria-labelledby="planning-a-few-years-ahead">
 <h2 id="planning-a-few-years-ahead">Planning a few years ahead</h2>
 <p>If mobility is likely to change, think about the next five years when choosing a compact tub. An outward or wider door is easier with a walker later. A seat at chair height is easier as knees stiffen. Grab bars mounted into studs now can support more weight later. A tub that works today and in five years saves the cost and disruption of a second project.</p>
+</section><section class="band b-sand" aria-labelledby="what-to-send-us-for-a-fast-recommendation">
 <h2 id="what-to-send-us-for-a-fast-recommendation">What to send us for a fast recommendation</h2>
 <p>The quickest way to find out which compact tub fits is to send a few photos and numbers. Take one photo standing in the bathroom doorway looking at the tub or shower, one close-up of the faucet wall, one of the floor in front of the tub, and one of the label on your water heater. Add your three length and width measurements, the height of any window or shelf above the tub, and the width of the bathroom door. With that, a specialist can usually narrow the options to two or three models on the first call, explain the trade-offs of each, and tell you whether your space is a straightforward one-day replacement or a conversion that needs more plumbing work. If it turns out no tub will fit comfortably, we will say so and show you the shower options instead, because the goal is a safe bath, not a sale.</p>
 <p>Most small-bathroom projects are simpler than families expect. The hardest part is usually the first step: getting accurate measurements and an honest opinion about what the space can hold.</p>
 <p>Once you have the numbers, the choice usually becomes obvious within one short conversation.</p>
 <p>And if the numbers point to a shower instead, you will hear that from us too.</p>
+</section><section class="band b-white" aria-labelledby="why-buy-a-compact-walk-in-tub-from-us">
 <h2 id="why-buy-a-compact-walk-in-tub-from-us">Why buy a compact walk-in tub from us</h2>
 <p>Because we carry several brands, including Ella’s Bubbles (an authorized dealer since 2012), Hydro Dimensions, Meditub and Bestbath, we can match the footprint, door style and seat to your actual room rather than trying to squeeze in one brand’s model. We are BBB Accredited with an A+ rating, install in one day in many areas with factory-certified installers, ship anywhere in the US and Canada, and back every order with the manufacturer’s warranty and our 1-year labor warranty.</p>
 <p>Send us the measurements and a photo of your bathroom. Call 1-888-779-2284 or <a href="/get-a-quote/">request a free quote</a>, and we will tell you honestly what fits.</p>
+</section><section class="band b-night" aria-labelledby="frequently-asked-questions">
 <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 <details class="faq"><summary>What is the smallest walk-in tub available?</summary><p>Compact walk-in tubs come as short as about 40 to 45 inches. Published examples include the Ella’s Bubbles Front Entry at 32 by 40 inches, and the Ella’s Bubbles Mobile and Hydro Dimensions HD2645 at about 26 by 45 inches.</p></details>
 <details class="faq"><summary>Can a walk-in tub fit in a small bathroom?</summary><p>Often, yes. Compact models fit many spaces where a standard tub would not, and inward-swinging or front-entry doors avoid door-swing conflicts with toilets and vanities. We check measurements before recommending a model.</p></details>
@@ -633,8 +787,10 @@ ul.sources{font-size:1rem}
 <details class="faq"><summary>Can I shower in a small walk-in tub?</summary><p>Yes. With a handheld shower on a slide bar, a tall surround and a curtain or glass screen, a compact walk-in tub works as a tub-and-shower combination. Many people prefer showering seated.</p></details>
 <details class="faq"><summary>Do compact walk-in tubs come with jets?</summary><p>Many do. Air, water and dual systems are available on a number of compact models, sometimes with fewer jets than larger tubs.</p></details>
 <details class="faq"><summary>Are small walk-in tubs cheaper?</summary><p>Not always. The door, seat and safety systems cost about the same regardless of size. Savings usually come from easier installation and a smaller water volume that may avoid a water heater upgrade.</p></details>
+</section><section class="band b-src" aria-labelledby="sources">
 <h2 id="sources">Sources</h2>
-<ul class="sources"><li><a href="https://www.consumeraffairs.com/homeowners/ella-walk-in-baths.html" rel="noopener" target="_blank">ConsumerAffairs, Ella’s Bubbles walk-in tub models</a></li><li><a href="https://bestcompany.com/walk-in-tubs/hydro-dimensions" rel="noopener" target="_blank">Best Company, Hydro Dimensions walk-in tubs</a></li><li><a href="https://www.retirementliving.com/best-walk-in-tubs/why-are-walk-in-tubs-expensive" rel="noopener" target="_blank">Retirement Living, Why Are Walk-In Tubs Expensive? (2026)</a></li><li><a href="https://www.ncoa.org/product-resources/mobility/ellas-bubbles-walk-in-tub-review/" rel="noopener" target="_blank">National Council on Aging, Ella’s Bubbles Walk-In Tub Review</a></li></ul><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/walk-in-tub-installation/"><strong>Walk-in tub installation</strong><span>What happens on installation day, how to prepare, and what can add time.</span></a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/"><strong>How to measure for a walk-in tub</strong><span>Ten minutes, a tape measure and this checklist.</span></a></li><li><a href="/buy-walk-in-tub-online/"><strong>Buy a walk-in tub online</strong><span>DIY delivery anywhere in the US and Canada, with spec sheets for your installer.</span></a></li><li><a href="/walk-in-tub-cost/"><strong>Walk-in tub cost</strong><span>Published price ranges, cost by tub type, and the hidden costs most quotes leave out.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
+<ul class="sources"><li><a href="https://www.consumeraffairs.com/homeowners/ella-walk-in-baths.html" rel="noopener" target="_blank">ConsumerAffairs, Ella’s Bubbles walk-in tub models</a></li><li><a href="https://bestcompany.com/walk-in-tubs/hydro-dimensions" rel="noopener" target="_blank">Best Company, Hydro Dimensions walk-in tubs</a></li><li><a href="https://www.retirementliving.com/best-walk-in-tubs/why-are-walk-in-tubs-expensive" rel="noopener" target="_blank">Retirement Living, Why Are Walk-In Tubs Expensive? (2026)</a></li><li><a href="https://www.ncoa.org/product-resources/mobility/ellas-bubbles-walk-in-tub-review/" rel="noopener" target="_blank">National Council on Aging, Ella’s Bubbles Walk-In Tub Review</a></li></ul>
+</section><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/walk-in-tub-installation/"><strong>Walk-in tub installation</strong><span>What happens on installation day, how to prepare, and what can add time.</span></a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/"><strong>How to measure for a walk-in tub</strong><span>Ten minutes, a tape measure and this checklist.</span></a></li><li><a href="/buy-walk-in-tub-online/"><strong>Buy a walk-in tub online</strong><span>DIY delivery anywhere in the US and Canada, with spec sheets for your installer.</span></a></li><li><a href="/walk-in-tub-cost/"><strong>Walk-in tub cost</strong><span>Published price ranges, cost by tub type, and the hidden costs most quotes leave out.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
 <form class="qform" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
 <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
 <input type="hidden" name="_subject" value="New quote request: seniorwalkinbathtubs.com"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
@@ -670,7 +826,7 @@ ul.sources{font-size:1rem}
 <p class="small">Also from our family of sites: <a href="https://www.agingsafelybaths.com/" rel="noopener">Aging Safely Baths</a> and <a href="https://www.showers4less.com/" rel="noopener">Showers4Less shower kits</a>.</p></div>
 <div><h2 class="fh">Walk-in tubs</h2><ul><li><a href="/">Senior walk in bathtubs</a></li><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy walk-in tubs</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric walk-in tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small walk-in tubs</a></li></ul></div><div><h2 class="fh">Plan and buy</h2><ul><li><a href="/walk-in-tub-cost/">Walk-in tub cost</a></li><li><a href="/walk-in-tub-installation/">One-day installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy a walk-in tub online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></div><div><h2 class="fh">Guides</h2><ul><li><a href="/blog/">All guides</a></li><li><a href="/blog/are-walk-in-tubs-worth-it/">Are walk-in tubs worth it?</a></li><li><a href="/blog/bathroom-fall-statistics-seniors/">Bathroom fall statistics</a></li><li><a href="/blog/walk-in-tub-water-heater-guide/">Water heater guide</a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/">How to measure</a></li></ul></div></div>
 <div class="wrap foot-legal"><p>© 2026 Aging Safely Baths. All rights reserved. Powered by Eye To Ad Media <a href="https://www.eyetoad.com" rel="noopener">www.eyetoad.com</a></p>
-<p><a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
+<p><a href="/about/">About us</a> <a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
 <p class="small">Information on this site is general and educational. It is not medical, legal or tax advice. Confirm coverage and eligibility with the program or plan administrator.</p></div></footer>
 <div class="callbar"><a href="tel:+18887792284">Call 1-888-779-2284</a><a href="/get-a-quote/">Free quote</a></div>
 <script>document.documentElement.classList.add('js');
@@ -708,6 +864,21 @@ document.querySelectorAll('form.qform').forEach(function(f){
 });
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');io.unobserve(e.target)}})},{threshold:.25});
 document.querySelectorAll('.chart').forEach(function(c){io.observe(c)});}else{document.querySelectorAll('.chart').forEach(function(c){c.classList.add('seen')});}
+
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, IO='IntersectionObserver' in window;
+var pb=document.querySelector('.progress span'),mb=document.querySelector('.minibar'),hd=document.querySelector('.site-head');
+function onS(){var h=document.documentElement,p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(pb)pb.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';if(mb&&hd)mb.classList.toggle('on',hd.getBoundingClientRect().bottom<0);}
+window.addEventListener('scroll',onS,{passive:true});onS();
+if(IO&&!rm){
+ var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,to=parseFloat(el.getAttribute('data-to')),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',cm=el.getAttribute('data-comma')==='1',fin=el.textContent,t0=null;
+  if(isNaN(to)){return}
+  function fmt(v){var s=Math.round(v).toString();if(cm)s=s.replace(/\B(?=(\d{3})+(?!\d))/g,',');return pre+s+suf}
+  function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1600),ez=1-Math.pow(1-k,3);el.textContent=fmt(to*ez);if(k<1)requestAnimationFrame(step);else el.textContent=fin;}
+  requestAnimationFrame(step);})},{threshold:.5});
+ document.querySelectorAll('.stat-n').forEach(function(el){if(/^[\$0-9,.]+/.test(el.textContent)&&!/×/.test(el.textContent))cio.observe(el)});
+ var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');rio.unobserve(e.target)}})},{threshold:.15});
+ document.querySelectorAll('.tcard,.photo,.illus,.related li,.stat,.calc').forEach(function(el){el.classList.add('reveal');rio.observe(el)});
+}
 })();
 
 function swbCalc(fill,tank,cold,bath){var hot=120;if(bath<=cold)return{need:0,usable:tank*0.7,ok:true};

@@ -19,7 +19,9 @@
 <meta name="twitter:title" content="Wheelchair-Accessible Walk-In Tubs and Transfer Tubs">
 <meta name="twitter:description" content="Wheelchair-accessible walk-in tubs with wide L-shaped outward doors for sliding transfers. Compare transfer tubs vs. roll-in showers, sizing, costs and VA grants.">
 <meta name="twitter:image" content="https://www.agingsafelybaths.com/wp-content/uploads/2024/07/barrier-free-shower-image-scaled-1.jpg">
-<meta name="theme-color" content="#0d5c63">
+<meta name="theme-color" content="#0a2a33">
+
+<link rel="preconnect" href="https://cdn.shopify.com">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%230d5c63' d='M32 4c9 8 18 8 24 10v18c0 15-10 24-24 28C18 56 8 47 8 32V14c6-2 15-2 24-10z'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' d='M17 36c5-4 10 4 15 0s10-4 15 0'/%3E%3Cpath fill='%23fff' d='M28.6 29.2l-5-5 2.1-2.1 2.9 2.9 8.6-8.6 2.1 2.1z'/%3E%3C/svg%3E" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -529,34 +531,168 @@ ul.sources{font-size:1rem}
 .brand-logo{height:140px;width:auto;max-width:260px;object-fit:contain;display:block}
 @media (max-width:980px){.brand-logo{height:120px;max-width:220px}.site-head{position:static}}
 @media (max-width:380px){.brand-logo{max-width:180px}}
+/* ================= v2 visual layer ================= */
+html,body{overflow-x:clip}
+.site-head{position:relative;top:auto}
+.head-in{min-height:0;padding-top:6px;padding-bottom:6px}
+.brand-logo{height:168px;max-width:312px}
+@media (max-width:980px){.brand-logo{height:144px;max-width:264px}}
+@media (max-width:380px){.brand-logo{max-width:216px;height:130px}}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:90;pointer-events:none}
+.progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#fcd34d,#f59e0b)}
+.minibar{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(10,42,51,.97);color:#fff;transform:translateY(-110%);transition:transform .45s ease;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.minibar.on{transform:none}
+.minibar-in{display:flex;align-items:center;gap:18px;padding-top:9px;padding-bottom:9px}
+.mb-name{color:#fff;font-weight:800;text-decoration:none;font-size:1.08rem}
+.mb-note{color:#dbeef1;font-size:.95rem}
+.mb-phone{margin-left:auto;color:#fff;font-weight:800;text-decoration:none}
+.mb-name:hover,.mb-phone:hover{color:#fcd34d}
+.minibar .btn{padding:8px 16px}
+@media (max-width:760px){.minibar{display:none}}
+@media (max-width:1040px){.mb-note{display:none}}
+.side{top:84px}
+/* inner hero */
+.page-hero{background:radial-gradient(900px 420px at 85% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(700px 380px at 0% 100%,rgba(252,211,77,.13),transparent 60%),linear-gradient(135deg,#0a2a33 0%,#0d4750 55%,#0b4f56 100%);color:#fff;padding:40px 0 92px}
+.page-hero h1{color:#fff}
+.page-hero .lead{color:#e3f2f4}.page-hero .lead strong{color:#fff}
+.page-hero .meta-line{color:#dbeef1}.page-hero .meta-line a{color:#fff}
+.page-hero .crumbs ol,.page-hero .crumbs li+li::before{color:#dbeef1}.page-hero .crumbs a{color:#fff}
+.page-hero .btn.ghost{background:transparent;color:#fff;border-color:#fff}.page-hero .btn.ghost:hover{background:#fff;color:#0a2a33}
+.page-hero .strip{background:rgba(255,255,255,.10);border-left-color:#fcd34d;color:#fff}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero .waterline path{fill:#fff}
+.page-hero .bubbles span{border-color:rgba(207,231,234,.45)}
+.ripples{position:absolute;right:-40px;top:-60px;width:560px;height:560px;z-index:1;pointer-events:none}
+.ripples circle{fill:none;stroke:rgba(207,231,234,.38);stroke-width:1.5;transform-origin:200px 200px;animation:ripple 10s ease-out infinite;opacity:0}
+.ripples circle:nth-child(2){animation-delay:3.3s}.ripples circle:nth-child(3){animation-delay:6.6s}
+@keyframes ripple{0%{transform:scale(.35);opacity:0}15%{opacity:1}100%{transform:scale(3.1);opacity:0}}
+@media (max-width:760px){.ripples{width:360px;height:360px;right:-140px;top:-40px}}
+/* layout + bands */
+.layout{background:none;padding-top:0}
+.home-body{background:none;padding-top:0}
+.band{position:relative;isolation:isolate;padding:48px 0 26px}
+.band::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;background:var(--bg,#fff);z-index:-1}
+.b-intro{--bg:#eef5f6;padding-top:30px}
+.home-body .b-intro{--bg:#eef5f6}
+.b-sky{--bg:#eef5f6}.b-white{--bg:#fff}.b-sand{--bg:#f7f5f0}.b-src{--bg:#fff}
+.prose .band>h2{margin-top:0}
+.b-night{color:#fff;padding:60px 0 44px}
+.b-night::before{background:radial-gradient(640px 320px at 92% 0%,rgba(126,200,208,.16),transparent 60%),linear-gradient(160deg,#0a2a33,#0d4750)}
+.b-night h2{color:#fff}
+.b-night>p,.b-night>ul li{color:#e3f2f4}
+.b-night>p a,.b-night>ul a{color:#9fe8ee}
+.b-night .faq{background:#fff;border:0;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.b-night .faq summary{color:#0a0a0a}.b-night .faq p{color:#1f2937}
+/* h2 wave accent */
+.prose h2::after{content:"";display:block;width:84px;height:12px;margin-top:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%230d5c63' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.b-night h2::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 12'%3E%3Cpath d='M2 6c7-6 13-6 20 0s13 6 20 0 13-6 20 0 13 6 20 0' fill='none' stroke='%23fcd34d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.prose h2.qtitle::after,.final h2::after{display:none}
+/* facts */
+.facts{border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#0d5c63,#fcd34d) border-box;border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px rgba(13,92,99,.14);margin-top:34px}
+.facts ul{list-style:none;padding:0}
+.facts li{position:relative;padding-left:34px}
+.facts li::before{content:"";position:absolute;left:0;top:.28em;width:22px;height:22px;border-radius:50%;background:#046c4e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6.5l2.5 2.5L10 3.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* stats */
+.stats{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 0;margin:30px 0 0}
+.stats::before{content:"";position:absolute;top:0;bottom:0;left:-100vmax;right:-100vmax;z-index:-1;background:radial-gradient(520px 260px at 12% 0%,rgba(252,211,77,.10),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56)}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 18px 16px}
+.stat-n{font-size:clamp(2.2rem,4.2vw,3.1rem);font-weight:800;color:#fcd34d;margin:0;line-height:1.05;font-variant-numeric:tabular-nums}
+.stat-l{color:#fff;margin:8px 0 6px;font-size:1.02rem;line-height:1.4}
+.stat-s{color:#dbeef1;font-size:.88rem;margin:0}
+@media (max-width:760px){.stats{grid-template-columns:1fr}}
+/* tables */
+th{background:#0d5c63;color:#fff}
+tbody tr:nth-child(even) td{background:#f4f9fa}
+.tscroll{box-shadow:0 10px 26px rgba(10,42,51,.08);border-radius:14px}
+/* charts */
+.chart,.illus{border:0;box-shadow:0 16px 38px rgba(10,42,51,.12);border-radius:18px;padding:22px 22px 14px}
+.photo{border:0;box-shadow:0 16px 38px rgba(10,42,51,.14);border-radius:18px}
+.hb-row{margin:14px 0}
+.hb-lab{font-size:1rem;color:#1f2937;margin-bottom:5px;line-height:1.35}
+.hb-bar{position:relative;height:26px;margin-right:130px}
+.hb-fill{position:absolute;left:0;top:0;bottom:0;width:var(--w);border-radius:6px;background:linear-gradient(90deg,#0d5c63,#13808a);transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.hb-fill.hl{background:linear-gradient(90deg,#b45309,#d97706)}
+.hb-val{position:absolute;left:calc(var(--w) + 10px);top:50%;transform:translateY(-50%);font-weight:800;white-space:nowrap;color:#000;font-size:1rem;transition:left 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .hb-fill{width:0}
+.js .chart:not(.seen) .hb-val{left:10px}
+.vb{display:flex;gap:18px;height:300px;padding-top:6px}
+.vb-col{flex:1;display:flex;flex-direction:column;min-width:0}
+.vb-stack{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:2px solid #6b7280}
+.vb-fill{display:block;width:min(96px,72%);height:calc(var(--h) * .82);border-radius:8px 8px 0 0;background:linear-gradient(180deg,#13808a,#0d5c63);transition:height 1.4s cubic-bezier(.2,.7,.2,1)}
+.vb-fill.hl{background:linear-gradient(180deg,#d97706,#b45309)}
+.vb-val{font-weight:800;margin-bottom:6px;color:#000}
+.vb-lab{text-align:center;padding-top:8px;font-size:1rem;color:#1f2937}
+.js .chart:not(.seen) .vb-fill{height:0}
+.rb-axis{position:relative;height:22px;margin:4px 0 8px;font-size:.85rem;color:#374151}
+.rb-axis span{position:absolute;transform:translateX(-50%)}
+.rb-axis span:first-child{transform:none}.rb-axis span:last-child{transform:translateX(-100%)}
+.rb-row{margin:16px 0}
+.rb-track{position:relative;height:24px;background:#e5eef0;border-radius:12px}
+.rb-fill{position:absolute;top:0;bottom:0;border-radius:12px;background:linear-gradient(90deg,#0d5c63,#13808a);transform-origin:left;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.js .chart:not(.seen) .rb-fill{transform:scaleX(0)}
+.rb-dot{position:absolute;top:50%;width:18px;height:18px;margin-left:-9px;transform:translateY(-50%);border-radius:50%;background:#fff;border:3px solid #000}
+/* type cards */
+.tcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+@media (max-width:900px){.tcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.tcards{grid-template-columns:1fr}}
+.tcard{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:16px;background:#fff;text-decoration:none;color:#0a0a0a;border-top:5px solid #0d5c63;box-shadow:0 12px 28px rgba(10,42,51,.10);transition:transform .35s ease,box-shadow .35s ease}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(10,42,51,.16);color:#0a0a0a}
+.tcard:nth-child(3n+2){border-top-color:#b45309}.tcard:nth-child(3n){border-top-color:#046c4e}
+.tcard svg{width:46px;height:46px;fill:none;stroke:#0d5c63;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.tcard strong{color:#000;font-size:1.12rem}.tcard span{color:#374151;font-size:1rem;line-height:1.45}
+/* callouts, related, cta, final */
+.callout{box-shadow:0 10px 24px rgba(10,42,51,.08)}
+.related a{border:0;border-top:4px solid #0d5c63;box-shadow:0 10px 26px rgba(10,42,51,.10);transition:transform .3s,box-shadow .3s}
+.related a:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(10,42,51,.16)}
+.cta-band{background:radial-gradient(500px 220px at 100% 0%,rgba(252,211,77,.18),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);box-shadow:0 18px 40px rgba(10,42,51,.25)}
+.final{background:radial-gradient(760px 380px at 90% 0%,rgba(126,200,208,.16),transparent 60%),radial-gradient(600px 300px at 0% 100%,rgba(252,211,77,.12),transparent 60%),linear-gradient(135deg,#0a2a33,#0b4f56);border-top:0;color:#fff}
+.final h2{color:#fff}
+.final-grid>div:first-child p{color:#e3f2f4}
+.final .bigphone a{color:#fff}
+.final .qbox{box-shadow:12px 12px 0 #fcd34d}
+.btn.go.big{position:relative;overflow:hidden}
+.btn.go.big::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,70%{left:-60%}100%{left:130%}}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.seen{opacity:1;transform:none}
+.author{background:#eef5f6;border:0;border-left:6px solid #0d5c63;border-radius:0 14px 14px 0;padding:16px 20px}
+.toc{box-shadow:0 10px 26px rgba(10,42,51,.08);border:0}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
 </style>
 </head>
 <body data-type="money">
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="minibar"><div class="wrap minibar-in"><a class="mb-name" href="/">Senior Walk In Bathtubs</a><span class="mb-note">One-day install or ship to US and Canada</span><a class="mb-phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div></div>
 <div class="util"><div class="wrap util-in"><span>BBB Accredited, A+ rating</span><span>Authorized Ella’s Bubbles dealer since 2012</span><span>Ships to the US and Canada</span><span><a href="tel:+18887792284">Call 1-888-779-2284</a></span></div></div>
 <header class="site-head"><div class="wrap head-in">
-<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" decoding="async"></a>
+<a class="brand" href="/" aria-label="Aging Safely Baths, Senior Walk In Bathtubs home"><img class="brand-logo" src="https://cdn.shopify.com/s/files/1/0658/2045/9202/files/denver-walk-in-tubs-logo.png?v=1765997125" alt="Aging Safely Baths - Senior Walk In Bathtubs and Roll In Showers" width="260" height="140" loading="eager" fetchpriority="high" decoding="async"></a>
 <nav class="mainnav" aria-label="Main"><ul><li class="has-sub"><a href="/">Walk-in tubs</a><ul class="subnav"><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small and compact tubs</a></li></ul></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
 <div class="head-cta"><a class="phone" href="tel:+18887792284">1-888-779-2284</a><a class="btn go" href="/get-a-quote/">Free quote</a></div>
 <details class="mnav"><summary aria-label="Open menu">Menu</summary><ul><li><a href="/">Home</a></li><li class="indent"><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy tubs with jets</a></li><li class="indent"><a href="/bariatric-walk-in-tubs/">Bariatric and two-seat tubs</a></li><li class="indent"><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li class="indent"><a href="/small-walk-in-tubs/">Small and compact tubs</a></li><li><a href="/walk-in-tub-cost/">Cost</a></li><li><a href="/walk-in-tub-installation/">Installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare &amp; grants</a></li><li><a href="/blog/">Guides</a></li><li><a href="/contact/">Contact</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></details>
 </div></header>
-<main id="main"><section class="hero page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Wheelchair-accessible walk-in tubs</li></ol></nav><h1>Wheelchair-Accessible Walk-In Tubs: Transfer Tubs That Let You Slide In</h1><p class="lead speakable">A <strong>wheelchair accessible walk-in tub</strong>, often called a transfer tub, has a wide door that swings outward and wraps around the corner of the tub, so a wheelchair user can pull alongside the tub and slide across onto the seat instead of stepping in. This guide explains how transfer tubs work, how to size one to the bather and the wheelchair, when a roll-in shower is the better choice, and which programs can help pay for it.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 15 minute read.</p>
+<main id="main"><section class="hero page-hero"><svg class="ripples" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="60"/></svg><div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Wheelchair-accessible walk-in tubs</li></ol></nav><h1>Wheelchair-Accessible Walk-In Tubs: Transfer Tubs That Let You Slide In</h1><p class="lead speakable">A <strong>wheelchair accessible walk-in tub</strong>, often called a transfer tub, has a wide door that swings outward and wraps around the corner of the tub, so a wheelchair user can pull alongside the tub and slide across onto the seat instead of stepping in. This guide explains how transfer tubs work, how to size one to the bather and the wheelchair, when a roll-in shower is the better choice, and which programs can help pay for it.</p><p class="meta-line">Updated September 19, 2026 by the Aging Safely Baths team. 15 minute read.</p>
 <div class="hero-actions"><a class="btn go" href="/get-a-quote/">Get a free quote</a><a class="btn ghost" href="tel:+18887792284">Call 1-888-779-2284</a></div>
 <p class="strip"><strong>One-day installation</strong> by factory-certified installers in many areas, <strong>or DIY delivery</strong> to your door anywhere in the US or Canada.</p>
-</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>Transfer tubs use a wide, often L-shaped outward-swinging door so a wheelchair user can slide across onto the seat.</li><li>Ella’s Bubbles offers several wheelchair-accessible models, including the Transfer60 with a 36-inch L-shaped door and 22-inch-wide seat.</li><li>The seat height should be close to the wheelchair seat height for a level transfer.</li><li>Leave clear floor space beside the tub for the wheelchair and, if needed, a caregiver.</li><li>If the bather cannot transfer safely, a roll-in shower may be the better choice; ADA roll-in showers are at least 30 by 60 inches.</li><li>Veterans may qualify for the VA HISA grant, up to $6,800 for service-connected conditions.</li></ul></div><nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-a-standard-walk-in-tub-is-not-enough-for-wheelchair-user">Why a standard walk-in tub is not enough for wheelchair users</a></li><li><a href="#how-a-transfer-tub-works">How a transfer tub works</a></li><li><a href="#transfer-tub-models-we-supply">Transfer tub models we supply</a></li><li><a href="#sizing-a-transfer-tub-to-the-bather-and-the-chair">Sizing a transfer tub to the bather and the chair</a></li><li><a href="#transfer-tub-vs-roll-in-shower-an-honest-comparison">Transfer tub vs. roll-in shower: an honest comparison</a></li><li><a href="#working-with-an-occupational-therapist">Working with an occupational therapist</a></li><li><a href="#features-that-matter-most-in-a-transfer-tub">Features that matter most in a transfer tub</a></li><li><a href="#reduced-sensation-and-water-temperature">Reduced sensation and water temperature</a></li><li><a href="#what-a-transfer-bath-looks-like-step-by-step">What a transfer bath looks like, step by step</a></li><li><a href="#planning-the-whole-bathroom-for-wheelchair-access">Planning the whole bathroom for wheelchair access</a></li><li><a href="#temporary-or-permanent-need">Temporary or permanent need?</a></li><li><a href="#mistakes-to-avoid-with-transfer-tubs">Mistakes to avoid with transfer tubs</a></li><li><a href="#a-caregiver-s-perspective">A caregiver’s perspective</a></li><li><a href="#paying-for-a-wheelchair-accessible-tub">Paying for a wheelchair-accessible tub</a></li><li><a href="#installation-and-delivery">Installation and delivery</a></li><li><a href="#questions-to-ask-before-choosing-a-transfer-tub">Questions to ask before choosing a transfer tub</a></li><li><a href="#privacy-and-dignity-matter-too">Privacy and dignity matter too</a></li><li><a href="#where-a-transfer-tub-fits-in-the-bathroom">Where a transfer tub fits in the bathroom</a></li><li><a href="#transfer-tubs-in-shared-homes">Transfer tubs in shared homes</a></li><li><a href="#why-choose-aging-safely-baths-for-a-wheelchair-accessible-tu">Why choose Aging Safely Baths for a wheelchair-accessible tub</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</div><div class="waterline" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0 22 C 180 4, 360 40, 540 22 S 900 4, 1080 22 S 1260 40, 1440 22 V40 H0z"/></svg></div></section><div class="wrap layout"><article class="prose"><div class="facts speakable"><p class="facts-h">The short answer</p><ul><li>Transfer tubs use a wide, often L-shaped outward-swinging door so a wheelchair user can slide across onto the seat.</li><li>Ella’s Bubbles offers several wheelchair-accessible models, including the Transfer60 with a 36-inch L-shaped door and 22-inch-wide seat.</li><li>The seat height should be close to the wheelchair seat height for a level transfer.</li><li>Leave clear floor space beside the tub for the wheelchair and, if needed, a caregiver.</li><li>If the bather cannot transfer safely, a roll-in shower may be the better choice; ADA roll-in showers are at least 30 by 60 inches.</li><li>Veterans may qualify for the VA HISA grant, up to $6,800 for service-connected conditions.</li></ul></div><aside class="stats" aria-label="Key figures"><div class="stat"><p class="stat-n" data-to="3060" data-pre="" data-suf="in" data-comma="0">30×60in</p><p class="stat-l">minimum ADA roll-in shower size</p><p class="stat-s">2010 ADA Standards</p></div><div class="stat"><p class="stat-n" data-to="6800" data-pre="$" data-suf="" data-comma="1">$6,800</p><p class="stat-l">VA HISA lifetime grant for service-connected conditions</p><p class="stat-s">U.S. Dept. of Veterans Affairs</p></div><div class="stat"><p class="stat-n" data-to="68" data-pre="" data-suf="%" data-comma="0">68%</p><p class="stat-l">of bathroom injuries happened in or around the tub or shower</p><p class="stat-s">CDC MMWR</p></div></aside><section class="band b-intro">
+<nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#why-a-standard-walk-in-tub-is-not-enough-for-wheelchair-user">Why a standard walk-in tub is not enough for wheelchair users</a></li><li><a href="#how-a-transfer-tub-works">How a transfer tub works</a></li><li><a href="#transfer-tub-models-we-supply">Transfer tub models we supply</a></li><li><a href="#sizing-a-transfer-tub-to-the-bather-and-the-chair">Sizing a transfer tub to the bather and the chair</a></li><li><a href="#transfer-tub-vs-roll-in-shower-an-honest-comparison">Transfer tub vs. roll-in shower: an honest comparison</a></li><li><a href="#working-with-an-occupational-therapist">Working with an occupational therapist</a></li><li><a href="#features-that-matter-most-in-a-transfer-tub">Features that matter most in a transfer tub</a></li><li><a href="#reduced-sensation-and-water-temperature">Reduced sensation and water temperature</a></li><li><a href="#what-a-transfer-bath-looks-like-step-by-step">What a transfer bath looks like, step by step</a></li><li><a href="#planning-the-whole-bathroom-for-wheelchair-access">Planning the whole bathroom for wheelchair access</a></li><li><a href="#temporary-or-permanent-need">Temporary or permanent need?</a></li><li><a href="#mistakes-to-avoid-with-transfer-tubs">Mistakes to avoid with transfer tubs</a></li><li><a href="#a-caregiver-s-perspective">A caregiver’s perspective</a></li><li><a href="#paying-for-a-wheelchair-accessible-tub">Paying for a wheelchair-accessible tub</a></li><li><a href="#installation-and-delivery">Installation and delivery</a></li><li><a href="#questions-to-ask-before-choosing-a-transfer-tub">Questions to ask before choosing a transfer tub</a></li><li><a href="#privacy-and-dignity-matter-too">Privacy and dignity matter too</a></li><li><a href="#where-a-transfer-tub-fits-in-the-bathroom">Where a transfer tub fits in the bathroom</a></li><li><a href="#transfer-tubs-in-shared-homes">Transfer tubs in shared homes</a></li><li><a href="#why-choose-aging-safely-baths-for-a-wheelchair-accessible-tu">Why choose Aging Safely Baths for a wheelchair-accessible tub</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+</section><section class="band b-white" aria-labelledby="why-a-standard-walk-in-tub-is-not-enough-for-wheelchair-user">
 <h2 id="why-a-standard-walk-in-tub-is-not-enough-for-wheelchair-user">Why a standard walk-in tub is not enough for wheelchair users</h2>
 <p>A standard walk-in tub is a huge improvement over a regular bathtub for people who can walk, even slowly. You step over a low threshold of a few inches and sit down. But for someone who uses a wheelchair full-time, or who cannot lift a foot safely even a few inches, stepping in is still the problem.</p>
 <p>A wheelchair-accessible walk-in tub changes the motion entirely. Instead of standing and stepping, the bather transfers sideways: the wheelchair is parked beside the tub, the door is opened wide, and the bather slides from the wheelchair seat onto the tub seat, often with a transfer board or a caregiver’s help. Then the legs are brought in, the door is closed, and the tub fills.</p>
 <p>Transfers are a real risk moment. In the CDC’s study of bathroom injuries treated in emergency departments, the researchers counted “transferring,” defined as moving between a wheelchair or walker and the toilet, sink, shower or tub, as its own category of injury. A tub designed around a sideways, level transfer is about making that moment as controlled as possible.</p>
+</section><section class="band b-sky" aria-labelledby="how-a-transfer-tub-works">
 <h2 id="how-a-transfer-tub-works">How a transfer tub works</h2>
 <p>Transfer tubs share a few defining features.</p>
 <ul><li><strong>A wide outward-swinging door.</strong> Many transfer tubs use an L-shaped door that opens on both the side and the front corner, leaving a wide, clear path to the seat. Ella’s Transfer60, for example, uses a 36-inch L-shaped outward door.</li><li><strong>A seat close to the door.</strong> The seat sits right at the opening so the transfer distance is short.</li><li><strong>A wide seat.</strong> Room to land safely and shift into position. The Transfer60’s molded seat is 22 inches wide.</li><li><strong>A low or barrier-free sidewall at the entry.</strong> So the bather slides across rather than lifting over.</li><li><strong>Grab bars within reach from the seat.</strong> For pulling into position and steadying during the transfer.</li><li><strong>A door latch that can be operated from the seat.</strong> So the bather or caregiver can close and open it easily.</li></ul>
 <p>The Top Ten Reviews summary of Ella’s Bubbles notes that each of Ella’s wheelchair-accessible tubs uses an L-shaped, double-latch door that swings out to allow users to scoot in and out from their chair, and that Ella also offers an electronic lift for people who need more help getting in and out.</p>
 <figure class="photo"><img src="https://www.agingsafelybaths.com/wp-content/uploads/2024/07/barrier-free-shower-image-scaled-1.jpg" alt="Barrier-free roll-in shower with seat and grab bars" loading="lazy" decoding="async" width="1200" height="800" onerror="this.closest('figure').style.display='none'"><figcaption>For some wheelchair users a barrier-free roll-in shower is the better choice; we supply both.</figcaption></figure>
+</section><section class="band b-white" aria-labelledby="transfer-tub-models-we-supply">
 <h2 id="transfer-tub-models-we-supply">Transfer tub models we supply</h2>
 <p>We supply wheelchair-accessible tubs from several manufacturers, which lets us match the tub to the bather and the bathroom.</p>
 <div class="tscroll"><table><thead><tr><th scope="col">Product line</th><th scope="col">Example</th><th scope="col">Published details</th></tr></thead><tbody><tr><td>Ella’s Bubbles transfer tubs</td><td>Transfer60</td><td>30 by 60 inches, 22-inch-wide seat, 36-inch L-shaped outward door, dual 2-inch drains</td></tr><tr><td>Ella’s Bubbles transfer tubs</td><td>Transfer30</td><td>30 by 52 inches, outward-swinging door</td></tr><tr><td>Hydro Dimensions specialty series</td><td>Wheelchair-access models</td><td>Part of a 16-model lineup; lifetime warranty on the tub</td></tr><tr><td>Bestbath</td><td>Rane transfer baths</td><td>Transfer baths plus Bestbath roll-in showers</td></tr></tbody></table></div>
 <p>Aging Safely Baths has been an authorized Ella’s Bubbles dealer since 2012 and is BBB Accredited with an A+ rating.</p>
+</section><section class="band b-sand" aria-labelledby="sizing-a-transfer-tub-to-the-bather-and-the-chair">
 <h2 id="sizing-a-transfer-tub-to-the-bather-and-the-chair">Sizing a transfer tub to the bather and the chair</h2>
 <p>A transfer tub has to fit three things: the bather, the wheelchair and the bathroom. Here is what to measure.</p>
 <h3>Seat height match</h3>
@@ -569,6 +705,7 @@ ul.sources{font-size:1rem}
 <p>The bather needs room to land on the seat with their hips fully supported, then rotate to face forward. Wider seats help, especially for larger bathers. See our <a href="/bariatric-walk-in-tubs/">bariatric walk-in tub guide</a> for wider options.</p>
 <h3>Leg room</h3>
 <p>After the transfer, the legs have to be lifted over the low sidewall and brought into the footwell. Check the distance from the seat front to the footwell wall.</p>
+</section><section class="band b-white" aria-labelledby="transfer-tub-vs-roll-in-shower-an-honest-comparison">
 <h2 id="transfer-tub-vs-roll-in-shower-an-honest-comparison">Transfer tub vs. roll-in shower: an honest comparison</h2>
 <p>For many wheelchair users, the right answer is a roll-in shower rather than any tub. We sell both, so here is a fair comparison.</p>
 <div class="tscroll"><table><thead><tr><th scope="col"></th><th scope="col">Wheelchair transfer tub</th><th scope="col">Roll-in shower</th></tr></thead><tbody><tr><td>How you enter</td><td>Transfer from wheelchair onto the tub seat</td><td>Roll in on a shower wheelchair or transfer to a fold-down seat</td></tr><tr><td>Bathing style</td><td>Seated, immersed in warm water</td><td>Seated shower</td></tr><tr><td>Transfers required</td><td>At least one each way</td><td>Possibly none with a shower wheelchair</td></tr><tr><td>Caregiver access</td><td>Good with an outward door</td><td>Excellent, with room to stand inside</td></tr><tr><td>Warm soak and jets</td><td>Yes</td><td>No</td></tr><tr><td>Minimum space</td><td>Varies by model, often a 60-inch alcove plus clear floor space</td><td>ADA minimum 30 by 60 inches inside, with clear space outside</td></tr><tr><td>Best for</td><td>Bathers who can transfer and want to soak</td><td>Bathers who cannot transfer safely, or prefer showers</td></tr></tbody></table></div>
@@ -576,46 +713,62 @@ ul.sources{font-size:1rem}
 <p>If a bather cannot transfer safely, even with help, a roll-in shower with a shower wheelchair is usually the safer choice. If they can transfer and warm water is important to their comfort, a transfer tub gives them something a shower cannot. Our <a href="/blog/walk-in-tub-vs-roll-in-shower/">walk-in tub vs. roll-in shower guide</a> and our <a href="/blog/wheelchair-accessible-showers-installation-guide/">wheelchair-accessible shower guide</a> cover both in more depth.</p>
 <aside class="cta-band"><p><strong>Not sure whether a transfer tub or a roll-in shower fits better? We will talk it through with you.</strong> Our specialists answer in plain language, with no pressure.</p>
 <div class="cta-actions"><a class="btn go" href="/get-a-quote/">Get a free quote</a><a class="btn ghost" href="tel:+18887792284">Call 1-888-779-2284</a></div></aside>
+</section><section class="band b-sky" aria-labelledby="working-with-an-occupational-therapist">
 <h2 id="working-with-an-occupational-therapist">Working with an occupational therapist</h2>
 <p>If the bather has had a stroke, spinal cord injury, amputation or another condition that affects transfers, an occupational therapist can be the most valuable person in the planning process. An OT can assess how the person transfers, which side is stronger, whether a transfer board or lift is needed, and what seat height works best. Bring their recommendations to your consultation, and we will match the tub to them. If you are working through the VA, the prosthetics and occupational therapy teams often coordinate home modification recommendations.</p>
+</section><section class="band b-white" aria-labelledby="features-that-matter-most-in-a-transfer-tub">
 <h2 id="features-that-matter-most-in-a-transfer-tub">Features that matter most in a transfer tub</h2>
 <ul><li><strong>Door width and swing.</strong> The wider and clearer the opening, the easier the transfer.</li><li><strong>Door latch design.</strong> Easy to reach and operate from the seat or by a caregiver.</li><li><strong>Grab bars</strong> positioned for pulling across and for steadying once seated.</li><li><strong>Handheld shower on a long hose.</strong> Makes rinsing easy for the bather or a caregiver.</li><li><strong>Heated seat or backrest.</strong> Wheelchair users often feel the cold during the fill and drain.</li><li><strong>Fast drain.</strong> Shortens the time before the door can be opened.</li><li><strong>Anti-scald protection.</strong> Especially important for people with reduced sensation in the legs or feet.</li><li><strong>Lift compatibility.</strong> If a powered lift is needed, check compatibility before choosing a tub.</li></ul>
+</section><section class="band b-sand" aria-labelledby="reduced-sensation-and-water-temperature">
 <h2 id="reduced-sensation-and-water-temperature">Reduced sensation and water temperature</h2>
 <p>Many wheelchair users have reduced feeling in their legs or feet, which makes it harder to notice water that is too hot. Anti-scald or thermostatic valves limit the maximum water temperature. Set the water heater at a safe temperature, check bath water with a hand or thermometer before the legs go in, and ask your doctor or therapist what temperature is safe for you. The U.S. Department of Energy recommends a 120°F water heater setting for most households.</p>
+</section><section class="band b-white" aria-labelledby="what-a-transfer-bath-looks-like-step-by-step">
 <h2 id="what-a-transfer-bath-looks-like-step-by-step">What a transfer bath looks like, step by step</h2>
 <p>Every person transfers a little differently, and an occupational therapist should teach the technique that is safest for you. But it helps to picture the routine before you choose a tub. Here is how a typical assisted or independent transfer bath works.</p>
 <ol class="steps"><li><strong>Prepare the bathroom.</strong> Towels, clothing and toiletries are placed within reach of the tub seat. The handheld shower is within reach.</li><li><strong>Position the wheelchair.</strong> The chair is parked beside the tub door, as close and as parallel as possible, and the brakes are locked. Footrests are swung away.</li><li><strong>Open the door fully.</strong> The L-shaped outward door leaves the seat and entry wide open.</li><li><strong>Transfer to the seat.</strong> The bather slides across, often using a transfer board and a grab bar, with a caregiver steadying if needed.</li><li><strong>Bring the legs in.</strong> The legs are lifted over the low sidewall into the footwell, one at a time.</li><li><strong>Close and latch the door.</strong> From the seat, the bather or caregiver closes the door and secures the latch.</li><li><strong>Fill and bathe.</strong> The tub fills while the handheld shower keeps the bather warm. Jets are used if the tub has them.</li><li><strong>Drain completely.</strong> The door is not opened until the tub has fully drained.</li><li><strong>Reverse the transfer.</strong> Legs out, transfer back to the wheelchair, dry off while seated.</li></ol>
 <p>Looking at the routine this way shows why seat height, door width, grab bar position and clear floor space all matter so much.</p>
+</section><section class="band b-sky" aria-labelledby="planning-the-whole-bathroom-for-wheelchair-access">
 <h2 id="planning-the-whole-bathroom-for-wheelchair-access">Planning the whole bathroom for wheelchair access</h2>
 <p>A transfer tub only helps if the wheelchair can reach it. The 2010 ADA Standards, written for public buildings, offer useful benchmarks for home planning too:</p>
 <ul><li><strong>Doorways.</strong> The ADA calls for a clear door opening of at least 32 inches. Many older homes have narrower bathroom doors, and widening them, or using offset hinges, may be needed.</li><li><strong>Turning space.</strong> The ADA uses a 60-inch diameter circle as a benchmark for turning a wheelchair around. In a small bathroom, planning where the chair turns is as important as choosing the tub.</li><li><strong>Clear floor space at the tub.</strong> Room for the wheelchair to sit parallel to the tub door, plus room for a caregiver.</li><li><strong>Grab bars.</strong> Mounted securely into studs or blocking, at heights the bather can reach from the chair and the tub seat.</li><li><strong>Toilet and sink.</strong> A grab bar beside the toilet and knee space under the sink make the whole room usable.</li><li><strong>Flooring.</strong> Firm, slip-resistant flooring that the chair can roll across easily.</li></ul>
 <p>You do not need to rebuild the bathroom to public-building standards. But using these numbers as a guide avoids the frustration of a great tub the chair cannot actually reach.</p>
+</section><section class="band b-white" aria-labelledby="temporary-or-permanent-need">
 <h2 id="temporary-or-permanent-need">Temporary or permanent need?</h2>
 <p>Not every wheelchair user will always use a wheelchair. After a hip or knee replacement, a stroke with good recovery, or a serious injury, the need may be temporary. Planning around that is worth a conversation.</p>
 <ul><li><strong>If the need is likely temporary,</strong> a shower chair or tub transfer bench with a handheld shower can bridge the gap for a few weeks.</li><li><strong>If the need is likely long-term or progressive,</strong> investing in a transfer tub or roll-in shower now avoids a second remodel later.</li><li><strong>If you are unsure,</strong> a transfer tub often serves both stages well, because people who later walk again can still step in through the wide door.</li></ul>
+</section><section class="band b-sand" aria-labelledby="mistakes-to-avoid-with-transfer-tubs">
 <h2 id="mistakes-to-avoid-with-transfer-tubs">Mistakes to avoid with transfer tubs</h2>
 <ul><li><strong>Choosing the door side without checking the transfer side.</strong> The door has to face the bather’s easier transfer direction.</li><li><strong>Ignoring seat height.</strong> A big mismatch between the wheelchair seat and the tub seat makes every transfer harder.</li><li><strong>Forgetting the door swing.</strong> An outward door needs clear space to open fully with the wheelchair parked beside it.</li><li><strong>Leaving no room for a caregiver.</strong> If help is needed now or later, plan standing room.</li><li><strong>Skipping the grab bar outside the tub.</strong> The transfer back to the chair needs support too.</li><li><strong>Not checking the path to the bathroom.</strong> A narrow hallway or door can block the whole plan.</li></ul>
+</section><section class="band b-white" aria-labelledby="a-caregiver-s-perspective">
 <h2 id="a-caregiver-s-perspective">A caregiver’s perspective</h2>
 <p>For family caregivers, bathing is often the most physically demanding and emotionally difficult task of the day. Lifting, leaning over a tub wall and worrying about slips take a toll. A transfer tub with an outward door lets the caregiver stand beside the bather rather than reaching over a wall. The handheld shower means rinsing without lifting. And because the bather is seated and supported, bath time can become calmer for both people. Many caregivers tell us the biggest change was not physical but emotional: bathing stopped being a daily source of dread.</p>
+</section><section class="band b-sky" aria-labelledby="paying-for-a-wheelchair-accessible-tub">
 <h2 id="paying-for-a-wheelchair-accessible-tub">Paying for a wheelchair-accessible tub</h2>
 <p>Several programs may help with part of the cost of accessible bathing equipment, depending on eligibility.</p>
 <ul><li><strong>VA Home Improvements and Structural Alterations (HISA) grant.</strong> A lifetime benefit of up to $6,800 for veterans with service-connected conditions and up to $2,000 for other conditions, for medically necessary home modifications. Veterans apply through the prosthetics department at their VA medical center with VA Form 10-0103 and a prescription or statement of need from their VA provider.</li><li><strong>VA Specially Adapted Housing grants</strong> for eligible veterans with certain severe service-connected disabilities.</li><li><strong>Medicaid waiver programs</strong> in many states cover home modifications for eligible people.</li><li><strong>Medicare Advantage</strong> plans sometimes include supplemental home-safety benefits.</li><li><strong>Tax rules.</strong> IRS Publication 502 explains when home modifications for medical reasons can count as medical expenses. In Canada, the Home Accessibility Tax Credit allows up to $20,000 of eligible expenses per year for qualifying individuals.</li></ul>
 <p>Our <a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits guide</a> walks through each option.</p>
+</section><section class="band b-white" aria-labelledby="installation-and-delivery">
 <h2 id="installation-and-delivery">Installation and delivery</h2>
 <p>Transfer tubs need careful installation: the tub must be level so the larger door seals evenly, the door must swing freely against its hinges, and the clear floor space beside the tub must stay open. Our factory-certified installers handle this in many areas, often in one day when the tub fits the existing space. If the bathroom needs wider doorways or floor changes for wheelchair access, we will tell you before scheduling.</p>
 <p>We also drop-ship transfer tubs anywhere in the United States and Canada, with spec sheets and rough-in dimensions for your installer. Every tub includes the manufacturer’s warranty and a 1-year labor warranty from Aging Safely Baths.</p>
+</section><section class="band b-sand" aria-labelledby="questions-to-ask-before-choosing-a-transfer-tub">
 <h2 id="questions-to-ask-before-choosing-a-transfer-tub">Questions to ask before choosing a transfer tub</h2>
 <ol class="steps"><li>What is the clear width of the door opening when fully open?</li><li>Is the door left-hand or right-hand, and does it match the bather’s transfer side?</li><li>How high is the seat from the bathroom floor, and how does that compare with the wheelchair seat?</li><li>How wide and deep is the seat?</li><li>Can the door latch be reached and operated from the seat?</li><li>Where are the grab bars, and can more be added outside the tub?</li><li>How much clear floor space does the open door need?</li><li>Is the tub compatible with a transfer board or a powered lift?</li><li>Does it have anti-scald protection and a handheld shower on a long hose?</li><li>How fast does it drain, and is there a heated seat or backrest?</li></ol>
+</section><section class="band b-white" aria-labelledby="privacy-and-dignity-matter-too">
 <h2 id="privacy-and-dignity-matter-too">Privacy and dignity matter too</h2>
 <p>For many adults who use a wheelchair, the loss that hurts most is not mobility. It is privacy. Needing help with every bath can make a person feel like a patient in their own home. A well-chosen transfer tub can restore some of that independence: some bathers can transfer, bathe and dry off entirely on their own, and others need help only for part of the routine. Even small gains, like being able to latch the door and soak alone for twenty minutes, matter enormously. When we help families choose, we always ask the bather what independence means to them, and we design around the answer.</p>
+</section><section class="band b-sky" aria-labelledby="where-a-transfer-tub-fits-in-the-bathroom">
 <h2 id="where-a-transfer-tub-fits-in-the-bathroom">Where a transfer tub fits in the bathroom</h2>
 <p>Transfer tubs usually replace a standard tub in its existing alcove, with the wide door facing into the room. The key planning question is not the alcove but the floor in front of it: the wheelchair must park beside the door opening with the door fully open, and the bather must be able to approach, turn and leave without backing into the toilet or vanity. Sketch the room with the tub, door swing and wheelchair drawn in before you order, or send us a photo and rough measurements and we will do it with you.</p>
 <p>Once the plan is on paper, you can see at a glance whether the room works as it is, or whether a door, vanity or toilet needs to move first.</p>
+</section><section class="band b-white" aria-labelledby="transfer-tubs-in-shared-homes">
 <h2 id="transfer-tubs-in-shared-homes">Transfer tubs in shared homes</h2>
 <p>Transfer tubs also work for other members of the household. Because the wide door leaves an easy opening, people who walk can simply step in and sit down. With a handheld shower and a surround that reaches high enough, a transfer tub can also be used for seated showers. That makes it a practical choice for a couple where one partner uses a wheelchair and the other does not.</p>
+</section><section class="band b-sand" aria-labelledby="why-choose-aging-safely-baths-for-a-wheelchair-accessible-tu">
 <h2 id="why-choose-aging-safely-baths-for-a-wheelchair-accessible-tu">Why choose Aging Safely Baths for a wheelchair-accessible tub</h2>
 <p>We are not limited to one manufacturer’s transfer tub. As an authorized Ella’s Bubbles dealer since 2012, and a supplier of Hydro Dimensions, Meditub and Bestbath products including Rane transfer baths and Bestbath roll-in showers, we can recommend a transfer tub or a roll-in shower based on what is actually safest for the bather. We install in one day in many areas with factory-certified installers, ship anywhere in the US and Canada, and back every order with the manufacturer’s warranty and our own 1-year labor warranty.</p>
 <p>Call 1-888-779-2284 or <a href="/get-a-quote/">request a free quote</a>. If an occupational therapist has made recommendations, send them along, and we will match the tub to them.</p>
+</section><section class="band b-night" aria-labelledby="frequently-asked-questions">
 <h2 id="frequently-asked-questions">Frequently asked questions</h2>
 <details class="faq"><summary>What is a wheelchair-accessible walk-in tub?</summary><p>A wheelchair-accessible walk-in tub, or transfer tub, has a wide door that swings outward, often in an L-shape around the tub’s corner, so a wheelchair user can pull alongside and slide across onto the seat rather than stepping in.</p></details>
 <details class="faq"><summary>Can a wheelchair user use a regular walk-in tub?</summary><p>Some can, if they are able to stand and step a few inches. For full-time wheelchair users, a transfer tub with a wide outward door, or a roll-in shower, is usually safer and easier.</p></details>
@@ -625,8 +778,10 @@ ul.sources{font-size:1rem}
 <details class="faq"><summary>Which way should the door open on a transfer tub?</summary><p>The door should open toward the side the bather transfers from most easily, usually their stronger side. That choice decides whether you need a left- or right-hand model.</p></details>
 <details class="faq"><summary>Can a caregiver help with transfers into a walk-in tub?</summary><p>Yes. An outward-swinging door, grab bars on both sides of the entry, a handheld shower on a long hose and clear floor space beside the tub make caregiver-assisted bathing much easier.</p></details>
 <details class="faq"><summary>Are there lifts for walk-in tubs?</summary><p>Some manufacturers offer powered lifts. Ella’s Bubbles, for example, offers an electronic lift for people who need extra help getting in and out. Confirm compatibility with the tub model before ordering.</p></details>
+</section><section class="band b-src" aria-labelledby="sources">
 <h2 id="sources">Sources</h2>
-<ul class="sources"><li><a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6022a1.htm" rel="noopener" target="_blank">CDC, MMWR: Nonfatal Bathroom Injuries Among Persons Aged ≥15 Years, United States, 2008</a></li><li><a href="https://www.toptenreviews.com/ellas-bubbles-walk-in-tubs-review" rel="noopener" target="_blank">Top Ten Reviews, Ella’s Bubbles walk-in tubs review</a></li><li><a href="https://www.overstock.com/products/ella-wheelchair-transfer-60-acrylic-hydro-massage-walk-in-bathtub-outward-swing-door-5-piece-fast-fill-faucet-2-dual-drain-34870178" rel="noopener" target="_blank">Ella Transfer60 product listing (published specifications)</a></li><li><a href="https://caring.com/senior-products/best-walk-in-tubs/ellas-bubbles" rel="noopener" target="_blank">Caring.com, Ella’s Bubbles walk-in tubs</a></li><li><a href="https://www.access-board.gov/ada/#ada-608" rel="noopener" target="_blank">U.S. Access Board, ADA Standards: Shower Compartments (608)</a></li><li><a href="https://www.prosthetics.va.gov/psas/HISA2.asp" rel="noopener" target="_blank">VA Prosthetic and Sensory Aids Service, HISA grant</a></li><li><a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy, Water Heating</a></li><li><a href="https://www.irs.gov/publications/p502" rel="noopener" target="_blank">IRS Publication 502, Medical and Dental Expenses</a></li></ul><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/blog/wheelchair-accessible-showers-installation-guide/"><strong>Wheelchair accessible shower guide</strong><span>ADA sizes, thresholds, grab bars, seats and install steps, explained.</span></a></li><li><a href="/blog/walk-in-tub-vs-roll-in-shower/"><strong>Walk-in tub vs. roll-in shower</strong><span>Access, safety, space, caregiving and cost, compared side by side.</span></a></li><li><a href="/bariatric-walk-in-tubs/"><strong>Bariatric walk-in tubs</strong><span>Wider seats, wider doors, and two-seat tubs, with sizing tips that actually work.</span></a></li><li><a href="/walk-in-tub-medicare-grants/"><strong>Medicare, grants and tax credits</strong><span>The straight answer on Medicare, plus every program that can actually help.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
+<ul class="sources"><li><a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6022a1.htm" rel="noopener" target="_blank">CDC, MMWR: Nonfatal Bathroom Injuries Among Persons Aged ≥15 Years, United States, 2008</a></li><li><a href="https://www.toptenreviews.com/ellas-bubbles-walk-in-tubs-review" rel="noopener" target="_blank">Top Ten Reviews, Ella’s Bubbles walk-in tubs review</a></li><li><a href="https://www.overstock.com/products/ella-wheelchair-transfer-60-acrylic-hydro-massage-walk-in-bathtub-outward-swing-door-5-piece-fast-fill-faucet-2-dual-drain-34870178" rel="noopener" target="_blank">Ella Transfer60 product listing (published specifications)</a></li><li><a href="https://caring.com/senior-products/best-walk-in-tubs/ellas-bubbles" rel="noopener" target="_blank">Caring.com, Ella’s Bubbles walk-in tubs</a></li><li><a href="https://www.access-board.gov/ada/#ada-608" rel="noopener" target="_blank">U.S. Access Board, ADA Standards: Shower Compartments (608)</a></li><li><a href="https://www.prosthetics.va.gov/psas/HISA2.asp" rel="noopener" target="_blank">VA Prosthetic and Sensory Aids Service, HISA grant</a></li><li><a href="https://www.energy.gov/energysaver/water-heating" rel="noopener" target="_blank">U.S. Department of Energy, Water Heating</a></li><li><a href="https://www.irs.gov/publications/p502" rel="noopener" target="_blank">IRS Publication 502, Medical and Dental Expenses</a></li></ul>
+</section><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Keep reading</h2><ul><li><a href="/blog/wheelchair-accessible-showers-installation-guide/"><strong>Wheelchair accessible shower guide</strong><span>ADA sizes, thresholds, grab bars, seats and install steps, explained.</span></a></li><li><a href="/blog/walk-in-tub-vs-roll-in-shower/"><strong>Walk-in tub vs. roll-in shower</strong><span>Access, safety, space, caregiving and cost, compared side by side.</span></a></li><li><a href="/bariatric-walk-in-tubs/"><strong>Bariatric walk-in tubs</strong><span>Wider seats, wider doors, and two-seat tubs, with sizing tips that actually work.</span></a></li><li><a href="/walk-in-tub-medicare-grants/"><strong>Medicare, grants and tax credits</strong><span>The straight answer on Medicare, plus every program that can actually help.</span></a></li></ul></section></article><aside class="side"><div class="qbox"><h2 class="qtitle">Free quote</h2><p class="qintro">One-day install or DIY delivery. We call you back with honest answers.</p>
 <form class="qform" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
 <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
 <input type="hidden" name="_subject" value="New quote request: seniorwalkinbathtubs.com"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
@@ -662,7 +817,7 @@ ul.sources{font-size:1rem}
 <p class="small">Also from our family of sites: <a href="https://www.agingsafelybaths.com/" rel="noopener">Aging Safely Baths</a> and <a href="https://www.showers4less.com/" rel="noopener">Showers4Less shower kits</a>.</p></div>
 <div><h2 class="fh">Walk-in tubs</h2><ul><li><a href="/">Senior walk in bathtubs</a></li><li><a href="/hydrotherapy-walk-in-tubs/">Hydrotherapy walk-in tubs</a></li><li><a href="/bariatric-walk-in-tubs/">Bariatric walk-in tubs</a></li><li><a href="/wheelchair-accessible-walk-in-tubs/">Wheelchair-accessible tubs</a></li><li><a href="/small-walk-in-tubs/">Small walk-in tubs</a></li></ul></div><div><h2 class="fh">Plan and buy</h2><ul><li><a href="/walk-in-tub-cost/">Walk-in tub cost</a></li><li><a href="/walk-in-tub-installation/">One-day installation</a></li><li><a href="/buy-walk-in-tub-online/">Buy a walk-in tub online</a></li><li><a href="/walk-in-tub-medicare-grants/">Medicare, grants and tax credits</a></li><li><a href="/get-a-quote/">Get a free quote</a></li></ul></div><div><h2 class="fh">Guides</h2><ul><li><a href="/blog/">All guides</a></li><li><a href="/blog/are-walk-in-tubs-worth-it/">Are walk-in tubs worth it?</a></li><li><a href="/blog/bathroom-fall-statistics-seniors/">Bathroom fall statistics</a></li><li><a href="/blog/walk-in-tub-water-heater-guide/">Water heater guide</a></li><li><a href="/blog/how-to-measure-for-a-walk-in-tub/">How to measure</a></li></ul></div></div>
 <div class="wrap foot-legal"><p>© 2026 Aging Safely Baths. All rights reserved. Powered by Eye To Ad Media <a href="https://www.eyetoad.com" rel="noopener">www.eyetoad.com</a></p>
-<p><a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
+<p><a href="/about/">About us</a> <a href="/privacy-policy/">Privacy policy</a> <a href="/sitemap/">Site map</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/llms.txt">llms.txt</a></p>
 <p class="small">Information on this site is general and educational. It is not medical, legal or tax advice. Confirm coverage and eligibility with the program or plan administrator.</p></div></footer>
 <div class="callbar"><a href="tel:+18887792284">Call 1-888-779-2284</a><a href="/get-a-quote/">Free quote</a></div>
 <script>document.documentElement.classList.add('js');
@@ -700,6 +855,21 @@ document.querySelectorAll('form.qform').forEach(function(f){
 });
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');io.unobserve(e.target)}})},{threshold:.25});
 document.querySelectorAll('.chart').forEach(function(c){io.observe(c)});}else{document.querySelectorAll('.chart').forEach(function(c){c.classList.add('seen')});}
+
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, IO='IntersectionObserver' in window;
+var pb=document.querySelector('.progress span'),mb=document.querySelector('.minibar'),hd=document.querySelector('.site-head');
+function onS(){var h=document.documentElement,p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(pb)pb.style.transform='scaleX('+Math.min(1,Math.max(0,p))+')';if(mb&&hd)mb.classList.toggle('on',hd.getBoundingClientRect().bottom<0);}
+window.addEventListener('scroll',onS,{passive:true});onS();
+if(IO&&!rm){
+ var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,to=parseFloat(el.getAttribute('data-to')),pre=el.getAttribute('data-pre')||'',suf=el.getAttribute('data-suf')||'',cm=el.getAttribute('data-comma')==='1',fin=el.textContent,t0=null;
+  if(isNaN(to)){return}
+  function fmt(v){var s=Math.round(v).toString();if(cm)s=s.replace(/\B(?=(\d{3})+(?!\d))/g,',');return pre+s+suf}
+  function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1600),ez=1-Math.pow(1-k,3);el.textContent=fmt(to*ez);if(k<1)requestAnimationFrame(step);else el.textContent=fin;}
+  requestAnimationFrame(step);})},{threshold:.5});
+ document.querySelectorAll('.stat-n').forEach(function(el){if(/^[\$0-9,.]+/.test(el.textContent)&&!/×/.test(el.textContent))cio.observe(el)});
+ var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('seen');rio.unobserve(e.target)}})},{threshold:.15});
+ document.querySelectorAll('.tcard,.photo,.illus,.related li,.stat,.calc').forEach(function(el){el.classList.add('reveal');rio.observe(el)});
+}
 })();
 </script>
 </body>
