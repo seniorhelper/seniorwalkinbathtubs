@@ -562,7 +562,7 @@ document.querySelectorAll('form.qform').forEach(function(f){
   var st=f.querySelector('.fstatus'),btn=f.querySelector('button[type=submit]');
   function say(c,m){st.className='fstatus '+c;st.textContent=m}
   var hp=f.querySelector('input[name=_honey]');
-  if((hp&&hp.value)||!human||Date.now()-t0<4000){say('ok','Thank you. Your request was received.');f.reset();return}
+  if(hp&&hp.value){return}if(Date.now()-t0<3500){say('err','Give the form a moment, then send again.');return}if(!human){return}
   var need=f.querySelectorAll('[required]'),bad=null;
   need.forEach(function(el){if(!el.value.trim()&&!bad)bad=el});
   if(bad){say('err','Please fill in your '+(bad.previousElementSibling?bad.previousElementSibling.textContent.toLowerCase():'details')+'.');bad.focus();return}
