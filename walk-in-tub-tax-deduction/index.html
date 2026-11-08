@@ -583,5 +583,6 @@ function calc(){var med=Math.max(0,n('t-cost')-n('t-val')),oth=n('t-other'),floo
 $('o-med').textContent=f.format(med);$('o-oth').textContent=f.format(oth);$('o-floor').textContent='\u2212 '+f.format(floor);$('o-ded').textContent=f.format(ded);$('o-save').textContent=r?'about '+f.format(ded*r/100):'\u2014';
 var tot=med+oth;$('o-bar').style.width=(tot?Math.min(100,ded/tot*100):0)+'%';
 $('o-read').textContent=ded>0?'About '+f.format(ded)+' of your '+f.format(tot)+' in medical costs clears the 7.5% floor. That amount is deductible only if you itemize.':'Your medical costs do not exceed 7.5% of AGI, so there would be no medical deduction this year.'}
-['t-cost','t-val','t-other','t-agi','t-rate'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});calc()})();</script></body>
+['t-cost','t-val','t-other','t-agi','t-rate'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});calc()})();</script><script src="/lead-send.js" defer></script>
+</body>
 </html>

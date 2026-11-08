@@ -858,5 +858,6 @@ if(IO&&!rm){
 hs.forEach(function(th,i){var b=th.querySelector('button');b.addEventListener('click',function(){var num=b.hasAttribute('data-n'),cur=th.getAttribute('aria-sort'),dir=cur==='descending'?'ascending':(cur==='ascending'?'descending':(num?'descending':'ascending'));
 var rs=Array.prototype.slice.call(tb.rows);rs.sort(function(a,c){var x=a.cells[i].textContent,y=c.cells[i].textContent;if(num){x=parseFloat(x.replace(/[^0-9.]/g,''));y=parseFloat(y.replace(/[^0-9.]/g,''));return dir==='ascending'?x-y:y-x}return dir==='ascending'?x.localeCompare(y):y.localeCompare(x)});
 rs.forEach(function(r){tb.appendChild(r)});hs.forEach(function(h){h.removeAttribute('aria-sort')});th.setAttribute('aria-sort',dir)})})})();</script>
+<script src="/lead-send.js" defer></script>
 </body>
 </html>
