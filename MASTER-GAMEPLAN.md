@@ -42,3 +42,9 @@ Aging Safely Baths & More, LLC. 1-888-779-2284, sales@agingsafelybaths.com. BBB 
 
 ## Measurement
 GA4 property per site (account 45765285), key events generate_lead and phone_click. Search Console: bare domain property, sitemap.xml submitted. Check queries and positions in GA4's Search Console report at the start of every project.
+
+## 2026-11-10 (branch seo-leads-2026-11-10, not pushed)
+Based on GSC (GSC-GA4-DIAGNOSIS-2026-11-10.md and AGING-GSC-SNAPSHOT-2026-11-08.md).
+- /blog/walk-in-tub-water-heater-guide/ (pos 12.4, 148 impr, 0 clicks): new title "What Size Water Heater for a Walk-In Tub? Free Calculator", new meta, answer-first lead (43 gallons of 120°F water for a 60-gallon fill). Removed the Fixr "$6,000 average" stat (only published prices allowed). The 120°F claim now cites CPSC publication 5098 (opened Nov 10) because energy.gov/energysaver/water-heating and /sizing-new-water-heater return 404. The first-hour-rating sentence still credits DOE with a dead link: replace when a live source is found.
+- No new post: "compact walk-in tubs for small bathrooms" is owned by /small-walk-in-tubs/ (retitled "Compact Walk-In Tubs for Small Bathrooms: Sizes That Fit", answer-first lead). "walk-in tub vs walk-in shower for seniors" is owned by /blog/walk-in-tub-vs-roll-in-shower/: added a low-curb walk-in shower section with a 3-way table, new FAQ, retitled; sources ADA 608 (access-board.gov) and EPA WaterSense showerheads, both opened Nov 10.
+Next: replace the dead DOE first-hour-rating citation; request indexing for the three URLs.
