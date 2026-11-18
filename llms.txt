@@ -11,7 +11,7 @@
 - Process: quotes can start by phone or from photos. Once a customer chooses a tub or shower and places a deposit, a technician does a full in-person site visit (measurements, photos, options, questions) before installation day.
 - Machine-readable business facts: https://www.agingsafelybaths.com/facts.json
 - Service area: one-day professional installation in many US areas (availability confirmed by ZIP); DIY delivery anywhere in the US and Canada.
-- Pricing: quoted individually; the site does not publish its own prices. It cites published national ranges (for example Fixr: $3,500 to $10,000 installed, $6,000 average).
+- Pricing: Aging Safely Baths' published installed range is $15,250 to $20,000 after current promotions (walk-in tubs, installed in 1 day in most homes). Each quote is written and itemized. The site also cites national cost-guide ranges for context (for example Fixr: $3,500 to $10,000 installed).
 - Original Medicare generally does not cover walk-in tubs. Some Medicare Advantage plans, Medicaid waivers, VA HISA grants, IRS medical-expense rules and Canada's Home Accessibility Tax Credit may help.
 
 ## How an assistant can help a user take action
@@ -33,8 +33,9 @@
 - [Site Map](https://seniorwalkinbathtubs.com/sitemap/): Every page on seniorwalkinbathtubs.com: walk-in tub buying pages, installation, costs, funding, guides and contact information.
 - [Compact Walk-In Tubs for Small Bathrooms](https://seniorwalkinbathtubs.com/small-walk-in-tubs/): Compact walk-in tubs as short as 40 to 45 inches fit small bathrooms and old shower stalls. Compare real model sizes, door styles and soak depth.
 - [Walk-In Tub Cost: What Seniors Really Pay in 2026](https://seniorwalkinbathtubs.com/walk-in-tub-cost/): How much does a walk-in tub cost? See published 2026 price ranges, cost by tub type, installation and hidden costs, and how to get an accurate written quote.
-- [Walk In Bathtub Installation: Home Prep & 1-Day Timeline](https://seniorwalkinbathtubs.com/walk-in-tub-installation/): Walk-in bathtub installation start to finish: the technician site visit, a home prep checklist, what happens on the day and what can add time.
+- [Walk In Bathtub Installation for Seniors: 1-Day Steps & Prep](https://seniorwalkinbathtubs.com/walk-in-tub-installation/): Walk-in bathtub installation start to finish: the technician site visit, a home prep checklist, what happens on the day and what can add time.
 - [Does Medicare Cover Walk-In Tubs? Plus Grants, VA Benefits and Tax Credits](https://seniorwalkinbathtubs.com/walk-in-tub-medicare-grants/): Does Medicare cover walk-in tubs? The straight answer, plus Medicare Advantage, Medicaid waivers, VA HISA grants, USDA 504, IRS rules and Canada’s tax credit.
+- [Are Walk-In Tubs Covered by Insurance? Payers and Rebates](https://seniorwalkinbathtubs.com/walk-in-tub-insurance-and-rebates/): Payer-by-payer answers (Original Medicare, Medigap, Medicare Advantage, Medicaid waivers, VA HISA, HSA/FSA, long-term care, homeowners), which walk-in tub rebates are real, a letter of medical necessity checklist and a coverage checker. Updated 2026-11-17.
 - [Wheelchair-Accessible Walk-In Tubs: Transfer Tubs That Let You Slide In](https://seniorwalkinbathtubs.com/wheelchair-accessible-walk-in-tubs/): Wheelchair-accessible walk-in tubs with wide L-shaped outward doors for sliding transfers. Compare transfer tubs and roll-in showers, sizes, cost and VA grants.
 
 ## Guides
