@@ -29,7 +29,7 @@ The short answer
 - You sit on a built-in seat at chair height instead of lowering yourself to the tub floor.
 - One-day installation is available in many areas. We confirm availability for your ZIP code when you call or request a quote.
 - Prefer your own contractor? We drop-ship tubs anywhere in the United States and Canada.
-- Installed price: $15,250 to $20,000 with Aging Safely Baths after current promotions. National cost guides publish wider ranges, such as $3,500 to $10,000 (Fixr, 2026), because they blend many tub types and job scopes. Your written quote depends on the model and your bathroom.
+- Installed cost varies with the bathroom and the model, so we give each home its own free written quote. National cost guides publish wider ranges, such as $3,500 to $10,000 (Fixr, 2026), because they blend many tub types and job scopes. Your written quote depends on the model and your bathroom.
 - Original Medicare generally does not pay for walk-in tubs, but grants, Medicaid waivers, VA benefits and tax credits sometimes help.
 
 81%
@@ -1777,7 +1777,7 @@ Freight (DIY orders) | Delivery to your address, plus brokerage and duty for Can
 Possible extra work | Items like subfloor repair or drain relocation, with a stated range | 
 Warranty | Manufacturer warranty terms and our 1-year labor warranty | 
 
-We do not bundle everything into one mystery number, and we do not quote a number that ignores your bathroom. Aging Safely Baths publishes one installed range: most walk-in tubs we install cost $15,250 to $20,000 after current promotions. National cost guides use wider ranges, such as Fixr’s 2026 range of $3,500 to $10,000 installed with a $6,000 average, are a useful starting point. Your written quote replaces that estimate with a real number for your home.
+We do not bundle everything into one mystery number, and we do not quote a number that ignores your bathroom. Installed pricing depends on your bathroom and the model you choose, so it is quoted at no cost. National cost guides, such as Fixr’s 2026 range of $3,500 to $10,000 installed with a $6,000 average, are a useful starting point. Your written quote replaces that estimate with a real number for your home.
 
 Published walk-in tub cost ranges, installed (dot = typical or average figure)
 
@@ -2066,7 +2066,7 @@ Do I need a home visit to get a quote?
 Not to get started. Measurements and a few photos let us give an accurate recommendation and written quote. Once you choose your tub and place a deposit, a technician visits for a full site check (measurements, photos, options and questions) before installation day.
 
 Do you publish walk-in tub prices?
-Yes, as a range: most walk-in tubs we install cost $15,250 to $20,000 after current promotions. Your exact price depends on your tub choice and your bathroom (plumbing, electrical, water heater and floor condition), so we confirm it in a written, itemized quote.
+Yes, as a range: Pricing is quoted for your bathroom and model after a short conversation, at no cost. Your exact price depends on your tub choice and your bathroom (plumbing, electrical, water heater and floor condition), so we confirm it in a written, itemized quote.
 
 What is included in an installation quote?
 The tub and options, removal and disposal of the old tub, plumbing and any electrical connection, leveling, wall finish, testing, cleanup and a walkthrough, plus the manufacturer warranty and our 1-year labor warranty.
@@ -2873,16 +2873,16 @@ The BBB accredits Aging Safely Baths. Have a look at our listing, then send any 
 URL: https://seniorwalkinbathtubs.com/walk-in-tub-cost/
 
 Walk-In Tub Cost: What Seniors Really Pay in 2026
-$15,250 to $20,000 installed with us after current promotions, itemized in writing.
+Installed cost varies with the bathroom and the model, so we give each home its own free written quote.
 
 Get a free quoteCall 1-888-779-2284
 
-A professionally installed walk-in tub from Aging Safely Baths costs $15,250 to $20,000 after current promotions, installed in one day in most homes. National cost guides print wider ranges, such as $3,500 to $10,000 with a $6,000 average (Fixr, 2026), because they blend many tub types and job scopes. Below we show every published range side by side, explain what pushes a price up or down, and show you how to read a walk-in tub quote so you pay for the tub you need and nothing you don’t.
+Installed pricing depends on the bathroom and the model, so call for a free written quote. National cost guides print wider ranges, such as $3,500 to $10,000 with a $6,000 average (Fixr, 2026), because they blend many tub types and job scopes. Below we show every published range side by side, explain what pushes a price up or down, and show you how to read a walk-in tub quote so you pay for the tub you need and nothing you don’t.
 Updated September 19, 2026 by the Aging Safely Baths team. 17 minute read.
 
 The short answer
 
-- Aging Safely Baths (Nov 2026): $15,250 to $20,000 installed after current promotions, itemized in writing.
+- Aging Safely Baths (Nov 2026): Installed cost varies with the bathroom and the model, so we give each home its own free written quote.
 - Fixr (2026): most installed walk-in tubs cost $3,500 to $10,000, with a $6,000 national average.
 - This Old House (2026): about $4,600 on average for a standard 60-by-32-inch tub, with a range of $1,800 to more than $20,000.
 - Retirement Living (2026): standard tubs $2,500 to $5,000, hydrotherapy tubs $5,000 to $10,000, bariatric tubs $7,000 to $10,000.
@@ -3098,9 +3098,9 @@ A good quote is specific. When you compare quotes from different companies, line
 
 Be cautious with any quote that gives one lump sum with no breakdown, or that requires you to decide the same day to get a special price. A fair offer is still fair tomorrow.
 
-### Our published installed range, and why your quote is still itemized
+### Why every installed quote is itemized
 
-Aging Safely Baths publishes one installed range: most walk-in tubs we install cost $15,250 to $20,000 after current promotions. That is the installed price: the tub plus professional installation by factory-certified installers, done in one day in most homes. Senior and veteran discounts and financing can lower what you pay. We still do not post a model-by-model price list, because two bathrooms that look alike can need very different work, and a price that ignores your water heater, your electrical panel or your subfloor is not a real price. What we do instead:
+Aging Safely Baths does not publish installation prices. Your installed price covers the tub plus professional installation by factory-certified installers, done in one day in most homes, and it is quoted for your bathroom and model at no cost. Senior and veteran discounts and financing can lower what you pay. We do not post a price list, because two bathrooms that look alike can need very different work, and a price that ignores your water heater, your electrical panel or your subfloor is not a real price. What we do instead:
 
 - We ask a few quick questions by phone or through our quote form.
 - We confirm your alcove size, doorways and utilities.
@@ -3188,7 +3188,7 @@ Hydro Dimensions provides a lifetime warranty on its walk-in tubs covering the s
 ### Frequently asked questions
 
 How much does a walk-in tub cost on average?
-Fixr’s 2026 data puts the national average for an installed walk-in tub at $6,000, with most projects costing $3,500 to $10,000. This Old House reports about $4,600 for a standard 60-by-32-inch tub. Prices rise with jets, larger sizes and bathroom repairs. Aging Safely Baths' own published installed range is $15,250 to $20,000 after current promotions.
+Fixr’s 2026 data puts the national average for an installed walk-in tub at $6,000, with most projects costing $3,500 to $10,000. This Old House reports about $4,600 for a standard 60-by-32-inch tub. Prices rise with jets, larger sizes and bathroom repairs. Every installation is priced for the specific bathroom and model, and the quote is free.
 
 How much does it cost to install a walk-in tub?
 Installation cost depends on removal of the old tub, plumbing, electrical work for jets, wall finishing and any hidden repairs. Rather than guess, we quote installation separately from the tub so you can see exactly what the labor covers.
@@ -3742,26 +3742,13 @@ Canada Home Accessibility Tax Credit | Yes, for eligible Canadians | 15% of up t
 
 The water heater line matters more than most people think. A walk-in tub fills deeper than a standard tub, and some homes need a larger or faster water heater to keep the bath hot. If yours is due for replacement anyway, a heat pump model may qualify for a state rebate that the tub itself never would. Rewiring America notes that these rebates are run state by state and that some states have paused or delayed their programs, so confirm with your state energy office first. Our water heater sizing guide helps you decide whether you need one at all.
 
-At Aging Safely Baths, the current promotion and any senior or veteran discount are already reflected in our published installed range of $15,250 to $20,000. We show them on the written quote so you can see exactly what you are getting.
+The installed cost depends on the room and the model you pick; ask for a free, itemized quote. We show them on the written quote so you can see exactly what you are getting.
 
 ### How far does each program go against the price?
 
 A useful way to plan is to line up each program's maximum against the low end of a professionally installed tub. These are ceilings, not typical awards. Most families who qualify for anything qualify for one or two routes, and approvals often come in under the cap.
 
 Sources: Colorado HCPF; USDA Rural Development; IRS Publication 969; VA HISA; Rewiring America (HEAR). The water heater rebate applies to a heat pump water heater, not the tub.
-
-Turn that into a worked example. The numbers below use the low end of our installed range and each program's maximum, so treat them as best cases.
-
-Best-case gap on a $15,250 installed tub
-Situation | Program maximum | Left to pay | 
-
-Veteran, service-connected condition, full HISA available | $6,800 | $8,450 | 
-
-Veteran, non-service-connected condition | $2,000 | $13,250 | 
-
-Colorado waiver member approved at the full cap | $14,000 | $1,250 | 
-
-Medicare Advantage allowance of $2,000 | $2,000 | $13,250 | 
 
 Whatever is left can come from an HSA, savings, family or financing. Some programs cannot be combined for the same item, and some pay the contractor directly, so ask each agency how it handles a project that another program is also funding. For a full list of programs and how to apply, Aging Safely Baths keeps a guide to eight programs that can pay part of a walk-in tub.
 
@@ -3846,7 +3833,7 @@ No bathing product eliminates the risk of falls; products are designed to reduce
 
 - Does Medicare pay for walk-in tubs?Medicare, Medicaid waivers, VA grants, USDA 504 and Canada's tax credit, in depth.
 - Walk-in tub tax deductionEstimate the deductible amount under IRS Publication 502.
-- Walk-in tub costOur installed range, national ranges and the hidden costs to ask about.
+- Walk-in tub costNational ranges, what moves a quote and the hidden costs to ask about.
 - Walk-in bathtub installationThe site visit, the prep checklist and what happens on install day. 
 
 ### Ready for a safer, easier bath?
